@@ -1,0 +1,1310 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mi Housse Tech Kénitra</title>
+<meta name="description" content="Mi Housse Tech, revendeur agréé Xiaomi à Kénitra : smartphones, tablettes, objets connectés, téléviseurs, électroménager. City Center, avenue Mohammed V.">
+<meta property="og:title" content="Mi Housse Tech · Revendeur agréé Xiaomi à Kénitra">
+<meta property="og:description" content="Smartphones, tablettes, objets connectés, téléviseurs et électroménager Xiaomi. City Center, avenue Mohammed V. Ouvert 7j/7 de 10h à 20h.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="fr_MA">
+<meta name="theme-color" content="#090a11">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "ElectronicsStore", "name": "Mi Housse Tech", "description": "Revendeur agréé Xiaomi à Kénitra", "telephone": "+212643745842", "address": {"@type": "PostalAddress", "streetAddress": "1, avenue Mohammed V, Centre commercial City Center", "addressLocality": "Kénitra", "addressCountry": "MA"}, "openingHours": "Mo-Su 10:00-20:00", "sameAs": ["https://www.instagram.com/mi_housse_tech_59/"]}</script>
+<link rel="icon" type="image/png" href="logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Albert+Sans:wght@400;500;600&family=Outfit:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+/* Direction : vitrine de marque, vivante. Titres dans la géométrique du logo, dégradé orange du logo
+   pour les moments forts, produits dessinés en couleur sur fonds teintés. Une bannière par rayon. */
+:root {
+  color-scheme: light;
+  --bg: #ffffff;
+  --tile: #f5f5f7;
+  --ink: #17171a;
+  --muted: #6e6e76;
+  --line: #e7e7ea;
+  --orange: #f26a1b;
+  --orange-2: #f58539;
+  --orange-3: #e4560f;
+  --dark: #0e0e10;
+  --on-dark-muted: #a9a9b2;
+  --green: #1faa55;
+  --grad: linear-gradient(135deg, var(--orange-2), var(--orange-3));
+  --font-display: "Outfit", "Segoe UI", system-ui, sans-serif;
+  --font: "Albert Sans", "Segoe UI", system-ui, sans-serif;
+  --r: 22px;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; scroll-padding-top: 130px; }
+body { margin: 0; background: var(--bg); color: var(--ink); font-family: var(--font); font-size: 16px; line-height: 1.5; }
+h1, h2, h3, p { margin: 0; }
+h1, h2, h3 { font-family: var(--font-display); text-wrap: balance; }
+a { color: inherit; }
+:focus-visible { outline: 3px solid var(--orange); outline-offset: 3px; border-radius: 6px; }
+.wrap { max-width: 1240px; margin: 0 auto; padding: 0 20px; }
+.stroke { fill: none; stroke: currentColor; stroke-width: 1.700; stroke-linecap: round; stroke-linejoin: round; }
+
+/* Bandeau d'annonce + en-tête */
+.announce { background: var(--grad); color: #fff; font-size: 14px; font-weight: 600; text-align: center; padding: 8px 16px; }
+.top { position: sticky; top: 0; z-index: 20; background: rgba(255,255,255,.92); backdrop-filter: blur(14px); border-bottom: 1px solid var(--line); }
+.top .wrap { display: flex; align-items: center; gap: 26px; min-height: 64px; padding-top: 8px; padding-bottom: 8px; }
+.brand { display: flex; align-items: center; gap: 11px; text-decoration: none; font-family: var(--font-display); font-weight: 700; font-size: 18px; white-space: nowrap; }
+.brand img { width: 42px; height: 42px; display: block; }
+nav { display: flex; gap: 24px; font-size: 15px; font-weight: 500; flex: 1; }
+nav a { text-decoration: none; padding: 6px 0; white-space: nowrap; }
+nav a:hover { color: var(--orange); }
+.top-cta { display: inline-flex; align-items: center; gap: 8px; background: var(--ink); color: #fff; font-weight: 600; font-size: 15px; text-decoration: none; padding: 10px 18px; border-radius: 999px; font-variant-numeric: tabular-nums; white-space: nowrap; margin-left: auto; }
+.top-cta svg { width: 18px; height: 18px; }
+.top-cta:hover { background: var(--orange); }
+
+/* Boutons */
+.btn { display: inline-flex; align-items: center; justify-content: center; gap: 9px; padding: 14px 28px; border-radius: 999px; font-weight: 600; font-size: 16px; text-decoration: none; border: 1.500px solid transparent; transition: transform .16s ease, box-shadow .16s ease, background .16s ease; }
+.btn svg { width: 20px; height: 20px; }
+.btn:hover { transform: translateY(-2px); }
+.btn-orange { background: linear-gradient(135deg, #ee6a1c, #c9460a); color: #fff; box-shadow: 0 10px 26px rgba(242,106,27,.42); }
+.btn-line { border-color: rgba(255,255,255,.5); color: #fff; }
+.btn-line:hover { background: rgba(255,255,255,.12); }
+.btn-white { background: #fff; color: var(--ink); }
+
+/* Héros */
+.sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+.hero { background: radial-gradient(ellipse 70% 60% at 50% 34%, #191c2e, transparent 72%), radial-gradient(ellipse 50% 40% at 50% 100%, rgba(242,106,27,.34), transparent 70%), #090a11; color: #fff; overflow: hidden; }
+.hero-c { position: relative; display: flex; flex-direction: column; align-items: center; text-align: center; padding-top: 64px; }
+.status { display: inline-flex; align-items: center; gap: 9px; font-size: 14px; font-weight: 500; background: rgba(255,255,255,.08); border: 1px solid rgba(255,255,255,.16); padding: 7px 14px; border-radius: 999px; }
+.dot { width: 8px; height: 8px; border-radius: 50%; background: var(--orange-2); }
+.status.open .dot { background: #35d07a; box-shadow: 0 0 0 0 rgba(53,208,122,.7); animation: pulse 1.800s infinite; }
+@keyframes pulse { 70% { box-shadow: 0 0 0 9px rgba(53,208,122,0); } 100% { box-shadow: 0 0 0 0 rgba(53,208,122,0); } }
+.hero-logo { position: absolute; top: 28px; right: 20px; width: 76px; height: 76px; border-radius: 20px; box-shadow: 0 0 44px rgba(242,106,27,.75); }
+.hero h1 { font-size: clamp(46px, 11.200vw, 150px); font-weight: 800; line-height: 1; letter-spacing: -0.02em; margin: 26px 0 0; white-space: nowrap; }
+.hero h1 em { font-style: normal; background: linear-gradient(180deg, #ff8a33, #ff6900); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.tagline { font-family: var(--font-display); font-weight: 400; text-transform: uppercase; letter-spacing: .42em; margin-right: -.42em; font-size: clamp(11px, 2vw, 25px); color: #c4c6d0; margin-top: clamp(14px, 2.400vw, 30px); }
+.hero .lead { font-size: 18px; color: #a9acb9; max-width: 52ch; margin-top: 26px; }
+.hero .cta { display: flex; gap: 12px; flex-wrap: wrap; justify-content: center; margin-top: 28px; }
+.stage { position: relative; width: 100%; height: 300px; margin-top: 30px; overflow: hidden; }
+.stage svg { position: absolute; width: 330px; height: 330px; left: 50%; top: 68%; filter: drop-shadow(0 30px 34px rgba(0,0,0,.55)); animation: float 7s ease-in-out infinite; transform: translate(var(--tx), var(--ty)) rotate(var(--rot)); }
+.stage .s1 { width: 400px; height: 400px; --rot: -4deg; --tx: -50%; --ty: -50%; z-index: 3; }
+.stage .s2 { --rot: 16deg; --tx: -6%; --ty: -46%; z-index: 2; animation-delay: -2.300s; }
+.stage .s3 { --rot: -20deg; --tx: -94%; --ty: -46%; z-index: 1; animation-delay: -4.600s; }
+@keyframes float { 50% { transform: translate(var(--tx), calc(var(--ty) - 14px)) rotate(var(--rot)); } }
+
+.stage canvas { position: absolute; inset: 0; width: 100%; height: 100%; display: none; cursor: grab; touch-action: pan-y; }
+.stage.gl { height: 500px; margin-top: 6px; }
+.stage.gl canvas { display: block; }
+.stage.gl svg { display: none; }
+.stage.gl.drag canvas { cursor: grabbing; }
+.grid { perspective: 1400px; }
+.p.tilt { transition: box-shadow .2s ease, border-color .2s ease; transform-style: preserve-3d; will-change: transform; }
+.p.tilt .p-img svg { transform: translateZ(40px) scale(1.060); }
+
+.facts { border-top: 1px solid rgba(255,255,255,.12); }
+.facts .wrap { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; padding-top: 22px; padding-bottom: 22px; }
+.facts div { display: flex; align-items: center; gap: 12px; text-align: left; font-size: 15px; color: #d7d7de; }
+.facts svg { width: 26px; height: 26px; flex: none; color: var(--orange-2); }
+.facts b { display: block; color: #fff; font-weight: 600; }
+
+/* Onglets de rayons */
+.tabs { position: sticky; top: 64px; z-index: 15; background: rgba(255,255,255,.94); backdrop-filter: blur(14px); border-bottom: 1px solid var(--line); }
+.tabs .wrap { display: flex; gap: 10px; padding-top: 12px; padding-bottom: 12px; overflow-x: auto; scrollbar-width: none; }
+.tabs a { display: flex; align-items: center; gap: 8px; text-decoration: none; font-weight: 600; font-size: 14px; background: var(--tile); border-radius: 999px; padding: 6px 18px 6px 8px; white-space: nowrap; transition: background .16s ease, color .16s ease; }
+.tabs a:hover { background: var(--ink); color: #fff; }
+.tabs svg { width: 34px; height: 34px; }
+
+/* Rayons */
+.range { padding-top: 56px; }
+.subnav { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 18px; }
+.subnav a { border: 1px solid var(--line); border-radius: 999px; padding: 10px 20px; font-weight: 600; font-size: 15px; background: #fff; }
+.subnav a:hover { border-color: #ff6900; color: #e4560f; }
+.sub { font-family: var(--font-display); font-size: clamp(22px, 2.6vw, 30px); font-weight: 700; margin-top: 34px; scroll-margin-top: 170px; display: flex; align-items: baseline; gap: 14px; flex-wrap: wrap; }
+.sub small { font-family: var(--font-body, inherit); font-size: 14px; font-weight: 400; color: #6b6e7b; }
+.sub::before { content: ""; width: 6px; height: .9em; border-radius: 3px; background: #ff6900; align-self: center; }
+.feature { position: relative; overflow: hidden; border-radius: 28px; color: #fff; background: radial-gradient(circle at 82% 50%, rgba(255,255,255,.28), transparent 46%), linear-gradient(120deg, color-mix(in srgb, var(--c) 78%, #000), var(--c)); display: grid; grid-template-columns: 1.150fr .850fr; align-items: center; min-height: 300px; }
+.feature-text { padding: 44px 48px; display: flex; flex-direction: column; align-items: flex-start; gap: 12px; }
+.eyebrow { font-weight: 600; font-size: 13px; letter-spacing: .14em; text-transform: uppercase; opacity: .85; }
+.feature h2 { font-size: clamp(28px, 3.700vw, 46px); font-weight: 700; line-height: 1.08; letter-spacing: -0.02em; }
+.feature p:not(.eyebrow) { font-size: 18px; max-width: 42ch; opacity: .92; }
+.feature .btn { margin-top: 10px; }
+.feature-art { position: relative; height: 100%; min-height: 300px; }
+.feature-art svg { position: absolute; width: 290px; height: 290px; top: 50%; left: 50%; filter: drop-shadow(0 22px 26px rgba(0,0,0,.35)); }
+.feature-art .fp { position: absolute; bottom: 0; height: auto; filter: drop-shadow(0 18px 26px rgba(0,0,0,.4)); }
+.feature-art .fpx { height: 78%; width: auto; max-width: 96%; object-fit: contain; top: 50%; left: 50%; bottom: auto; transform: translate(-50%, -50%); }
+.feature-art .fp1 { width: 350px; left: 4%; }
+.feature-art .fp2 { width: 300px; right: -6%; }
+@media (max-width: 900px) { .feature-art .fp1 { width: 230px; } .feature-art .fp2 { width: 200px; right: 0; } }
+.feature-art .a1 { transform: translate(-66%, -46%) rotate(-10deg); }
+.feature-art .a2 { transform: translate(-26%, -52%) rotate(12deg) scale(.86); }
+
+.grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-top: 16px; }
+.p { background: #fff; border: 1px solid var(--line); border-radius: var(--r); padding: 12px 12px 22px; display: flex; flex-direction: column; align-items: center; text-align: center; gap: 4px; transition: transform .2s ease, box-shadow .2s ease, border-color .2s ease; }
+.p:hover { transform: translateY(-6px); box-shadow: 0 22px 44px rgba(20,20,30,.13); border-color: transparent; }
+.p-img { width: 100%; height: 210px; border-radius: 14px; display: grid; place-items: center; margin-bottom: 12px; background: var(--tile); background: radial-gradient(circle at 50% 62%, color-mix(in srgb, var(--c) 34%, #fff), color-mix(in srgb, var(--c) 7%, #f6f6f8) 72%); overflow: hidden; }
+.p-img svg { width: 168px; height: 168px; filter: drop-shadow(0 14px 14px rgba(0,0,0,.22)); transition: transform .3s ease; }
+.p:hover .p-img svg { transform: scale(1.080) rotate(-5deg); }
+.p-photo { width: 100%; height: 100%; object-fit: contain; padding: 10px; transition: transform .3s ease; }
+.p-img:has(.p-photo) { background: #f5f5f7; }
+.p:hover .p-photo { transform: scale(1.060); }
+.p-img { position: relative; }
+.p-photo { object-fit: cover !important; padding: 0 !important; border-radius: inherit; }
+.grid-3 { grid-template-columns: repeat(4, 1fr); }
+.grid > .p { min-width: 0; }
+.p h3 { max-width: 100%; overflow: hidden; }
+.p:not(.poster):not(.spec) .p-img { height: auto; aspect-ratio: 1040 / 600; }
+.p:not(.poster):not(.spec) .p-img svg { width: 128px; height: 128px; }
+.p.poster .p-img { height: auto; aspect-ratio: 1040 / 600; background: #f5f5f7 !important; }
+.p.poster .p-photo { object-fit: contain !important; position: absolute; inset: 0; height: 100%; }
+.p.poster .p-price { display: none; }
+.p.poster .p-from { margin-top: 2px; }
+.p-price { position: absolute; left: 8px; bottom: 8px; background: #0c0c0e; color: #fff; font-family: var(--font-display); font-weight: 700; font-size: 15px; line-height: 1; padding: 6px 12px; border-radius: 999px; font-variant-numeric: tabular-nums; box-shadow: 0 8px 20px rgba(0,0,0,.3); }
+.p-price small { font-size: 11px; font-weight: 700; }
+.grid-2 { grid-template-columns: repeat(2, 1fr); }
+.p.spec { padding: 14px 14px 26px; gap: 8px; }
+.p.spec .p-img { height: auto; aspect-ratio: 904 / 420; background: #eef0fb; }
+.p.spec h3 { font-size: clamp(22px, 2.400vw, 30px); font-weight: 800; letter-spacing: -0.02em; }
+.grid-1 { grid-template-columns: 1fr; }
+@media (min-width: 761px) {
+  .grid-1 .p.spec { display: grid; grid-template-columns: 44% 1fr; column-gap: 40px; row-gap: 10px; justify-items: start; align-content: center; text-align: left; padding: 16px 32px 16px 16px; }
+  .grid-1 .p.spec .p-img { grid-column: 1; grid-row: 1 / span 7; margin: 0; width: 100%; }
+  .grid-1 .p.spec > :not(.p-img) { grid-column: 2; }
+  .grid-1 .p.spec h3 { font-size: clamp(26px, 3vw, 38px); }
+  .grid-1 .p-var, .grid-1 .p-actions { justify-content: flex-start; }
+  .grid-1 .p-specs { max-width: none; }
+}
+.grid-1 .p.spec .p-img { aspect-ratio: 760 / 688; }
+.mini .p.spec { padding: 12px 12px 18px; gap: 6px; }
+.mini .p.spec .p-img { aspect-ratio: 1040 / 600; background: #f5f5f7; }
+.mini .p.spec h3 { font-size: 18px; font-weight: 600; letter-spacing: -0.01em; }
+.mini .p-var { gap: 5px; }
+.mini .p-var span { font-size: 12px; padding: 3px 9px; }
+@media (max-width: 700px) { .mini .p-from { flex-direction: column; gap: 3px; border: 0; padding: 0; font-size: 12px; } .mini .p.spec h3 { font-size: 15px; } .mini .p-var span { font-size: 11px; padding: 2px 7px; } }
+.p-var { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; }
+.p-var span { background: var(--tile); border-radius: 999px; padding: 5px 14px; font-size: 14px; font-weight: 600; color: #4d4d55; font-variant-numeric: tabular-nums; }
+.p-from { display: inline-flex; align-items: center; gap: 8px; border: 1px solid var(--line); border-radius: 999px; padding: 3px 3px 3px 12px; font-size: 13px; margin-top: 4px; white-space: nowrap; }
+.p-from b { background: #0c0c0e; color: #fff; font-family: var(--font-display); font-weight: 700; font-size: 15px; padding: 5px 12px; border-radius: 999px; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.p-specs { list-style: none; margin: 10px 0 4px; padding: 14px 0; width: 100%; max-width: 520px; display: grid; grid-template-columns: 1fr 1fr; gap: 8px 18px; text-align: left; font-size: 14px; color: var(--muted); border-top: 1px dashed var(--line); border-bottom: 1px dashed var(--line); }
+.p-specs li { padding-left: 16px; position: relative; }
+.p-specs li::before { content: ""; position: absolute; left: 0; top: .55em; width: 7px; height: 7px; border-radius: 50%; background: var(--orange); }
+.p-specs b { color: var(--ink); font-weight: 600; }
+.p-tag { color: var(--muted); font-size: 15px; max-width: 30ch; text-wrap: balance; }
+.p.poster h3 { font-size: 18px; }
+.p-kind { font-size: 13px; color: var(--muted); }
+.p h3 { font-size: 18px; font-weight: 600; letter-spacing: -0.01em; }
+.p-actions { display: flex; align-items: center; justify-content: center; gap: 8px; margin-top: 12px; flex-wrap: wrap; }
+.p-add { width: 44px; height: 44px; border-radius: 50%; border: 1.500px solid var(--line); background: #fff; color: var(--ink); display: grid; place-items: center; cursor: pointer; padding: 0; transition: background .16s ease, border-color .16s ease, color .16s ease, transform .16s ease; }
+.p-add svg { width: 20px; height: 20px; stroke-width: 2.200; }
+.p-add .i-check { display: none; }
+.p-add:hover { border-color: var(--ink); transform: scale(1.060); }
+.p-add[aria-pressed="true"] { background: var(--orange); border-color: var(--orange); color: #fff; }
+.p-add[aria-pressed="true"] .i-plus { display: none; }
+.p-add[aria-pressed="true"] .i-check { display: inline; }
+.p-ask { margin-top: 0; font-size: 14px; font-weight: 600; color: #fff; background: var(--ink); text-decoration: none; border-radius: 999px; padding: 12px 18px; white-space: nowrap; transition: background .16s ease; }
+.p-ask:hover, .p:hover .p-ask { background: var(--orange); }
+
+/* Recherche */
+.finder { padding-top: 44px; }
+.finder .wrap { display: flex; flex-direction: column; align-items: center; gap: 12px; }
+.finder label { font-family: var(--font-display); font-weight: 700; font-size: clamp(22px, 2.600vw, 30px); letter-spacing: -0.01em; text-align: center; }
+.finder-box { position: relative; width: min(620px, 100%); }
+.finder-box svg { position: absolute; left: 20px; top: 50%; transform: translateY(-50%); width: 22px; height: 22px; color: var(--muted); pointer-events: none; }
+.finder input { width: 100%; font: inherit; font-size: 17px; padding: 16px 22px 16px 54px; border-radius: 999px; border: 1.500px solid var(--line); background: var(--tile); color: var(--ink); }
+.finder input:focus { outline: none; border-color: var(--orange); background: #fff; box-shadow: 0 0 0 4px rgba(242,106,27,.18); }
+.finder-count { font-size: 14px; color: var(--muted); min-height: 21px; }
+.empty { display: none; margin: 30px auto 0; max-width: 560px; text-align: center; background: var(--tile); border-radius: var(--r); padding: 36px 28px; }
+.empty h3 { font-size: 21px; margin-bottom: 6px; }
+.empty p { color: var(--muted); margin-bottom: 18px; }
+.empty.show { display: block; }
+.is-hidden { display: none !important; }
+.tabs a.on { background: var(--ink); color: #fff; }
+
+/* Étapes */
+.steps { margin-top: 80px; }
+.sec-head { text-align: center; margin-bottom: 30px; }
+.sec-head h2 { font-size: clamp(28px, 3.700vw, 44px); font-weight: 700; letter-spacing: -0.02em; line-height: 1.1; }
+.sec-head p { color: var(--muted); font-size: 17px; margin-top: 8px; }
+.steps ol { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; counter-reset: s; }
+.steps li { counter-increment: s; position: relative; border: 1px solid var(--line); border-radius: var(--r); padding: 30px 28px 28px; }
+.steps li::before { content: counter(s); display: grid; place-items: center; width: 46px; height: 46px; border-radius: 50%; background: var(--grad); color: #fff; font-family: var(--font-display); font-weight: 700; font-size: 20px; margin-bottom: 16px; }
+.steps h3 { font-size: 19px; font-weight: 600; margin-bottom: 4px; }
+.steps li p { color: var(--muted); }
+
+/* Questions fréquentes */
+.faq { margin-top: 80px; }
+.faq-list { max-width: 820px; margin: 0 auto; display: grid; gap: 10px; }
+.faq details { background: var(--tile); border-radius: 18px; padding: 0 24px; }
+.faq summary { cursor: pointer; list-style: none; display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 20px 0; font-family: var(--font-display); font-weight: 600; font-size: 17px; }
+.faq summary::-webkit-details-marker { display: none; }
+.faq summary::after { content: "+"; flex: none; width: 30px; height: 30px; border-radius: 50%; background: #fff; display: grid; place-items: center; font-size: 20px; font-weight: 400; color: var(--orange-3); transition: transform .2s ease; }
+.faq details[open] summary::after { transform: rotate(45deg); }
+.faq details p { color: #4d4d55; padding: 0 0 22px; max-width: 65ch; }
+
+/* Ma liste */
+.list-fab { position: fixed; left: 18px; bottom: 18px; z-index: 30; display: flex; align-items: center; gap: 10px; font: inherit; font-weight: 600; background: var(--ink); color: #fff; border: 0; cursor: pointer; padding: 13px 18px 13px 20px; border-radius: 999px; box-shadow: 0 10px 26px rgba(0,0,0,.3); }
+.list-fab[hidden] { display: none; }
+.list-fab b { min-width: 26px; height: 26px; padding: 0 7px; border-radius: 999px; background: var(--orange); display: grid; place-items: center; font-size: 14px; font-variant-numeric: tabular-nums; }
+.list-fab.bump b { animation: bump .35s ease; }
+@keyframes bump { 50% { transform: scale(1.350); } }
+dialog.list { border: 0; padding: 0; border-radius: 26px; width: min(480px, calc(100vw - 32px)); max-height: min(640px, calc(100vh - 32px)); color: var(--ink); background: #fff; box-shadow: 0 40px 90px rgba(0,0,0,.4); }
+dialog.list::backdrop { background: rgba(9,10,17,.6); backdrop-filter: blur(4px); }
+.dlg { display: flex; flex-direction: column; gap: 16px; padding: 26px; }
+.dlg-head { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+.dlg-head h2 { font-size: 24px; font-weight: 700; letter-spacing: -0.01em; }
+.dlg-x { width: 44px; height: 44px; border-radius: 50%; border: 0; background: var(--tile); font-size: 24px; line-height: 1; cursor: pointer; color: var(--ink); }
+.dlg ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; max-height: 300px; overflow-y: auto; }
+.dlg li { display: flex; align-items: center; justify-content: space-between; gap: 12px; background: var(--tile); border-radius: 14px; padding: 8px 8px 8px 18px; font-weight: 600; }
+.dlg li button { width: 40px; height: 40px; border-radius: 50%; border: 0; background: #fff; cursor: pointer; font-size: 20px; line-height: 1; color: var(--muted); flex: none; }
+.dlg li button:hover { color: #c4320a; }
+.dlg-note { color: var(--muted); font-size: 15px; }
+.dlg .btn { width: 100%; }
+.dlg-clear { align-self: center; background: none; border: 0; font: inherit; font-size: 14px; color: var(--muted); text-decoration: underline; cursor: pointer; padding: 8px; }
+
+/* Effets adaptés de composants 21st.dev : « Shimmer Button » (dillionverma) et « Spotlight Card » (preetsuthar17) */
+.shimmer { position: relative; z-index: 0; overflow: hidden; background: #a83a06; box-shadow: 0 10px 26px rgba(242,106,27,.42), inset 0 -8px 10px rgba(255,255,255,.12); }
+.shimmer:hover { box-shadow: 0 10px 26px rgba(242,106,27,.42), inset 0 -6px 10px rgba(255,255,255,.25); }
+.sh-spark { position: absolute; inset: 0; z-index: -30; filter: blur(2px); container-type: size; overflow: visible; }
+.sh-slide { position: absolute; inset: 0; height: 100cqh; aspect-ratio: 1; animation: sh-slide 3s ease-in-out infinite alternate; }
+.sh-spin { position: absolute; inset: -100%; background: conic-gradient(from 225deg, transparent 0, #fff 90deg, transparent 90deg); animation: sh-spin 6s linear infinite; }
+.sh-bg { position: absolute; inset: 2px; z-index: -20; border-radius: inherit; background: linear-gradient(135deg, #ee6a1c, #c9460a); }
+@keyframes sh-slide { to { transform: translate(calc(100cqw - 100%), 0); } }
+@keyframes sh-spin { 0% { transform: rotate(0); } 15%, 35% { transform: rotate(90deg); } 65%, 85% { transform: rotate(270deg); } 100% { transform: rotate(360deg); } }
+.p, .services .wrap > div, .steps li, .reach a { position: relative; }
+.p::after, .services .wrap > div::after, .steps li::after, .reach a::after { content: ""; position: absolute; inset: 0; border-radius: inherit; pointer-events: none; opacity: 0; transition: opacity .5s ease-in-out; background: radial-gradient(circle at var(--mx, 50%) var(--my, 50%), rgba(242,106,27,.34), transparent 70%); }
+.p:hover::after, .services .wrap > div:hover::after, .steps li:hover::after, .reach a:hover::after { opacity: .6; }
+
+/* Services */
+.services { margin-top: 72px; }
+.services .wrap { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+.services div { background: var(--tile); border-radius: var(--r); padding: 28px; }
+.services svg { width: 46px; height: 46px; padding: 10px; border-radius: 14px; background: var(--grad); color: #fff; margin-bottom: 14px; }
+.services h3 { font-size: 19px; font-weight: 600; margin-bottom: 4px; }
+.services p { color: var(--muted); }
+
+/* Boutique */
+.store { padding: 72px 0; }
+.store-grid { display: grid; grid-template-columns: 1.100fr .900fr; gap: 16px; }
+.store-main { position: relative; overflow: hidden; background: var(--grad); color: #fff; border-radius: 28px; padding: 44px; display: flex; flex-direction: column; gap: 18px; align-items: flex-start; }
+.store-main::after { content: ""; position: absolute; right: -90px; bottom: -110px; width: 340px; height: 340px; border-radius: 50%; background: rgba(255,255,255,.14); }
+.store-main img { width: 84px; height: 84px; border-radius: 22px; box-shadow: 0 0 0 4px rgba(255,255,255,.35); }
+.store-main h2 { font-size: clamp(30px, 3.700vw, 46px); font-weight: 700; line-height: 1.08; letter-spacing: -0.02em; }
+.store-main p { font-size: 18px; }
+.store-main strong { font-variant-numeric: tabular-nums; }
+.store-main .btn { position: relative; z-index: 1; }
+.reach { display: grid; gap: 16px; }
+.reach a { display: flex; align-items: center; gap: 16px; background: var(--tile); border-radius: var(--r); padding: 22px 26px; text-decoration: none; transition: transform .16s ease, box-shadow .16s ease, background .16s ease; }
+.reach a:hover { transform: translateX(6px); background: #fff; box-shadow: 0 14px 32px rgba(20,20,30,.12); }
+.reach svg { width: 48px; height: 48px; padding: 11px; border-radius: 14px; background: var(--ink); color: #fff; flex: none; }
+.reach small { display: block; font-size: 13px; color: var(--muted); }
+.reach strong { font-size: 19px; font-weight: 600; font-variant-numeric: tabular-nums; overflow-wrap: anywhere; }
+
+footer { background: var(--dark); color: var(--on-dark-muted); padding: 30px 0 96px; font-size: 13px; }
+footer .wrap { display: flex; justify-content: space-between; gap: 10px; flex-wrap: wrap; }
+
+.wa { position: fixed; right: 18px; bottom: 18px; z-index: 30; display: flex; align-items: center; gap: 9px; background: var(--green); color: #fff; font-weight: 600; text-decoration: none; padding: 13px 22px 13px 17px; border-radius: 999px; box-shadow: 0 10px 26px rgba(31,170,85,.45); }
+.wa svg { width: 22px; height: 22px; }
+.wa:hover { transform: translateY(-2px); }
+
+@media (max-width: 1420px) {
+  nav { display: none; }
+}
+@media (max-width: 1080px) {
+  .grid { grid-template-columns: repeat(3, 1fr); }
+  .grid-3 { grid-template-columns: repeat(3, 1fr); }
+  .grid-1 { grid-template-columns: 1fr; }
+  .facts .wrap { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 760px) {
+  html { scroll-padding-top: 120px; }
+  .brand span { display: none; }
+  .hero-c { padding-top: 86px; }
+  .hero-logo { width: 54px; height: 54px; border-radius: 14px; top: 18px; }
+  .stage { height: 230px; }
+  .stage.gl { height: 380px; }
+  .stage svg { width: 230px; height: 230px; }
+  .stage .s1 { width: 280px; height: 280px; }
+  .feature { grid-template-columns: 1fr; }
+  .feature-text { padding: 30px 26px 0; }
+  .feature-art { min-height: 230px; }
+  .feature-art svg { width: 210px; height: 210px; }
+  .grid { grid-template-columns: repeat(2, 1fr); gap: 10px; }
+  .p { padding: 8px 8px 18px; }
+  .p-img { height: 150px; }
+  .grid-2, .grid-1 { grid-template-columns: 1fr; }
+  .p.spec .p-img { height: auto; }
+  .p.spec h3 { font-size: 23px; }
+  .p-specs { grid-template-columns: 1fr; }
+  .p.spec .p-ask { font-size: 15px; padding: 13px 20px; }
+  .p.poster h3 { font-size: 15px; }
+  .p.poster .p-ask { font-size: 15px; padding: 13px 20px; }
+  .p-img svg { width: 118px; height: 118px; }
+  .p h3 { font-size: 15px; }
+  .p-ask { padding: 12px 12px; font-size: 13px; }
+  .p-actions { gap: 6px; }
+  .list-fab { left: 12px; bottom: 18px; padding: 13px 14px 13px 16px; }
+  .services .wrap, .store-grid, .steps ol { grid-template-columns: 1fr; }
+  .steps, .faq { margin-top: 56px; }
+  .store-main { padding: 30px 26px; }
+  .range { padding-top: 40px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .stage svg, .status.open .dot, .sh-slide, .sh-spin { animation: none; }
+  .btn, .p, .p-img svg, .reach a, .faq summary::after { transition: none; }
+}
+
+/* Bannière Tablettes : tablette flottante en 3D */
+.tab-stage { display: grid; place-items: center; perspective: 900px; min-height: 320px; overflow: visible; }
+.tab-halo { position: absolute; width: 260px; height: 260px; border-radius: 50%; background: radial-gradient(circle, rgba(255,140,60,.45), rgba(255,105,0,0) 68%); filter: blur(8px); animation: tabPulse 5s ease-in-out infinite; }
+.tab-float { position: relative; animation: tabFloat 6s ease-in-out infinite; }
+.tab-tilt { position: relative; width: 140px; transform: rotate(-8deg) rotateY(var(--ry,-12deg)) rotateX(var(--rx,4deg)); transform-style: preserve-3d; transition: transform .25s ease-out; border-radius: 16px; filter: drop-shadow(0 30px 34px rgba(0,0,0,.45)); }
+.tab-tilt img { display: block; width: 100%; height: auto; }
+.tab-shine { position: absolute; inset: 1% 1.5%; border-radius: 12px; overflow: hidden; pointer-events: none; }
+.tab-shine::after { content: ""; position: absolute; top: -20%; left: -60%; width: 45%; height: 140%; background: linear-gradient(100deg, transparent, rgba(255,255,255,.55), transparent); transform: skewX(-12deg); animation: tabSweep 5.5s ease-in-out infinite; }
+.tab-pill { position: absolute; right: 4%; bottom: 8%; white-space: nowrap; display: inline-flex; align-items: center; gap: 8px; background: rgba(255,255,255,.92); color: #16181d; font-weight: 600; font-size: 14px; padding: 9px 16px; border-radius: 999px; box-shadow: 0 10px 24px rgba(0,0,0,.2); text-decoration: none; backdrop-filter: blur(6px); }
+.tab-pill:hover { background: #fff; }
+.tab-dot { width: 8px; height: 8px; border-radius: 50%; background: #ff6900; box-shadow: 0 0 0 0 rgba(255,105,0,.6); animation: tabDot 2s infinite; }
+@keyframes tabFloat { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-12px); } }
+@keyframes tabPulse { 0%,100% { opacity: .75; transform: scale(1); } 50% { opacity: 1; transform: scale(1.08); } }
+@keyframes tabSweep { 0%,55% { left: -60%; } 85%,100% { left: 130%; } }
+@keyframes tabDot { 0% { box-shadow: 0 0 0 0 rgba(255,105,0,.6); } 100% { box-shadow: 0 0 0 10px rgba(255,105,0,0); } }
+@media (max-width: 900px) { .tab-stage { min-height: 250px; } .tab-tilt { width: 112px; } .tab-halo { width: 200px; height: 200px; } .tab-pill { font-size: 12px; right: 50%; transform: translateX(50%); bottom: 6%; } }
+@media (prefers-reduced-motion: reduce) { .tab-float, .tab-halo, .tab-shine::after, .tab-dot { animation: none; } }
+
+.tab-fan { width: 300px; height: 230px; transform: rotateY(var(--ry,-10deg)) rotateX(var(--rx,4deg)); filter: none; }
+.tab-fan .tf { position: absolute; top: 50%; left: 50%; width: 118px; height: auto; filter: drop-shadow(0 22px 26px rgba(0,0,0,.42)); transition: transform .5s cubic-bezier(.2,.8,.2,1); }
+.tab-fan .tf img { display: block; width: 100%; height: auto; }
+.tab-fan .tf-l { transform: translate(-112%, -46%) rotate(-14deg) scale(.86); }
+.tab-fan .tf-r { transform: translate(12%, -46%) rotate(14deg) scale(.86); }
+.tab-fan .tf-c { transform: translate(-50%, -54%); z-index: 2; }
+.feature:hover .tab-fan .tf-l { transform: translate(-128%, -46%) rotate(-18deg) scale(.86); }
+.feature:hover .tab-fan .tf-r { transform: translate(28%, -46%) rotate(18deg) scale(.86); }
+@media (max-width: 900px) { .tab-fan { width: 240px; height: 190px; } .tab-fan .tf { width: 92px; } }
+
+/* Bannières : produits flottants en éventail (même idée que Tablettes) */
+.fan { position: relative; width: 300px; height: 230px; transform: rotateY(var(--ry,-10deg)) rotateX(var(--rx,4deg)); transform-style: preserve-3d; transition: transform .25s ease-out; }
+.fan .tf { position: absolute; top: 50%; left: 50%; width: var(--w,120px); height: var(--h,165px); display: flex; align-items: flex-end; justify-content: center; filter: drop-shadow(0 22px 24px rgba(0,0,0,.42)); transition: transform .5s cubic-bezier(.2,.8,.2,1); }
+.fan .tf img { max-width: 100%; max-height: 100%; width: auto; height: auto; object-fit: contain; display: block; }
+.fan .tf .tab-shine { inset: 0; border-radius: 10px; mix-blend-mode: soft-light; }
+.fan .tf-l { transform: translate(-115%, -45%) rotate(-12deg) scale(.82); }
+.fan .tf-r { transform: translate(15%, -45%) rotate(12deg) scale(.82); }
+.fan .tf-c { transform: translate(-50%, -55%); z-index: 2; }
+.fan .tf-l2 { transform: translate(-95%, -55%) rotate(-6deg) scale(.88); }
+.fan .tf-r2 { transform: translate(-10%, -45%) rotate(4deg); z-index: 2; }
+.feature:hover .fan .tf-l { transform: translate(-130%, -45%) rotate(-16deg) scale(.82); }
+.feature:hover .fan .tf-r { transform: translate(30%, -45%) rotate(16deg) scale(.82); }
+.fan-port { --w: 120px; --h: 165px; }
+.fan-wide { --w: 190px; --h: 140px; }
+.fan-wide .tf-l { transform: translate(-100%, -40%) rotate(-8deg) scale(.78); }
+.fan-wide .tf-r { transform: translate(0%, -40%) rotate(8deg) scale(.78); }
+.fan-solo { --w: 330px; --h: 230px; }
+#tilt-mobilite { --w: 240px; --h: 200px; }
+@media (max-width: 900px) { #tilt-mobilite { --w: 180px; --h: 150px; } }
+@media (max-width: 900px) { .fan { width: 240px; height: 190px; } .fan-port { --w: 96px; --h: 132px; } .fan-wide { --w: 150px; --h: 110px; } .fan-solo { --w: 250px; --h: 180px; } }
+
+/* Catalogue géré depuis /admin : badges Nouveau / Épuisé */
+.p-badge { position: absolute; top: 10px; left: 10px; z-index: 2; padding: 4px 10px; border-radius: 999px; font-size: 12px; font-weight: 700; letter-spacing: .01em; color: #fff; background: #f26a1b; box-shadow: 0 4px 10px rgba(0,0,0,.12); }
+.p-badge.out { background: #2c2c30; }
+.p.is-out .p-photo { filter: grayscale(1); opacity: .55; }
+.p.is-out h3, .p.is-out .p-kind { opacity: .7; }
+.p.is-out .p-ask { background: #fff; color: #1b1b1f; box-shadow: inset 0 0 0 1px #cfd0d6; }
+.p-from { margin: 6px 0 0; font-size: 14px; }
+.catalogue-erreur { padding: 18px; border-radius: 14px; background: #fff3ec; color: #7a3410; font-size: 15px; }
+
+/* Panier dans l'en-tête */
+.cart-btn { position: relative; display: inline-grid; place-items: center; width: 46px; height: 46px; border-radius: 50%; border: 1.500px solid var(--line); background: #fff; color: var(--ink); cursor: pointer; padding: 0; flex: none; text-decoration: none; }
+.cart-btn svg { width: 22px; height: 22px; }
+.cart-btn:hover { border-color: var(--ink); }
+.cart-btn b { position: absolute; top: -5px; right: -5px; min-width: 22px; height: 22px; padding: 0 6px; border-radius: 999px; background: var(--orange); color: #fff; font-size: 12px; display: grid; place-items: center; font-variant-numeric: tabular-nums; border: 2px solid #fff; }
+.cart-btn b[hidden] { display: none; }
+.cart-btn.bump b { animation: bump .35s ease; }
+@keyframes bump { 50% { transform: scale(1.350); } }
+.p-buy { font: inherit; border: 0; cursor: pointer; }
+.p .p-img img { cursor: zoom-in; }
+
+/* Fiche produit (après « Acheter ») */
+dialog.fiche { border: 0; padding: 0; border-radius: 28px; width: min(980px, calc(100vw - 24px)); max-height: calc(100vh - 24px); color: var(--ink); background: #fff; box-shadow: 0 40px 100px rgba(0,0,0,.45); overflow: auto; }
+dialog.fiche::backdrop { background: rgba(9,10,17,.62); backdrop-filter: blur(5px); }
+.fi { display: grid; grid-template-columns: 1.150fr 1fr; min-height: 560px; }
+.fi-stage { position: relative; background: #f6f5f8; display: grid; place-items: center; padding: 36px; border-radius: 28px 0 0 28px; }
+.fi-stage img { width: 100%; max-height: 470px; object-fit: contain; transition: opacity .25s ease, transform .35s ease; }
+.fi-stage img.swap { opacity: 0; transform: scale(.97); }
+.fi-badge { position: absolute; top: 20px; left: 20px; }
+.fi-body { padding: 34px 32px 30px; display: flex; flex-direction: column; gap: 20px; }
+.fi-x { position: absolute; top: 14px; right: 14px; z-index: 2; }
+.fi-kind { color: var(--muted); font-size: 14px; }
+.fi-body h2 { font-size: clamp(24px, 3vw, 32px); font-weight: 700; letter-spacing: -0.015em; line-height: 1.150; margin-top: 4px; }
+.fi-price { font-family: var(--font-display); font-size: 30px; font-weight: 800; font-variant-numeric: tabular-nums; }
+.fi-price small { font-size: 15px; font-weight: 600; color: var(--muted); margin-left: 6px; }
+.fi-group h3 { font-family: var(--font); font-size: 14px; font-weight: 600; margin-bottom: 10px; }
+.fi-group h3 span { color: var(--muted); font-weight: 500; }
+.fi-colors { display: flex; flex-wrap: wrap; gap: 10px; }
+.fi-colors button { width: 40px; height: 40px; border-radius: 50%; border: 0; padding: 0; cursor: pointer; background: var(--sw, #ddd); box-shadow: inset 0 0 0 1px rgba(0,0,0,.14), 0 0 0 3px #fff, 0 0 0 4px transparent; transition: box-shadow .15s ease; }
+.fi-colors button[aria-pressed="true"] { box-shadow: inset 0 0 0 1px rgba(0,0,0,.14), 0 0 0 3px #fff, 0 0 0 5px var(--ink); }
+.fi-chips { display: flex; flex-wrap: wrap; gap: 10px; }
+.fi-chips button { font: inherit; font-size: 15px; font-weight: 600; padding: 12px 16px; border-radius: 14px; border: 1.500px solid var(--line); background: #fff; cursor: pointer; color: var(--ink); text-align: left; line-height: 1.250; }
+.fi-chips button small { display: block; font-size: 13px; font-weight: 500; color: var(--muted); margin-top: 2px; font-variant-numeric: tabular-nums; }
+.fi-chips button[aria-pressed="true"] { border-color: var(--orange); background: #fff6f0; box-shadow: inset 0 0 0 1px var(--orange); }
+.fi-chips button:disabled { opacity: .4; cursor: not-allowed; }
+.qty { display: inline-flex; align-items: center; border: 1.500px solid var(--line); border-radius: 999px; }
+.qty button { width: 42px; height: 42px; border: 0; background: none; font-size: 20px; cursor: pointer; color: var(--ink); border-radius: 50%; }
+.qty button:disabled { opacity: .3; cursor: default; }
+.qty output { min-width: 32px; text-align: center; font-weight: 700; font-variant-numeric: tabular-nums; }
+.fi-actions { margin-top: auto; display: grid; gap: 10px; }
+.fi-actions .btn { width: 100%; justify-content: center; }
+.btn-line { display: inline-flex; align-items: center; justify-content: center; gap: 8px; font: inherit; font-weight: 600; font-size: 16px; padding: 14px 22px; border-radius: 999px; border: 1.500px solid var(--ink); background: #fff; color: var(--ink); cursor: pointer; text-decoration: none; }
+.btn-line:hover { background: var(--ink); color: #fff; }
+.fi-note { font-size: 13px; color: var(--muted); }
+
+/* Page panier */
+.panier { position: fixed; inset: 0; z-index: 50; background: #f6f5f8; overflow-y: auto; }
+.panier[hidden] { display: none; }
+body.panier-ouvert { overflow: hidden; }
+.pa-top { position: sticky; top: 0; z-index: 2; background: rgba(255,255,255,.94); backdrop-filter: blur(14px); border-bottom: 1px solid var(--line); }
+.pa-top .wrap { display: flex; align-items: center; gap: 16px; min-height: 64px; }
+.pa-top h1 { font-size: 22px; font-weight: 700; flex: 1; }
+.pa-back { display: inline-flex; align-items: center; gap: 8px; font: inherit; font-weight: 600; background: none; border: 0; cursor: pointer; color: var(--ink); padding: 10px 4px; }
+.pa-back svg { width: 20px; height: 20px; }
+.pa-grid { display: grid; grid-template-columns: 1.450fr 1fr; gap: 24px; padding-top: 28px; padding-bottom: 60px; align-items: start; }
+.pa-list { display: grid; gap: 12px; }
+.pa-item { display: grid; grid-template-columns: 120px 1fr auto; gap: 18px; align-items: center; background: #fff; border-radius: 22px; padding: 14px 18px 14px 14px; }
+.pa-item img { width: 120px; height: 100px; object-fit: contain; background: #f6f5f8; border-radius: 16px; }
+.pa-item h3 { font-size: 17px; font-weight: 700; }
+.pa-opts { color: var(--muted); font-size: 14px; margin-top: 2px; }
+.pa-unit { font-size: 14px; margin-top: 4px; font-variant-numeric: tabular-nums; }
+.pa-row { display: flex; align-items: center; gap: 14px; margin-top: 10px; }
+.pa-del { background: none; border: 0; font: inherit; font-size: 14px; color: var(--muted); text-decoration: underline; cursor: pointer; padding: 6px 0; }
+.pa-del:hover { color: #c4320a; }
+.pa-line { font-family: var(--font-display); font-weight: 800; font-size: 19px; font-variant-numeric: tabular-nums; white-space: nowrap; align-self: start; padding-top: 6px; }
+.pa-empty { background: #fff; border-radius: 22px; padding: 48px 24px; text-align: center; display: grid; gap: 14px; justify-items: center; }
+.pa-empty svg { width: 54px; height: 54px; color: var(--muted); }
+.pa-side { background: #fff; border-radius: 22px; padding: 24px; display: grid; gap: 16px; position: sticky; top: 88px; }
+.pa-side h2 { font-size: 20px; font-weight: 700; }
+.pa-sum { display: grid; gap: 8px; font-variant-numeric: tabular-nums; }
+.pa-sum div { display: flex; justify-content: space-between; gap: 12px; }
+.pa-sum .tot { font-family: var(--font-display); font-weight: 800; font-size: 24px; padding-top: 10px; border-top: 1px solid var(--line); }
+.pa-form { display: grid; gap: 12px; }
+.pa-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.pa-form label { display: grid; gap: 6px; font-size: 14px; font-weight: 600; }
+.pa-form input, .pa-form textarea { font: inherit; font-size: 16px; padding: 12px 14px; border-radius: 12px; border: 1.500px solid var(--line); background: #fff; color: var(--ink); width: 100%; }
+.pa-form input:focus, .pa-form textarea:focus { outline: none; border-color: var(--orange); }
+.pa-form textarea { min-height: 70px; resize: vertical; }
+.pa-mode { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; border: 0; padding: 0; margin: 0; }
+.pa-mode legend { font-size: 14px; font-weight: 600; margin-bottom: 6px; padding: 0; }
+.pa-mode label { display: flex; align-items: center; gap: 8px; border: 1.500px solid var(--line); border-radius: 12px; padding: 12px; cursor: pointer; font-weight: 600; }
+.pa-mode label:has(input:checked) { border-color: var(--orange); background: #fff6f0; }
+.pa-mode input { accent-color: var(--orange); width: auto; }
+.pa-err { color: #c4320a; font-size: 14px; font-weight: 600; }
+.pa-err:empty { display: none; }
+.pa-pay { font-size: 13px; color: var(--muted); }
+.toast { position: fixed; left: 50%; bottom: 24px; z-index: 60; transform: translate(-50%, 20px); opacity: 0; background: var(--ink); color: #fff; font-weight: 600; padding: 12px 20px; border-radius: 999px; transition: opacity .25s ease, transform .25s ease; pointer-events: none; }
+.toast.on { opacity: 1; transform: translate(-50%, 0); }
+@media (max-width: 820px) {
+  .fi { grid-template-columns: 1fr; min-height: 0; }
+  .fi-stage { border-radius: 28px 28px 0 0; padding: 24px; }
+  .fi-stage img { max-height: 300px; }
+  .fi-body { padding: 22px 20px 22px; gap: 16px; }
+  .pa-grid { grid-template-columns: 1fr; }
+  .pa-side { position: static; }
+  .pa-item { grid-template-columns: 84px 1fr; }
+  .pa-item img { width: 84px; height: 76px; }
+  .pa-line { grid-column: 2; padding-top: 0; }
+}
+</style>
+<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs><linearGradient id="shine" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".42"/><stop offset=".45" stop-color="#fff" stop-opacity=".04"/><stop offset="1" stop-color="#000" stop-opacity=".22"/></linearGradient><linearGradient id="screen" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffb347"/><stop offset=".5" stop-color="#f26a1b"/><stop offset="1" stop-color="#7a2bd0"/></linearGradient><symbol id="i-phone" viewBox="0 0 120 120"><rect x="38" y="8" width="44" height="104" rx="10" fill="var(--c)"/><rect x="38" y="8" width="44" height="104" rx="10" fill="url(#shine)"/><rect x="43" y="13" width="21" height="21" rx="6.500" fill="rgba(0,0,0,.38)"/><circle cx="49.5" cy="19.5" r="3.400" fill="#0d0d0f" stroke="rgba(255,255,255,.35)" stroke-width=".800"/><circle cx="57.5" cy="19.5" r="3.400" fill="#0d0d0f" stroke="rgba(255,255,255,.35)" stroke-width=".800"/><circle cx="49.5" cy="27.5" r="3.400" fill="#0d0d0f" stroke="rgba(255,255,255,.35)" stroke-width=".800"/><circle cx="57.5" cy="27.5" r="3.400" fill="#0d0d0f" stroke="rgba(255,255,255,.35)" stroke-width=".800"/></symbol><symbol id="i-tablet" viewBox="0 0 120 120"><rect x="10" y="26" width="100" height="68" rx="8" fill="var(--c)"/><rect x="10" y="26" width="100" height="68" rx="8" fill="url(#shine)"/><rect x="16" y="32" width="15" height="15" rx="5" fill="rgba(0,0,0,.38)"/><circle cx="23.5" cy="39.5" r="3.400" fill="#0d0d0f" stroke="rgba(255,255,255,.35)" stroke-width=".800"/></symbol><symbol id="i-watch" viewBox="0 0 120 120"><rect x="46" y="4" width="28" height="112" rx="9" fill="var(--c)" opacity=".7"/><rect x="34" y="34" width="52" height="52" rx="16" fill="var(--c)"/><rect x="34" y="34" width="52" height="52" rx="16" fill="url(#shine)"/><rect x="39" y="39" width="42" height="42" rx="12" fill="#0d0d0f"/><path d="M60 48v12l8 5" fill="none" stroke="#ff7a1f" stroke-width="3" stroke-linecap="round"/></symbol><symbol id="i-band" viewBox="0 0 120 120"><rect x="49" y="4" width="22" height="112" rx="11" fill="var(--c)"/><rect x="49" y="4" width="22" height="112" rx="11" fill="url(#shine)"/><rect x="46" y="32" width="28" height="56" rx="14" fill="#0d0d0f"/><path d="M54 52h12M54 60h8" stroke="#ff7a1f" stroke-width="3" stroke-linecap="round"/></symbol><symbol id="i-buds" viewBox="0 0 120 120"><rect x="40" y="30" width="9" height="30" rx="4.500" fill="var(--c)"/><circle cx="44" cy="30" r="11" fill="var(--c)"/><rect x="71" y="30" width="9" height="30" rx="4.500" fill="var(--c)"/><circle cx="76" cy="30" r="11" fill="var(--c)"/><rect x="24" y="62" width="72" height="46" rx="20" fill="var(--c)"/><rect x="24" y="62" width="72" height="46" rx="20" fill="url(#shine)"/><path d="M24 80h72" stroke="rgba(0,0,0,.22)" stroke-width="1.500"/><circle cx="60" cy="90" r="2.200" fill="#ff7a1f"/></symbol><symbol id="i-tv" viewBox="0 0 120 120"><rect x="6" y="22" width="108" height="66" rx="4" fill="#0d0d0f"/><rect x="9" y="25" width="102" height="60" rx="2" fill="url(#screen)"/><path d="M34 104h52M60 88v16" stroke="#3a3a3e" stroke-width="5" stroke-linecap="round"/></symbol><symbol id="i-monitor" viewBox="0 0 120 120"><path d="M8 20q52 -8 104 0v52q-52 -8 -104 0z" fill="#0d0d0f"/><path d="M11 23q49 -7 98 0v46q-49 -7 -98 0z" fill="url(#screen)"/><path d="M30 60l14 -12 10 8 16 -16 18 14" fill="none" stroke="#ff7a1f" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><path d="M60 68v26" stroke="#3a3a3e" stroke-width="7" stroke-linecap="round"/><path d="M38 102q22 -10 44 0" fill="none" stroke="#3a3a3e" stroke-width="6" stroke-linecap="round"/><rect x="52" y="74" width="16" height="4" rx="2" fill="#ff7a1f"/></symbol><symbol id="i-vacuum" viewBox="0 0 120 120"><circle cx="60" cy="60" r="46" fill="var(--c)"/><circle cx="60" cy="60" r="46" fill="url(#shine)"/><circle cx="60" cy="60" r="46" fill="none" stroke="rgba(0,0,0,.14)" stroke-width="1.500"/><circle cx="60" cy="60" r="15" fill="#0d0d0f"/><circle cx="60" cy="60" r="5" fill="#ff7a1f"/><path d="M38 28a40 40 0 0 1 44 0" fill="none" stroke="rgba(0,0,0,.2)" stroke-width="2.500" stroke-linecap="round"/></symbol><symbol id="i-purifier" viewBox="0 0 120 120"><rect x="36" y="8" width="48" height="104" rx="12" fill="var(--c)"/><rect x="36" y="8" width="48" height="104" rx="12" fill="url(#shine)"/><rect x="36" y="8" width="48" height="104" rx="12" fill="none" stroke="rgba(0,0,0,.14)" stroke-width="1.500"/><circle cx="60" cy="26" r="7" fill="#0d0d0f"/><circle cx="60" cy="26" r="2.500" fill="#ff7a1f"/><path d="M44 52h32" stroke="rgba(0,0,0,.22)" stroke-width="2.500" stroke-linecap="round" stroke-dasharray="1 5"/><path d="M44 60h32" stroke="rgba(0,0,0,.22)" stroke-width="2.500" stroke-linecap="round" stroke-dasharray="1 5"/><path d="M44 68h32" stroke="rgba(0,0,0,.22)" stroke-width="2.500" stroke-linecap="round" stroke-dasharray="1 5"/><path d="M44 76h32" stroke="rgba(0,0,0,.22)" stroke-width="2.500" stroke-linecap="round" stroke-dasharray="1 5"/><path d="M44 84h32" stroke="rgba(0,0,0,.22)" stroke-width="2.500" stroke-linecap="round" stroke-dasharray="1 5"/><path d="M44 92h32" stroke="rgba(0,0,0,.22)" stroke-width="2.500" stroke-linecap="round" stroke-dasharray="1 5"/><path d="M44 100h32" stroke="rgba(0,0,0,.22)" stroke-width="2.500" stroke-linecap="round" stroke-dasharray="1 5"/></symbol><symbol id="i-camera" viewBox="0 0 120 120"><rect x="54" y="78" width="12" height="24" fill="var(--c)"/><rect x="36" y="100" width="48" height="10" rx="5" fill="var(--c)"/><rect x="36" y="100" width="48" height="10" rx="5" fill="rgba(0,0,0,.12)"/><circle cx="60" cy="48" r="34" fill="var(--c)"/><circle cx="60" cy="48" r="34" fill="url(#shine)"/><circle cx="60" cy="48" r="34" fill="none" stroke="rgba(0,0,0,.14)" stroke-width="1.500"/><circle cx="60" cy="48" r="19" fill="#0d0d0f"/><circle cx="60" cy="48" r="8" fill="#26262a"/><circle cx="64" cy="44" r="2.500" fill="rgba(255,255,255,.6)"/></symbol><symbol id="i-washer" viewBox="0 0 120 120"><rect x="20" y="10" width="80" height="100" rx="8" fill="var(--c)"/><rect x="20" y="10" width="80" height="100" rx="8" fill="url(#shine)"/><rect x="26" y="16" width="68" height="12" rx="3" fill="#0d0d0f"/><circle cx="60" cy="68" r="28" fill="#0d0d0f"/><circle cx="60" cy="68" r="19" fill="#3a4a66"/><circle cx="60" cy="68" r="19" fill="url(#shine)"/><circle cx="86" cy="22" r="2.500" fill="#ff7a1f"/></symbol><symbol id="i-scooter" viewBox="0 0 120 120"><path d="M92 94L80 20" stroke="var(--c)" stroke-width="7" stroke-linecap="round"/><path d="M66 20h26" stroke="#0d0d0f" stroke-width="7" stroke-linecap="round"/><rect x="20" y="88" width="72" height="8" rx="4" fill="var(--c)"/><circle cx="20" cy="98" r="12" fill="#0d0d0f"/><circle cx="20" cy="98" r="4" fill="#ff7a1f"/><circle cx="98" cy="98" r="12" fill="#0d0d0f"/><circle cx="98" cy="98" r="4" fill="#ff7a1f"/></symbol></defs></svg>
+
+<div class="announce">Revendeur agréé Xiaomi à Kénitra · Avenue Mohammed V – Centre commercial City Center · Ouvert 7j/7 de 10h à 20h</div>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#accueil"><img src="logo.png" alt="" width="42" height="42"><span>Mi Housse Tech</span></a>
+    <nav aria-label="Rayons"><a href="#smartphones">Smartphones</a><a href="#tablettes">Tablettes</a><a href="#objets">Objets connectés</a><a href="#televiseurs">Téléviseurs</a><a href="#ecrans">Écrans PC</a><a href="#securite">Sécurité</a><a href="#purificateurs">Purificateurs d'air</a><a href="#electromenager">Électroménager</a><a href="#aspirateurs">Aspirateurs</a><a href="#boutique">La boutique</a></nav>
+    <a class="top-cta" href="tel:+212643745842"><svg viewBox="0 0 24 24" class="stroke" aria-hidden="true"><path d="M5 3.500h3.500l1.500 4.500-2 1.500a12 12 0 0 0 6.500 6.500l1.500-2 4.500 1.500V19a2 2 0 0 1-2 2A16 16 0 0 1 3 5.500a2 2 0 0 1 2-2Z"/></svg>06 43 74 58 42</a>
+    <a class="cart-btn" id="cart-btn" href="#panier" aria-label="Mon panier"><svg viewBox="0 0 24 24" class="stroke" aria-hidden="true"><path d="M3 4h2l2.400 11.200a2 2 0 0 0 2 1.600h7.700a2 2 0 0 0 2-1.500L21 8H6.200"/><circle cx="10" cy="20" r="1.300"/><circle cx="17" cy="20" r="1.300"/></svg><b id="cart-n" hidden>0</b></a>
+  </div>
+</header>
+
+<main id="accueil">
+  <div class="hero">
+    <div class="wrap hero-c">
+      <img class="hero-logo" src="logo.png" alt="" width="76" height="76">
+      <span class="status" id="status"><span class="dot"></span><span id="status-text">Ouvert tous les jours · 10h – 20h</span></span>
+      <h1>Mi Housse <em>Tech</em></h1>
+      <p class="tagline">Revendeur agréé Xiaomi à Kénitra</p>
+      <p class="lead">Smartphones, tablettes, objets connectés, téléviseurs et électroménager. Venez les essayer dans notre boutique.</p>
+      <div class="cta">
+        <a class="btn btn-orange shimmer" href="https://wa.me/212643745842?text=Bonjour%20Mi%20Housse%20Tech%2C%20je%20voudrais%20un%20renseignement."><span class="sh-spark" aria-hidden="true"><span class="sh-slide"><span class="sh-spin"></span></span></span><span class="sh-bg" aria-hidden="true"></span><svg viewBox="0 0 24 24" class="stroke" aria-hidden="true"><path d="M20.500 11.500a8.500 8.500 0 0 1-12.700 7.400L3.500 20.500l1.600-4.300a8.500 8.500 0 1 1 15.400-4.700Z"/></svg>Écrire sur WhatsApp</a>
+        <a class="btn btn-line" href="#smartphones">Voir les produits</a>
+      </div>
+      <div style="height:44px"></div>
+    </div>
+    <div class="facts">
+      <div class="wrap">
+        <div><svg viewBox="0 0 24 24" class="stroke" aria-hidden="true"><path d="M12 2.500l7.500 3v5.500c0 5-3.200 8.600-7.500 10.500C7.700 19.600 4.500 16 4.500 11V5.500Z"/><path d="M9 11.800l2.200 2.200 3.800-4.200"/></svg><span><b>Produit original</b>Garantie officielle Xiaomi</span></div>
+        <div><svg viewBox="0 0 24 24" class="stroke" aria-hidden="true"><path d="M12 21.500s7-6.300 7-11.500a7 7 0 0 0-14 0c0 5.200 7 11.500 7 11.500Z"/><circle cx="12" cy="10" r="2.600"/></svg><span><b>City Center Kénitra</b>1, avenue Mohammed V</span></div>
+        <div><svg viewBox="0 0 24 24" class="stroke" aria-hidden="true"><circle cx="12" cy="12" r="9.500"/><path d="M12 6.500V12l3.500 2"/></svg><span><b>Ouvert 7 jours sur 7</b>De 10h00 à 20h00</span></div>
+        <div><svg viewBox="0 0 24 24" class="stroke" aria-hidden="true"><path d="M20.500 11.500a8.500 8.500 0 0 1-12.700 7.400L3.500 20.500l1.600-4.300a8.500 8.500 0 1 1 15.400-4.700Z"/></svg><span><b>Réponse sur WhatsApp</b>Prix et disponibilité</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="tabs"><div class="wrap"><a href="#smartphones"><svg class="" style="--c:#2c2c30" viewBox="0 0 120 120" aria-hidden="true"><use href="#i-phone"/></svg><span>Smartphones</span></a><a href="#tablettes"><svg class="" style="--c:#2c2c30" viewBox="0 0 120 120" aria-hidden="true"><use href="#i-tablet"/></svg><span>Tablettes</span></a><a href="#objets"><svg class="" style="--c:#3f6fd8" viewBox="0 0 120 120" aria-hidden="true"><use href="#i-watch"/></svg><span>Objets connectés</span></a><a href="#televiseurs"><svg class="" style="--c:#2c2c30" viewBox="0 0 120 120" aria-hidden="true"><use href="#i-tv"/></svg><span>Téléviseurs</span></a><a href="#ecrans"><svg class="" style="--c:#2c2c30" viewBox="0 0 120 120" aria-hidden="true"><use href="#i-monitor"/></svg><span>Écrans PC</span></a><a href="#securite"><svg class="" style="--c:#e9e9ee" viewBox="0 0 120 120" aria-hidden="true"><use href="#i-camera"/></svg><span>Sécurité</span></a><a href="#purificateurs"><svg class="" style="--c:#e9e9ee" viewBox="0 0 120 120" aria-hidden="true"><use href="#i-purifier"/></svg><span>Purificateurs d'air</span></a><a href="#electromenager"><svg class="" style="--c:#2c2c30" viewBox="0 0 120 120" aria-hidden="true"><use href="#i-washer"/></svg><span>Électroménager</span></a><a href="#aspirateurs"><svg class="" style="--c:#e9e9ee" viewBox="0 0 120 120" aria-hidden="true"><use href="#i-vacuum"/></svg><span>Aspirateurs</span></a></div></div>
+
+  <div class="finder" id="produits">
+    <div class="wrap">
+      <label for="q">Quel produit cherchez-vous ?</label>
+      <div class="finder-box">
+        <svg viewBox="0 0 24 24" class="stroke" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M16.500 16.500L21 21"/></svg>
+        <input id="q" type="search" placeholder="Exemple : REDMI Note, tablette, montre…" autocomplete="off">
+      </div>
+      <p class="finder-count" id="q-count" aria-live="polite"></p>
+    </div>
+  </div>
+  <div class="wrap">
+    <div class="empty" id="q-empty">
+      <h3>Ce produit n'est pas affiché sur le site</h3>
+      <p>Le site ne montre pas tout le stock. Demandez-le-nous directement, on vous répond avec le prix et la disponibilité.</p>
+      <a class="btn btn-orange" id="q-ask" href="https://wa.me/212643745842?text=Bonjour%20Mi%20Housse%20Tech%2C%20je%20voudrais%20un%20renseignement."><svg viewBox="0 0 24 24" class="stroke" aria-hidden="true"><path d="M20.500 11.500a8.500 8.500 0 0 1-12.700 7.400L3.500 20.500l1.600-4.300a8.500 8.500 0 1 1 15.400-4.700Z"/></svg>Demander sur WhatsApp</a>
+    </div>
+  </div>
+
+  <section id="smartphones" class="range">
+    <div class="wrap">
+      <div class="feature" style="--c:#2c3354">
+        <div class="feature-text">
+          <p class="eyebrow">Smartphones</p>
+          <h2>Le bon Xiaomi pour chaque budget</h2>
+          <p>La nouvelle série REDMI Note 17 est en boutique, de 7700 à 10 000 mAh, avec 18 mois de garantie officielle. Et aussi les Xiaomi 17T et les autres REDMI.</p>
+        </div>
+        <div class="feature-art tab-stage">
+          <div class="tab-halo" aria-hidden="true"></div>
+          <div class="tab-float"><div class="tab-tilt fan fan-solo" id="tilt-smartphones"><div class="tf tf-c"><img src="img/banner-xiaomi-17t.webp" alt="Xiaomi 17T" loading="lazy"><span class="tab-shine" aria-hidden="true"></span></div></div></div>
+          <a class="tab-pill" href="#smartphones-grille"><span class="tab-dot"></span>Nouveau : Xiaomi 17T</a>
+        </div>
+      </div>
+      <div class="subnav" hidden style="display:none"></div>
+      <h3 class="sub" id="gamme-redmi">Gamme REDMI</h3>
+      <div class="grid mini" id="smartphones-grille" data-catalogue="smartphones" data-gamme="redmi">
+      </div>
+      <h3 class="sub" id="gamme-xiaomi">Gamme Xiaomi</h3>
+      <div class="grid" data-catalogue="smartphones" data-gamme="xiaomi">
+      </div>
+    </div>
+  </section>
+  <section id="tablettes" class="range">
+    <div class="wrap">
+      <div class="feature" style="--c:#2c3354">
+        <div class="feature-text">
+          <p class="eyebrow">Tablettes</p>
+          <h2>Un grand écran qui vous suit partout</h2>
+          <p>Les tablettes REDMI Pad, pour travailler, étudier et regarder vos séries.</p>
+        </div>
+        <div class="feature-art tab-stage" id="tabStage">
+          <div class="tab-halo" aria-hidden="true"></div>
+          <div class="tab-float">
+            <div class="tab-tilt tab-fan" id="tabTilt">
+              <img class="tf tf-l" src="img/banner-pad2.webp" alt="REDMI Pad 2" width="500" height="774">
+              <img class="tf tf-r" src="img/banner-padpro.webp" alt="REDMI Pad Pro 5G" width="500" height="778">
+              <div class="tf tf-c"><img src="img/banner-pad2pro.webp" alt="REDMI Pad 2 Pro 5G" width="500" height="772"><span class="tab-shine" aria-hidden="true"></span></div>
+            </div>
+          </div>
+          <a class="tab-pill" href="#tablettes-grille"><span class="tab-dot"></span>Nouvelle collection REDMI Pad</a>
+        </div>
+      </div>
+      <div class="grid" id="tablettes-grille" data-catalogue="tablettes">
+      </div>
+    </div>
+  </section>
+  <section id="objets" class="range">
+    <div class="wrap">
+      <div class="feature" style="--c:#2c3354">
+        <div class="feature-text">
+          <p class="eyebrow">Objets connectés</p>
+          <h2>Au poignet et dans les oreilles</h2>
+          <p>Montres Xiaomi Watch et REDMI Watch, bracelets Smart Band, écouteurs REDMI Buds et batteries externes.</p>
+        </div>
+        <div class="feature-art tab-stage">
+          <div class="tab-halo" aria-hidden="true"></div>
+          <div class="tab-float"><div class="tab-tilt fan fan-port" id="tilt-objets"><div class="tf tf-l"><img src="img/fan/objets-0.webp" alt="" loading="lazy"></div><div class="tf tf-r"><img src="img/fan/objets-2.webp" alt="" loading="lazy"></div><div class="tf tf-c"><img src="img/fan/objets-1.webp" alt="" loading="lazy"><span class="tab-shine" aria-hidden="true"></span></div></div></div>
+          <a class="tab-pill" href="#objets-grille"><span class="tab-dot"></span>Montres, bracelets et écouteurs</a>
+        </div>
+      </div>
+      <div class="grid mini" id="objets-grille" data-catalogue="objets">
+      </div>
+    </div>
+  </section>
+  <section id="televiseurs" class="range">
+    <div class="wrap">
+      <div class="feature" style="--c:#2c3354">
+        <div class="feature-text">
+          <p class="eyebrow">Téléviseurs</p>
+          <h2>Le cinéma à la maison</h2>
+          <p>Du Xiaomi TV A 32 pouces au Xiaomi TV Max 100 pouces.</p>
+        </div>
+        <div class="feature-art tab-stage">
+          <div class="tab-halo" aria-hidden="true"></div>
+          <div class="tab-float"><div class="tab-tilt fan fan-wide" id="tilt-televiseurs"><div class="tf tf-l"><img src="img/fan/televiseurs-0.webp" alt="" loading="lazy"></div><div class="tf tf-r"><img src="img/fan/televiseurs-2.webp" alt="" loading="lazy"></div><div class="tf tf-c"><img src="img/fan/televiseurs-1.webp" alt="" loading="lazy"><span class="tab-shine" aria-hidden="true"></span></div></div></div>
+          <a class="tab-pill" href="#televiseurs-grille"><span class="tab-dot"></span>De 32 à 100 pouces</a>
+        </div>
+      </div>
+      <div class="grid" id="televiseurs-grille" data-catalogue="televiseurs">
+      </div>
+    </div>
+  </section>
+  <section id="ecrans" class="range">
+    <div class="wrap">
+      <div class="feature" style="--c:#2c3354">
+        <div class="feature-text">
+          <p class="eyebrow">Écrans PC</p>
+          <h2>Un écran pour travailler et jouer</h2>
+          <p>Écrans Xiaomi pour le bureau (A24i, A27Qi 2K) et pour le jeu (G27i, G27Qi 2K et l’incurvé G34WQi).</p>
+        </div>
+        <div class="feature-art tab-stage">
+          <div class="tab-halo" aria-hidden="true"></div>
+          <div class="tab-float"><div class="tab-tilt fan fan-wide" id="tilt-ecrans"><div class="tf tf-l2"><img src="img/fan/ecrans-0.webp" alt="" loading="lazy"></div><div class="tf tf-r2 tf-c"><img src="img/fan/ecrans-1.webp" alt="" loading="lazy"><span class="tab-shine" aria-hidden="true"></span></div></div></div>
+          <a class="tab-pill" href="#ecrans-grille"><span class="tab-dot"></span>Bureau et gaming</a>
+        </div>
+      </div>
+      <div class="grid" id="ecrans-grille" data-catalogue="ecrans">
+      </div>
+    </div>
+  </section>
+  <section id="securite" class="range">
+    <div class="wrap">
+      <div class="feature" style="--c:#2c3354">
+        <div class="feature-text">
+          <p class="eyebrow">Sécurité</p>
+          <h2>Gardez un œil sur ce qui compte</h2>
+          <p>Caméras de surveillance Xiaomi, à suivre depuis votre téléphone. Demandez-nous les modèles disponibles en boutique.</p>
+        </div>
+        <div class="feature-art tab-stage">
+          <div class="tab-halo" aria-hidden="true"></div>
+          <div class="tab-float"><div class="tab-tilt fan fan-port" id="tilt-securite"><div class="tf tf-l"><img src="img/fan/securite-0.webp" alt="" loading="lazy"></div><div class="tf tf-r"><img src="img/fan/securite-2.webp" alt="" loading="lazy"></div><div class="tf tf-c"><img src="img/fan/securite-1.webp" alt="" loading="lazy"><span class="tab-shine" aria-hidden="true"></span></div></div></div>
+          <a class="tab-pill" href="#securite-grille"><span class="tab-dot"></span>Intérieur et extérieur</a>
+        </div>
+      </div>
+      <div class="grid" id="securite-grille" data-catalogue="securite">
+      </div>
+    </div>
+  </section>
+  <section id="purificateurs" class="range">
+    <div class="wrap">
+      <div class="feature" style="--c:#2c3354">
+        <div class="feature-text">
+          <p class="eyebrow">Purificateurs d'air</p>
+          <h2>Respirez un air pur et sain</h2>
+          <p>Trois purificateurs Xiaomi, du studio au grand salon. Produit original, 1 an de garantie officielle Xiaomi.</p>
+        </div>
+        <div class="feature-art tab-stage">
+          <div class="tab-halo" aria-hidden="true"></div>
+          <div class="tab-float"><div class="tab-tilt fan fan-port" id="tilt-purificateurs"><div class="tf tf-l"><img src="img/fan/purificateurs-0.webp" alt="" loading="lazy"></div><div class="tf tf-r"><img src="img/fan/purificateurs-2.webp" alt="" loading="lazy"></div><div class="tf tf-c"><img src="img/fan/purificateurs-1.webp" alt="" loading="lazy"><span class="tab-shine" aria-hidden="true"></span></div></div></div>
+          <a class="tab-pill" href="#purificateurs-grille"><span class="tab-dot"></span>Un air plus sain</a>
+        </div>
+      </div>
+      <div class="grid grid-3" id="purificateurs-grille" data-catalogue="purificateurs">
+      </div>
+    </div>
+  </section>
+  <section id="electromenager" class="range">
+    <div class="wrap">
+      <div class="feature" style="--c:#2c3354">
+        <div class="feature-text">
+          <p class="eyebrow">Électroménager</p>
+          <h2>Le confort Mijia à la maison</h2>
+          <p>Lave-linge, climatiseur, réfrigérateur et petits appareils Mijia et Xiaomi pour toute la maison.</p>
+        </div>
+        <div class="feature-art tab-stage">
+          <div class="tab-halo" aria-hidden="true"></div>
+          <div class="tab-float"><div class="tab-tilt fan fan-port" id="tilt-electromenager"><div class="tf tf-l"><img src="img/fan/electromenager-0.webp" alt="" loading="lazy"></div><div class="tf tf-r"><img src="img/fan/electromenager-2.webp" alt="" loading="lazy"></div><div class="tf tf-c"><img src="img/fan/electromenager-1.webp" alt="" loading="lazy"><span class="tab-shine" aria-hidden="true"></span></div></div></div>
+          <a class="tab-pill" href="#electromenager-grille"><span class="tab-dot"></span>Cuisine, linge et froid</a>
+        </div>
+      </div>
+      <div class="grid mini" id="electromenager-grille" data-catalogue="electromenager">
+      </div>
+    </div>
+  </section>
+  <section id="aspirateurs" class="range">
+    <div class="wrap">
+      <div class="feature" style="--c:#2c3354">
+        <div class="feature-text">
+          <p class="eyebrow">Aspirateurs</p>
+          <h2>Une maison propre sans effort</h2>
+          <p>Aspirateurs robots avec station, balais sans fil, aspirateurs eau et poussière et petits modèles à main. Venez les comparer en boutique.</p>
+        </div>
+        <div class="feature-art tab-stage">
+          <div class="tab-halo" aria-hidden="true"></div>
+          <div class="tab-float"><div class="tab-tilt fan fan-port" id="tilt-aspirateurs"><div class="tf tf-l"><img src="img/fan/aspirateurs-0.webp" alt="" loading="lazy"></div><div class="tf tf-r"><img src="img/fan/aspirateurs-2.webp" alt="" loading="lazy"></div><div class="tf tf-c"><img src="img/fan/aspirateurs-1.webp" alt="" loading="lazy"><span class="tab-shine" aria-hidden="true"></span></div></div></div>
+          <a class="tab-pill" href="#aspirateurs-grille"><span class="tab-dot"></span>Robots, balais et laveurs</a>
+        </div>
+      </div>
+      <div class="grid" id="aspirateurs-grille" data-catalogue="aspirateurs">
+      </div>
+    </div>
+  </section>
+
+
+  <div class="services">
+    <div class="wrap">
+      <div><svg viewBox="0 0 24 24" class="stroke" aria-hidden="true"><path d="M12 2.500l7.500 3v5.500c0 5-3.200 8.600-7.500 10.500C7.700 19.600 4.500 16 4.500 11V5.500Z"/><path d="M9 11.800l2.200 2.200 3.800-4.200"/></svg><h3>Produit original</h3><p>Revendeur agréé Xiaomi, avec garantie officielle Xiaomi.</p></div>
+      <div><svg viewBox="0 0 24 24" class="stroke" aria-hidden="true"><path d="M20.500 11.500a8.500 8.500 0 0 1-12.700 7.400L3.500 20.500l1.600-4.300a8.500 8.500 0 1 1 15.400-4.700Z"/></svg><h3>SAV assuré par nous-mêmes</h3><p>Conseil avant l'achat et service après-vente, par notre équipe.</p></div>
+      <div><svg viewBox="0 0 24 24" class="stroke" aria-hidden="true"><circle cx="12" cy="12" r="9.500"/><path d="M12 6.500V12l3.500 2"/></svg><h3>Ouvert 7 jours sur 7</h3><p>De 10h à 20h, au City Center.</p></div>
+    </div>
+  </div>
+
+  <section class="steps" aria-labelledby="steps-t">
+    <div class="wrap">
+      <div class="sec-head"><h2 id="steps-t">Comment ça marche</h2><p>Trois étapes, sans créer de compte.</p></div>
+      <ol>
+        <li><h3>Choisissez un produit</h3><p>Parcourez les rayons ou utilisez la recherche.</p></li>
+        <li><h3>Ajoutez au panier</h3><p>Appuyez sur « Acheter », choisissez la couleur et la mémoire, puis passez la commande. Votre panier reste enregistré si vous revenez plus tard.</p></li>
+        <li><h3>Passez en boutique</h3><p>Au City Center, tous les jours de 10h à 20h, pour l'essayer et repartir avec.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="faq" aria-labelledby="faq-t">
+    <div class="wrap">
+      <div class="sec-head"><h2 id="faq-t">Questions fréquentes</h2></div>
+      <div class="faq-list">
+        <details><summary>Où se trouve la boutique ?</summary><p>Au centre commercial City Center, 1, avenue Mohammed V, à Kénitra.</p></details>
+        <details><summary>Quels sont vos horaires ?</summary><p>La boutique est ouverte tous les jours, de 10h00 à 20h00.</p></details>
+        <details><summary>Comment connaître le prix d'un produit ?</summary><p>Appuyez sur « Demander le prix » sous le produit : WhatsApp s'ouvre avec le nom du modèle déjà écrit, et nous vous répondons avec le prix et la disponibilité. Vous pouvez aussi appeler le 06 43 74 58 42.</p></details>
+        <details><summary>Les produits sont-ils d'origine ?</summary><p>Oui. Mi Housse Tech est revendeur agréé Xiaomi : les produits sont originaux.</p></details>
+        <details><summary>Quelle est la garantie ?</summary><p>La garantie officielle Xiaomi dépend du produit : 18 mois pour la série REDMI Note 17, 1 an pour les purificateurs d'air, 1 an pour le climatiseur Mijia Air Conditioner Eco, et pour le lave-linge Mijia 12 ans sur le moteur Direct Drive et 2 ans sur toutes les pièces. Pour un autre article, demandez-nous. Le service après-vente est assuré par nous-mêmes.</p></details>
+        <details><summary>Je ne trouve pas un modèle sur le site. L'avez-vous ?</summary><p>Le site ne montre pas tout le stock. Écrivez-nous sur WhatsApp avec le nom du modèle recherché.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <section id="boutique" class="store">
+    <div class="wrap">
+      <div class="store-grid">
+        <div class="store-main">
+          <img src="logo.png" alt="Logo Mi Housse Tech" width="84" height="84">
+          <h2>Venez nous voir au City Center</h2>
+          <p>1, avenue Mohammed V<br>Centre commercial City Center, Kénitra</p>
+          <p>Tous les jours · <strong>10h00 – 20h00</strong></p>
+          <a class="btn btn-white" href="https://www.google.com/maps/search/?api=1&query=Centre+commercial+City+Center+avenue+Mohammed+V+K%C3%A9nitra">Voir l'itinéraire</a>
+        </div>
+        <div class="reach">
+          <a href="tel:+212643745842"><svg viewBox="0 0 24 24" class="stroke" aria-hidden="true"><path d="M5 3.500h3.500l1.500 4.500-2 1.500a12 12 0 0 0 6.500 6.500l1.500-2 4.500 1.500V19a2 2 0 0 1-2 2A16 16 0 0 1 3 5.500a2 2 0 0 1 2-2Z"/></svg><span><small>Téléphone</small><strong>06 43 74 58 42</strong></span></a>
+          <a href="https://wa.me/212643745842?text=Bonjour%20Mi%20Housse%20Tech%2C%20je%20voudrais%20un%20renseignement."><svg viewBox="0 0 24 24" class="stroke" aria-hidden="true"><path d="M20.500 11.500a8.500 8.500 0 0 1-12.700 7.400L3.500 20.500l1.600-4.300a8.500 8.500 0 1 1 15.400-4.700Z"/></svg><span><small>WhatsApp</small><strong>06 43 74 58 42</strong></span></a>
+          <a href="https://www.instagram.com/mi_housse_tech_59/"><svg viewBox="0 0 24 24" class="stroke" aria-hidden="true"><rect x="3.500" y="3.500" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="3.800"/><path d="M17 7h.01"/></svg><span><small>Instagram</small><strong>@mi_housse_tech_59</strong></span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 Mi Housse Tech · City Center, Kénitra, Maroc</span>
+    <span>Mi Housse Tech est un revendeur indépendant agréé. Xiaomi et Redmi sont des marques de leurs propriétaires respectifs.</span>
+  </div>
+</footer>
+
+<dialog class="fiche" id="fiche" aria-labelledby="fi-nom">
+  <button class="dlg-x fi-x" id="fi-close" type="button" aria-label="Fermer">×</button>
+  <div class="fi">
+    <div class="fi-stage"><span class="fi-badge" id="fi-badge"></span><img id="fi-img" src="" alt=""></div>
+    <div class="fi-body">
+      <div><p class="fi-kind" id="fi-kind"></p><h2 id="fi-nom"></h2></div>
+      <p class="fi-price" id="fi-price"></p>
+      <div class="fi-group" id="fi-colors-g"><h3>Couleur : <span id="fi-color-name"></span></h3><div class="fi-colors" id="fi-colors" role="group" aria-label="Couleur"></div></div>
+      <div class="fi-group" id="fi-vers-g"><h3 id="fi-vers-t">Mémoire (RAM + stockage)</h3><div class="fi-chips" id="fi-vers" role="group" aria-label="Version"></div></div>
+      <div class="fi-group"><h3>Quantité</h3><div class="qty"><button type="button" id="fi-minus" aria-label="Diminuer">−</button><output id="fi-qty">1</output><button type="button" id="fi-plus" aria-label="Augmenter">+</button></div></div>
+      <div class="fi-actions">
+        <button class="btn btn-orange shimmer" id="fi-order" type="button"><span class="sh-spark" aria-hidden="true"><span class="sh-slide"><span class="sh-spin"></span></span></span><span class="sh-bg" aria-hidden="true"></span>Passer la commande</button>
+        <button class="btn-line" id="fi-add" type="button">Ajouter au panier et continuer</button>
+        <p class="fi-note">Paiement à la livraison ou en boutique · City Center, Kénitra</p>
+      </div>
+    </div>
+  </div>
+</dialog>
+
+<section class="panier" id="panier" hidden aria-labelledby="pa-t">
+  <div class="pa-top"><div class="wrap">
+    <button class="pa-back" id="pa-back" type="button"><svg viewBox="0 0 24 24" class="stroke" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg>Continuer mes achats</button>
+    <h1 id="pa-t">Mon panier</h1>
+  </div></div>
+  <div class="wrap pa-grid">
+    <div class="pa-list" id="pa-list"></div>
+    <aside class="pa-side" id="pa-side">
+      <h2>Récapitulatif</h2>
+      <div class="pa-sum"><div><span id="pa-count">0 article</span><span id="pa-sub">0 DH</span></div><div><span>Livraison</span><span id="pa-ship">À confirmer</span></div><div class="tot"><span>Total</span><span id="pa-total">0 DH</span></div></div>
+      <form class="pa-form" id="pa-form" novalidate>
+        <div class="pa-2"><label>Prénom<input name="prenom" autocomplete="given-name" required></label><label>Nom<input name="nom" autocomplete="family-name" required></label></div>
+        <label>Téléphone<input name="tel" type="tel" autocomplete="tel" inputmode="tel" required placeholder="06 00 00 00 00"></label>
+        <fieldset class="pa-mode"><legend>Réception</legend>
+          <label><input type="radio" name="mode" value="Livraison à domicile" checked>Livraison</label>
+          <label><input type="radio" name="mode" value="Retrait en boutique (City Center, Kénitra)">Retrait en boutique</label>
+        </fieldset>
+        <label id="pa-ville-l">Ville<input name="ville" autocomplete="address-level2" required></label>
+        <label id="pa-adr-l">Adresse<textarea name="adresse" autocomplete="street-address" required></textarea></label>
+        <label>E-mail (facultatif)<input name="email" type="email" autocomplete="email" inputmode="email" placeholder="exemple@gmail.com"></label>
+        <p class="pa-err" id="pa-err" role="alert"></p>
+        <button class="btn btn-orange shimmer" type="submit"><span class="sh-spark" aria-hidden="true"><span class="sh-slide"><span class="sh-spin"></span></span></span><span class="sh-bg" aria-hidden="true"></span>Confirmer la commande</button>
+        <p class="pa-pay">Paiement à la livraison ou en boutique. Nous vous confirmons la disponibilité et les frais de livraison sur WhatsApp.</p>
+      </form>
+    </aside>
+  </div>
+</section>
+<div class="toast" id="toast" role="status"></div>
+
+
+<a class="wa" href="https://wa.me/212643745842?text=Bonjour%20Mi%20Housse%20Tech%2C%20je%20voudrais%20un%20renseignement." aria-label="Écrire à Mi Housse Tech sur WhatsApp"><svg viewBox="0 0 24 24" class="stroke" aria-hidden="true"><path d="M20.500 11.500a8.500 8.500 0 0 1-12.700 7.400L3.500 20.500l1.600-4.300a8.500 8.500 0 1 1 15.400-4.700Z"/></svg>WhatsApp</a>
+
+<script type="text/plain" class="js-apres-catalogue">
+// Indique si la boutique est ouverte maintenant (heure de Casablanca, 10h–20h tous les jours).
+(function () {
+  try {
+    var parts = new Intl.DateTimeFormat('en-GB', { hour: '2-digit', hour12: false, timeZone: 'Africa/Casablanca' }).formatToParts(new Date());
+    var h = Number(parts.filter(function (p) { return p.type === 'hour'; })[0].value);
+    if (isNaN(h)) return;
+    var open = h >= 10 && h < 20;
+    document.getElementById('status').classList.toggle('open', open);
+    document.getElementById('status-text').textContent = open ? 'Ouvert maintenant · jusqu\'à 20h' : 'Fermé pour le moment · ouvre à 10h';
+  } catch (e) {}
+})();
+
+// Recherche dans les produits
+(function () {
+  var q = document.getElementById('q'), count = document.getElementById('q-count');
+  var empty = document.getElementById('q-empty'), ask = document.getElementById('q-ask');
+  var ranges = [].slice.call(document.querySelectorAll('.range'));
+  function norm(t) { return t.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, ''); }
+  var cards = [].slice.call(document.querySelectorAll('.p')).map(function (el) {
+    var sec = el.closest('.range');
+    return { el: el, text: norm(el.querySelector('.p-kind').textContent + ' ' + el.querySelector('h3').textContent + ' ' + sec.querySelector('.eyebrow').textContent) };
+  });
+  function run() {
+    var raw = q.value.trim(), words = norm(raw).split(/\s+/).filter(Boolean), shown = 0;
+    cards.forEach(function (c) {
+      var ok = words.every(function (w) { return c.text.indexOf(w) !== -1; });
+      c.el.classList.toggle('is-hidden', !ok);
+      if (ok) shown++;
+    });
+    ranges.forEach(function (r) {
+      var any = r.querySelector('.p:not(.is-hidden)');
+      r.classList.toggle('is-hidden', !any);
+      r.querySelector('.feature').classList.toggle('is-hidden', words.length > 0);
+    });
+    empty.classList.toggle('show', shown === 0);
+    count.textContent = words.length ? (shown === 0 ? '' : shown + (shown > 1 ? ' produits trouvés' : ' produit trouvé')) : '';
+    ask.href = 'https://wa.me/212643745842?text=' + encodeURIComponent(raw ? 'Bonjour, avez-vous ce produit : ' + raw + ' ?' : 'Bonjour Mi Housse Tech, je voudrais un renseignement.');
+  }
+  q.addEventListener('input', run);
+})();
+
+// Rayon actif dans la barre de rayons
+(function () {
+  if (!('IntersectionObserver' in window)) return;
+  var links = {};
+  [].forEach.call(document.querySelectorAll('.tabs a'), function (a) { links[a.getAttribute('href').slice(1)] = a; });
+  var io = new IntersectionObserver(function (es) {
+    es.forEach(function (e) {
+      if (!e.isIntersecting) return;
+      Object.keys(links).forEach(function (k) { links[k].classList.toggle('on', k === e.target.id); });
+    });
+  }, { rootMargin: '-35% 0px -60% 0px' });
+  [].forEach.call(document.querySelectorAll('.range'), function (r) { io.observe(r); });
+})();
+
+// Téléphones en 3D dans la bannière d'accueil (repli sur les dessins si WebGL est absent)
+(function () {
+  var stage = document.getElementById('stage'), canvas = document.getElementById('gl');
+  if (!stage || !canvas) return;
+  if (!window.THREE || !stage || !canvas) return;
+  var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var renderer;
+  try { renderer = new THREE.WebGLRenderer({ canvas: canvas, alpha: true, antialias: true }); } catch (e) { return; }
+  renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, 2));
+  renderer.outputEncoding = THREE.sRGBEncoding;
+  stage.classList.add('gl');
+
+  var scene = new THREE.Scene();
+  var camera = new THREE.PerspectiveCamera(30, 1, 0.1, 100);
+  camera.position.set(0, 0, 15);
+  scene.add(new THREE.AmbientLight(0xffffff, 0.42));
+  var key = new THREE.DirectionalLight(0xffffff, 0.62); key.position.set(4, 6, 9); scene.add(key);
+  var rim = new THREE.PointLight(0xff7a1f, 0.9, 40); rim.position.set(-7, -2, 5); scene.add(rim);
+  var rim2 = new THREE.PointLight(0x7a5fd0, 0.7, 40); rim2.position.set(7, 3, -5); scene.add(rim2);
+
+  function rounded(w, h, r) {
+    var s = new THREE.Shape(), x = -w / 2, y = -h / 2;
+    s.moveTo(x + r, y); s.lineTo(x + w - r, y); s.quadraticCurveTo(x + w, y, x + w, y + r);
+    s.lineTo(x + w, y + h - r); s.quadraticCurveTo(x + w, y + h, x + w - r, y + h);
+    s.lineTo(x + r, y + h); s.quadraticCurveTo(x, y + h, x, y + h - r);
+    s.lineTo(x, y + r); s.quadraticCurveTo(x, y, x + r, y);
+    return s;
+  }
+  function slab(w, h, r, depth, bevel) {
+    var g = new THREE.ExtrudeGeometry(rounded(w, h, r), { depth: depth, bevelEnabled: true, bevelThickness: bevel, bevelSize: bevel, bevelSegments: 5, curveSegments: 20 });
+    g.center();
+    return g;
+  }
+  function screenTexture() {
+    var c = document.createElement('canvas'); c.width = 512; c.height = 1080;
+    var x = c.getContext('2d');
+    var bg = x.createLinearGradient(0, 0, 0, 1080); bg.addColorStop(0, '#191c2e'); bg.addColorStop(1, '#07080d');
+    x.fillStyle = bg; x.fillRect(0, 0, 512, 1080);
+    var glow = x.createRadialGradient(256, 900, 20, 256, 900, 520); glow.addColorStop(0, 'rgba(242,106,27,.85)'); glow.addColorStop(1, 'rgba(242,106,27,0)');
+    x.fillStyle = glow; x.fillRect(0, 0, 512, 1080);
+    var lg = x.createLinearGradient(156, 300, 356, 500); lg.addColorStop(0, '#f58539'); lg.addColorStop(1, '#e4560f');
+    x.fillStyle = lg; x.beginPath();
+    var X = 156, Y = 300, S = 200, R = 50;
+    x.moveTo(X + R, Y); x.arcTo(X + S, Y, X + S, Y + S, R); x.arcTo(X + S, Y + S, X, Y + S, R); x.arcTo(X, Y + S, X, Y, R); x.arcTo(X, Y, X + S, Y, R); x.fill();
+    x.fillStyle = '#fff'; x.textAlign = 'center';
+    x.font = '800 118px Outfit, Arial, sans-serif'; x.fillText('mi', 256, 440);
+    x.font = '700 54px Outfit, Arial, sans-serif'; x.fillText('Mi Housse', 256, 610);
+    x.fillStyle = '#f58539'; x.fillText('Tech', 256, 676);
+    x.fillStyle = 'rgba(255,255,255,.75)'; x.font = '500 22px Outfit, Arial, sans-serif';
+    x.fillText('REVENDEUR AGRÉÉ XIAOMI', 256, 740);
+    x.fillStyle = 'rgba(255,255,255,.85)'; x.font = '600 26px Outfit, Arial, sans-serif'; x.fillText('10:00', 70, 60);
+    var t = new THREE.CanvasTexture(c); t.encoding = THREE.sRGBEncoding; t.anisotropy = 4;
+    return t;
+  }
+  var tex = screenTexture();
+  var dark = new THREE.MeshStandardMaterial({ color: 0x0a0a0c, metalness: 0.6, roughness: 0.3 });
+  var glass = new THREE.MeshStandardMaterial({ color: 0x050506, metalness: 0.9, roughness: 0.08 });
+
+  function phone(color) {
+    var g = new THREE.Group(), W = 2.3, H = 4.9, T = 0.2, B = 0.07, half = T / 2 + B;
+    var body = new THREE.Mesh(slab(W, H, 0.42, T, B), new THREE.MeshStandardMaterial({ color: color, metalness: 0.55, roughness: 0.32 }));
+    g.add(body);
+    var scr = new THREE.Mesh(new THREE.ShapeGeometry(rounded(W - 0.02, H - 0.02, 0.38), 20), new THREE.MeshBasicMaterial({ map: tex }));
+    // la texture est plaquée selon les coordonnées de la forme : on les ramène entre 0 et 1
+    var uv = scr.geometry.attributes.uv, pos = scr.geometry.attributes.position;
+    for (var i = 0; i < uv.count; i++) uv.setXY(i, pos.getX(i) / (W - 0.02) + 0.5, pos.getY(i) / (H - 0.02) + 0.5);
+    scr.position.z = half + 0.004; g.add(scr);
+    var isl = new THREE.Mesh(slab(1.02, 1.02, 0.3, 0.05, 0.03), dark);
+    isl.position.set(0.5, 1.72, -half - 0.05); g.add(isl);
+    [[-0.24, 0.24], [0.24, 0.24], [-0.24, -0.24], [0.24, -0.24]].forEach(function (p) {
+      var ring = new THREE.Mesh(new THREE.CylinderGeometry(0.19, 0.19, 0.07, 28), new THREE.MeshStandardMaterial({ color: 0x3a3a40, metalness: 0.9, roughness: 0.25 }));
+      ring.rotation.x = Math.PI / 2; ring.position.set(0.5 + p[0], 1.72 + p[1], -half - 0.11); g.add(ring);
+      var lens = new THREE.Mesh(new THREE.CylinderGeometry(0.13, 0.13, 0.08, 28), glass);
+      lens.rotation.x = Math.PI / 2; lens.position.set(0.5 + p[0], 1.72 + p[1], -half - 0.12); g.add(lens);
+    });
+    return g;
+  }
+
+  var rig = new THREE.Group(); scene.add(rig);
+  var main = phone(0x1b1b20), left = phone(0x6a4fd0), right = phone(0xf05a0a);
+  left.position.set(-3.5, -0.3, -2.4); left.scale.setScalar(0.86);
+  right.position.set(3.5, -0.3, -2.4); right.scale.setScalar(0.86);
+  rig.add(main, left, right);
+
+  var tx = 0, ty = 0, cx = 0, cy = 0, spin = 0, dragging = false, lastX = 0, vel = 0;
+  stage.addEventListener('pointermove', function (e) {
+    var r = stage.getBoundingClientRect();
+    tx = ((e.clientX - r.left) / r.width - 0.5) * 2; ty = ((e.clientY - r.top) / r.height - 0.5) * 2;
+    if (dragging) { vel = (e.clientX - lastX) * 0.012; spin += vel; lastX = e.clientX; draw(); }
+  });
+  stage.addEventListener('pointerleave', function () { tx = 0; ty = 0; });
+  canvas.addEventListener('pointerdown', function (e) { dragging = true; lastX = e.clientX; stage.classList.add('drag'); });
+  window.addEventListener('pointerup', function () { dragging = false; stage.classList.remove('drag'); });
+
+  function size() {
+    var w = stage.clientWidth, h = stage.clientHeight;
+    renderer.setSize(w, h, false); camera.aspect = w / h;
+    camera.position.z = w < 620 ? 19 : 15;
+    camera.updateProjectionMatrix();
+  }
+  var t0 = performance.now();
+  function draw() {
+    var t = (performance.now() - t0) / 1000;
+    cx += (tx - cx) * 0.06; cy += (ty - cy) * 0.06;
+    if (!dragging && !reduce) { spin += 0.007 + vel; vel *= 0.94; }
+    main.rotation.y = spin; main.rotation.x = Math.sin(t * 0.8) * 0.06; main.position.y = Math.sin(t * 1.1) * 0.14;
+    left.rotation.set(0.1, Math.PI + 0.55 + Math.sin(t * 0.6) * 0.25, 0.22); left.position.y = -0.3 + Math.sin(t * 1.1 + 2) * 0.16;
+    right.rotation.set(0.1, Math.PI - 0.55 + Math.sin(t * 0.6 + 1.5) * 0.25, -0.22); right.position.y = -0.3 + Math.sin(t * 1.1 + 4) * 0.16;
+    rig.rotation.y = cx * 0.32; rig.rotation.x = cy * 0.16;
+    renderer.render(scene, camera);
+  }
+  var visible = true, raf = 0;
+  function loop() { raf = 0; if (!visible) return; draw(); raf = requestAnimationFrame(loop); }
+  function start() { if (!raf && !reduce) raf = requestAnimationFrame(loop); }
+  size(); spin = 0.5; draw();
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(function () { tex.image = screenTexture().image; tex.needsUpdate = true; draw(); });
+  window.addEventListener('resize', function () { size(); draw(); });
+  if ('IntersectionObserver' in window) new IntersectionObserver(function (es) { visible = es[0].isIntersecting; if (visible) start(); }).observe(stage);
+  document.addEventListener('visibilitychange', function () { visible = !document.hidden; if (visible) start(); });
+  start();
+})();
+
+// Relief 3D des fiches produits au survol (souris uniquement)
+(function () {
+  if (!window.matchMedia || !window.matchMedia('(hover: hover) and (pointer: fine)').matches) return;
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  [].forEach.call(document.querySelectorAll('.p'), function (el) {
+    el.addEventListener('pointermove', function (e) {
+      var r = el.getBoundingClientRect(), x = (e.clientX - r.left) / r.width - 0.5, y = (e.clientY - r.top) / r.height - 0.5;
+      el.classList.add('tilt');
+      el.style.transform = 'translateY(-6px) rotateX(' + (-y * 12).toFixed(2) + 'deg) rotateY(' + (x * 14).toFixed(2) + 'deg)';
+    });
+    el.addEventListener('pointerleave', function () { el.classList.remove('tilt'); el.style.transform = ''; });
+  });
+})();
+
+// Halo qui suit la souris sur les cartes (adapté de « Spotlight Card », 21st.dev)
+(function () {
+  [].forEach.call(document.querySelectorAll('.p, .services .wrap > div, .steps li, .reach a'), function (el) {
+    el.addEventListener('pointermove', function (e) {
+      var r = el.getBoundingClientRect();
+      el.style.setProperty('--mx', (e.clientX - r.left) + 'px');
+      el.style.setProperty('--my', (e.clientY - r.top) + 'px');
+    });
+  });
+})();
+
+// Noms de produits sur une seule ligne : on réduit la taille jusqu'à ce que le nom tienne
+(function () {
+  var hs = [].slice.call(document.querySelectorAll('.p h3'));
+  function fit() {
+    hs.forEach(function (h) {
+      h.style.fontSize = ''; h.style.whiteSpace = 'nowrap';
+      var size = parseFloat(getComputedStyle(h).fontSize), box = h.clientWidth;
+      if (box <= 0) return;
+      while (h.scrollWidth > box && size > 11.5) { size -= 0.5; h.style.fontSize = size + 'px'; }
+      if (h.scrollWidth > box) { h.style.whiteSpace = 'normal'; h.style.fontSize = ''; }
+    });
+  }
+  fit();
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(fit);
+  var t; window.addEventListener('resize', function () { clearTimeout(t); t = setTimeout(fit, 150); });
+})();
+</script>
+<script type="text/plain" class="js-apres-catalogue">
+(function () {
+  if (window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  [].forEach.call(document.querySelectorAll('.tab-stage'), function (stage) {
+    var tilt = stage.querySelector('.tab-tilt'), card = stage.closest('.feature'); if (!tilt || !card) return;
+    function set(x, y) { tilt.style.setProperty('--ry', (x * 22 - 10).toFixed(1) + 'deg'); tilt.style.setProperty('--rx', (4 - y * 10).toFixed(1) + 'deg'); }
+    card.addEventListener('pointermove', function (e) { var r = stage.getBoundingClientRect(); set(Math.min(1, Math.max(-1, (e.clientX - r.left) / r.width * 2 - 1)), Math.min(1, Math.max(-1, (e.clientY - r.top) / r.height * 2 - 1))); });
+    card.addEventListener('pointerleave', function () { tilt.style.removeProperty('--ry'); tilt.style.removeProperty('--rx'); });
+  });
+  window.addEventListener('deviceorientation', function (e) { if (e.gamma == null) return; [].forEach.call(document.querySelectorAll('.tab-tilt'), function (t) { t.style.setProperty('--ry', (Math.max(-1, Math.min(1, e.gamma / 30)) * 22 - 10).toFixed(1) + 'deg'); }); });
+})();
+</script>
+<script type="text/plain" class="js-apres-catalogue">
+// Fiche produit + panier (le panier est gardé dans le navigateur du client)
+(function () {
+  var P = window.MHT_P || [], KEY = 'mht-panier', WA = 'https://wa.me/212643745842?text=';
+  var $ = function (id) { return document.getElementById(id); };
+  var cart = [];
+  try { cart = JSON.parse(localStorage.getItem(KEY)) || []; } catch (e) {}
+  cart = cart.filter(function (x) { return x && x.nom && x.prix > 0 && x.qte > 0; });
+  function save() { try { localStorage.setItem(KEY, JSON.stringify(cart)); } catch (e) {} }
+  function num(s) { var n = parseInt(String(s || '').replace(/[^\d]/g, ''), 10); return isNaN(n) ? 0 : n; }
+  function dh(n) { return String(n).replace(/\B(?=(\d{3})+(?!\d))/g, ' ') + ' DH'; }
+  function el(tag, cls, txt) { var e = document.createElement(tag); if (cls) e.className = cls; if (txt != null) e.textContent = txt; return e; }
+
+  // Compteur du panier dans l'en-tête
+  var cbtn = $('cart-btn'), cn = $('cart-n');
+  function count() { return cart.reduce(function (s, x) { return s + x.qte; }, 0); }
+  function badge(bump) {
+    var n = count(); cn.textContent = n; cn.hidden = n === 0;
+    cbtn.setAttribute('aria-label', 'Mon panier, ' + n + ' article' + (n > 1 ? 's' : ''));
+    if (bump) { cbtn.classList.remove('bump'); void cbtn.offsetWidth; cbtn.classList.add('bump'); }
+  }
+  var toastT;
+  function toast(msg) { var t = $('toast'); t.textContent = msg; t.classList.add('on'); clearTimeout(toastT); toastT = setTimeout(function () { t.classList.remove('on'); }, 2200); }
+
+  function add(item) {
+    var id = [item.nom, item.couleur || '', item.version || ''].join('|');
+    var found = cart.filter(function (x) { return x.id === id; })[0];
+    if (found) found.qte = Math.min(10, found.qte + item.qte); else { item.id = id; cart.push(item); }
+    save(); badge(true); renderCart();
+  }
+
+  // ---- Fiche produit
+  var fiche = $('fiche'), cur = null, sel = {};
+  function priceOf(p) { var v = (p.versions || [])[sel.v]; return v && num(v.prix) ? num(v.prix) : num(p.prix); }
+  function photoOf(p) { var c = (p.couleurs || [])[sel.c]; return (c && c.photo) || p.photo; }
+  function paint() {
+    var p = cur, img = $('fi-img'), src = photoOf(p);
+    if (img.getAttribute('src') !== src) { img.classList.add('swap'); setTimeout(function () { img.src = src; img.onload = function () { img.classList.remove('swap'); }; }, 120); }
+    img.alt = p.nom + ((p.couleurs || [])[sel.c] ? ' – ' + p.couleurs[sel.c].nom : '');
+    $('fi-price').textContent = dh(priceOf(p) * sel.q);
+    if (sel.q > 1) { var s = el('small', '', dh(priceOf(p)) + ' / unité'); $('fi-price').appendChild(s); }
+    $('fi-color-name').textContent = (p.couleurs || [])[sel.c] ? p.couleurs[sel.c].nom : '';
+    [].forEach.call($('fi-colors').children, function (b, i) { b.setAttribute('aria-pressed', i === sel.c ? 'true' : 'false'); });
+    [].forEach.call($('fi-vers').children, function (b, i) { b.setAttribute('aria-pressed', i === sel.v ? 'true' : 'false'); });
+    $('fi-qty').textContent = sel.q; $('fi-minus').disabled = sel.q <= 1; $('fi-plus').disabled = sel.q >= 10;
+  }
+  function open(pid) {
+    var p = P[pid]; if (!p) return; cur = p; sel = { c: 0, v: 0, q: 1 };
+    $('fi-kind').textContent = p.type || ''; $('fi-nom').textContent = p.nom;
+    $('fi-badge').innerHTML = p.statut === 'nouveau' ? '<span class="p-badge">Nouveau</span>' : '';
+    var cs = p.couleurs || [], vs = p.versions || [];
+    $('fi-colors').textContent = ''; $('fi-colors-g').hidden = cs.length === 0;
+    cs.forEach(function (c, i) {
+      var b = el('button'); b.type = 'button'; b.style.setProperty('--sw', c.hex || '#ddd'); b.title = c.nom; b.setAttribute('aria-label', c.nom);
+      b.addEventListener('click', function () { sel.c = i; paint(); }); $('fi-colors').appendChild(b);
+    });
+    $('fi-vers').textContent = ''; $('fi-vers-g').hidden = vs.length === 0;
+    $('fi-vers-t').textContent = vs.some(function (v) { return /\bGo\b/.test(v.nom); }) ? 'Mémoire (RAM + stockage)' : 'Version';
+    vs.forEach(function (v, i) {
+      var b = el('button', '', v.nom); b.type = 'button'; if (num(v.prix)) b.appendChild(el('small', '', dh(num(v.prix))));
+      b.addEventListener('click', function () { sel.v = i; paint(); }); $('fi-vers').appendChild(b);
+    });
+    $('fi-img').src = photoOf(p); $('fi-img').classList.remove('swap');
+    paint();
+    if (fiche.showModal) fiche.showModal(); else fiche.setAttribute('open', '');
+  }
+  function current() {
+    var c = (cur.couleurs || [])[sel.c], v = (cur.versions || [])[sel.v];
+    return { nom: cur.nom, couleur: c ? c.nom : '', version: v ? v.nom : '', prix: priceOf(cur), photo: photoOf(cur), qte: sel.q };
+  }
+  $('fi-close').addEventListener('click', function () { fiche.close(); });
+  fiche.addEventListener('click', function (e) { if (e.target === fiche) fiche.close(); });
+  $('fi-minus').addEventListener('click', function () { if (sel.q > 1) { sel.q--; paint(); } });
+  $('fi-plus').addEventListener('click', function () { if (sel.q < 10) { sel.q++; paint(); } });
+  $('fi-add').addEventListener('click', function () { add(current()); fiche.close(); toast('Ajouté au panier'); });
+  $('fi-order').addEventListener('click', function () { add(current()); fiche.close(); showCart(); });
+
+  // Boutons des cartes produit
+  document.addEventListener('click', function (e) {
+    var b = e.target.closest('.p-buy, .p-add[data-pid], .p-img img[data-pid]');
+    if (!b) return;
+    e.preventDefault();
+    var p = P[+b.getAttribute('data-pid')];
+    if (b.classList.contains('p-add') && p && (p.couleurs || []).length <= 1 && (p.versions || []).length <= 1) {
+      cur = p; sel = { c: 0, v: 0, q: 1 }; add(current()); toast(p.nom + ' ajouté au panier'); return;
+    }
+    open(+b.getAttribute('data-pid'));
+  });
+
+  // ---- Page panier
+  var page = $('panier'), list = $('pa-list'), lastScroll = 0;
+  function renderCart() {
+    list.textContent = '';
+    var n = count(), sub = cart.reduce(function (s, x) { return s + x.prix * x.qte; }, 0);
+    $('pa-side').hidden = cart.length === 0;
+    if (!cart.length) {
+      var em = el('div', 'pa-empty');
+      em.innerHTML = '<svg viewBox="0 0 24 24" class="stroke" aria-hidden="true"><path d="M3 4h2l2.400 11.200a2 2 0 0 0 2 1.600h7.700a2 2 0 0 0 2-1.500L21 8H6.200"/><circle cx="10" cy="20" r="1.300"/><circle cx="17" cy="20" r="1.300"/></svg>';
+      em.appendChild(el('h3', '', 'Votre panier est vide'));
+      em.appendChild(el('p', '', 'Choisissez un produit puis appuyez sur « Acheter ».'));
+      var bk = el('button', 'btn-line', 'Voir les produits'); bk.type = 'button'; bk.addEventListener('click', hideCart); em.appendChild(bk);
+      list.appendChild(em);
+    }
+    cart.forEach(function (x, i) {
+      var it = el('div', 'pa-item'), img = el('img'); img.src = x.photo; img.alt = '';
+      var mid = el('div'); mid.appendChild(el('h3', '', x.nom));
+      var opts = [x.couleur, x.version].filter(Boolean).join(' · '); if (opts) mid.appendChild(el('p', 'pa-opts', opts));
+      mid.appendChild(el('p', 'pa-unit', dh(x.prix) + ' l\'unité'));
+      var row = el('div', 'pa-row'), q = el('div', 'qty'), mi = el('button', '', '−'), o = el('output', '', x.qte), pl = el('button', '', '+');
+      mi.type = pl.type = 'button'; mi.setAttribute('aria-label', 'Diminuer'); pl.setAttribute('aria-label', 'Augmenter'); mi.disabled = x.qte <= 1; pl.disabled = x.qte >= 10;
+      mi.addEventListener('click', function () { x.qte--; save(); badge(); renderCart(); });
+      pl.addEventListener('click', function () { x.qte++; save(); badge(); renderCart(); });
+      q.appendChild(mi); q.appendChild(o); q.appendChild(pl);
+      var del = el('button', 'pa-del', 'Retirer'); del.type = 'button';
+      del.addEventListener('click', function () { cart.splice(i, 1); save(); badge(); renderCart(); });
+      row.appendChild(q); row.appendChild(del); mid.appendChild(row);
+      it.appendChild(img); it.appendChild(mid); it.appendChild(el('p', 'pa-line', dh(x.prix * x.qte)));
+      list.appendChild(it);
+    });
+    $('pa-count').textContent = n + ' article' + (n > 1 ? 's' : '');
+    $('pa-sub').textContent = dh(sub); $('pa-total').textContent = dh(sub);
+    var retrait = (form.mode.value || '').indexOf('Retrait') === 0;
+    $('pa-ship').textContent = retrait ? 'Gratuit (retrait)' : 'À confirmer';
+    $('pa-ville-l').hidden = $('pa-adr-l').hidden = retrait;
+  }
+  function showCart() {
+    lastScroll = window.scrollY; renderCart(); page.hidden = false; document.body.classList.add('panier-ouvert'); page.scrollTop = 0;
+    if (location.hash !== '#panier') history.pushState({ panier: 1 }, '', '#panier');
+    $('pa-back').focus();
+  }
+  function hideCart(fromHistory) {
+    if (page.hidden) return;
+    page.hidden = true; document.body.classList.remove('panier-ouvert'); window.scrollTo(0, lastScroll);
+    if (fromHistory !== true && location.hash === '#panier') history.back();
+  }
+  cbtn.addEventListener('click', function (e) { e.preventDefault(); showCart(); });
+  $('pa-back').addEventListener('click', function () { hideCart(); });
+  window.addEventListener('popstate', function () { if (location.hash === '#panier') showCart(); else hideCart(true); });
+  document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && !page.hidden && !fiche.open) hideCart(); });
+
+  var form = $('pa-form');
+  try { var saved = JSON.parse(localStorage.getItem('mht-client')) || {}; ['prenom', 'nom', 'tel', 'email', 'ville', 'adresse'].forEach(function (k) { if (saved[k]) form[k].value = saved[k]; }); } catch (e) {}
+  [].forEach.call(form.mode, function (r) { r.addEventListener('change', renderCart); });
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    var retrait = form.mode.value.indexOf('Retrait') === 0, err = $('pa-err');
+    var need = [['prenom', 'votre prénom'], ['nom', 'votre nom'], ['tel', 'votre téléphone']].concat(retrait ? [] : [['ville', 'votre ville'], ['adresse', 'votre adresse']]);
+    var miss = need.filter(function (k) { return !form[k[0]].value.trim(); });
+    if (!cart.length) { err.textContent = 'Votre panier est vide.'; return; }
+    if (miss.length) { err.textContent = 'Indiquez ' + miss.map(function (k) { return k[1]; }).join(', ') + '.'; form[miss[0][0]].focus(); return; }
+    if (num(form.tel.value).toString().length < 9) { err.textContent = 'Vérifiez votre numéro de téléphone.'; form.tel.focus(); return; }
+    if (form.email.value.trim() && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(form.email.value.trim())) { err.textContent = 'Vérifiez votre adresse e-mail.'; form.email.focus(); return; }
+    err.textContent = '';
+    var c = { prenom: form.prenom.value.trim(), nom: form.nom.value.trim(), tel: form.tel.value.trim(), email: form.email.value.trim(), ville: form.ville.value.trim(), adresse: form.adresse.value.trim() };
+    try { localStorage.setItem('mht-client', JSON.stringify(c)); } catch (x) {}
+    var total = cart.reduce(function (s, x) { return s + x.prix * x.qte; }, 0);
+    var lines = ['Bonjour Mi Housse Tech, je souhaite commander :', ''];
+    cart.forEach(function (x) { lines.push('• ' + x.qte + ' × ' + x.nom + ([x.couleur, x.version].filter(Boolean).length ? ' (' + [x.couleur, x.version].filter(Boolean).join(', ') + ')' : '') + ' — ' + dh(x.prix * x.qte)); });
+    lines.push('', 'Total : ' + dh(total), '', 'Nom : ' + c.prenom + ' ' + c.nom, 'Téléphone : ' + c.tel, 'Réception : ' + form.mode.value);
+    if (!retrait) { lines.push('Ville : ' + c.ville, 'Adresse : ' + c.adresse); }
+    if (c.email) lines.push('E-mail : ' + c.email);
+    var url = WA + encodeURIComponent(lines.join('\n')), w = window.open(url, '_blank');
+    if (!w) location.href = url;
+    toast('Commande prête dans WhatsApp : appuyez sur Envoyer');
+  });
+
+  badge(); renderCart();
+  if (location.hash === '#panier') showCart();
+})();
+</script>
+<script>
+// Catalogue : les produits sont lus depuis data/<rubrique>.json (modifiés dans l'espace /admin)
+(function () {
+  var WA = 'https://wa.me/212643745842?text=';
+  window.MHT_P = [];
+  var STYLE = { 'standard': 'p', 'mise-en-avant': 'p spec', 'affiche': 'p poster' };
+  function esc(s) { return String(s == null ? '' : s).replace(/[&<>"']/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]; }); }
+  function card(p) {
+    var nom = p.nom || '', out = p.statut === 'epuise', neuf = p.statut === 'nouveau';
+    var cls = (STYLE[p.style] || 'p') + (out ? ' is-out' : '');
+    var badge = out ? '<span class="p-badge out">Épuisé</span>' : (neuf ? '<span class="p-badge">Nouveau</span>' : '');
+    var vars = (p.variantes && p.variantes.length) ? '<p class="p-var">' + p.variantes.map(function (v) { return '<span>' + esc(v) + '</span>'; }).join('') + '</p>' : '';
+    var prix = p.prix ? '<p class="p-from">Prix <b>' + esc(p.prix) + '</b></p>' : '';
+    var msg = out ? 'Bonjour, ' + nom + ' est épuisé sur le site. Pouvez-vous me prévenir quand il revient ?' : (p.prix ? 'Bonjour, je souhaite acheter : ' + nom + ' (' + p.prix + ').' : 'Bonjour, je voudrais le prix et la disponibilité : ' + nom + '.');
+    var lien = out ? 'Me prévenir du retour' : (p.prix ? 'Acheter' : 'Demander le prix');
+    var buy = !out && !!p.prix, pid = buy ? (window.MHT_P.push(p) - 1) : -1;
+    return '<article class="' + cls + '" style="--c:' + esc(p.couleur || '#e9e9ee') + '">' +
+      '<div class="p-img">' + badge + (p.photo ? '<img class="p-photo" src="' + esc(p.photo) + '" alt="' + esc(nom) + '" loading="lazy"' + (buy ? ' data-pid="' + pid + '"' : '') + '>' : '') + '</div>' +
+      '<p class="p-kind">' + esc(p.type) + '</p><h3>' + esc(nom) + '</h3>' + vars + prix +
+      '<div class="p-actions">' + (buy ? '<button class="p-ask p-buy" type="button" data-pid="' + pid + '">Acheter</button>' +
+        '<button class="p-add" type="button" data-pid="' + pid + '" aria-label="Ajouter ' + esc(nom) + ' au panier" title="Ajouter au panier"><svg viewBox="0 0 24 24" class="stroke" aria-hidden="true"><path d="M3 4h2l2.400 11.200a2 2 0 0 0 2 1.600h7.700a2 2 0 0 0 2-1.500L21 8H6.200"/><circle cx="10" cy="20" r="1.300"/><circle cx="17" cy="20" r="1.300"/></svg></button>'
+        : '<a class="p-ask" href="' + WA + encodeURIComponent(msg) + '">' + lien + '</a>') + '</div></article>';
+  }
+  function runSite() {
+    [].forEach.call(document.querySelectorAll('script.js-apres-catalogue'), function (old) {
+      var s = document.createElement('script'); s.text = old.textContent; document.body.appendChild(s);
+    });
+  }
+  var grids = [].slice.call(document.querySelectorAll('[data-catalogue]'));
+  var names = grids.map(function (g) { return g.getAttribute('data-catalogue'); }).filter(function (n, i, a) { return a.indexOf(n) === i; });
+  Promise.all(names.map(function (n) {
+    return fetch('data/' + n + '.json', { cache: 'no-cache' }).then(function (r) { if (!r.ok) throw new Error(n); return r.json(); })
+      .then(function (d) { return [n, (d && d.produits) || []]; })
+      .catch(function () { return [n, null]; });
+  })).then(function (res) {
+    var data = {}; res.forEach(function (x) { data[x[0]] = x[1]; });
+    grids.forEach(function (g) {
+      var list = data[g.getAttribute('data-catalogue')], gamme = g.getAttribute('data-gamme');
+      if (list === null) { g.innerHTML = '<p class="catalogue-erreur">Les produits n\'ont pas pu être chargés. Actualisez la page ou contactez-nous sur WhatsApp.</p>'; return; }
+      list = list.filter(function (p) { return p && p.nom && p.statut !== 'masque' && (!gamme || (p.gamme || 'redmi') === gamme); });
+      g.innerHTML = list.map(card).join('');
+      var sec = g.closest('.range'); if (sec && !sec.querySelector('.p')) sec.classList.add('vide');
+    });
+  }).then(runSite, runSite);
+})();
+</script>
+<script>
+// Connexion à l'espace /admin : si un lien d'invitation ou de mot de passe arrive sur l'accueil, on renvoie vers /admin
+if (window.netlifyIdentity) { window.netlifyIdentity.on('init', function (u) { if (!u) window.netlifyIdentity.on('login', function () { document.location.href = '/admin/'; }); }); }
+</script>
+</body>
+</html>

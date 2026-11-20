@@ -1,0 +1,69 @@
+MI HOUSSE TECH — MISE EN LIGNE DU SITE + ESPACE DE GESTION (/admin)
+=====================================================================
+
+Contenu du dossier
+------------------
+index.html      la page du site (elle lit le catalogue dans data/)
+data/           le catalogue : un fichier par rubrique (smartphones, tablettes, objets,
+                televiseurs, ecrans, securite, purificateurs, electromenager,
+                aspirateurs, mobilite). 166 produits.
+img/            toutes les photos
+admin/          l'espace de gestion (Decap CMS)
+netlify.toml    réglage Netlify (le catalogue est toujours relu à jour)
+
+Ne modifiez plus les produits à la main dans index.html : tout se gère dans /admin.
+
+
+ÉTAPE 1 — Créer le dépôt GitHub (≈ 5 min, gratuit)
+--------------------------------------------------
+1. Créez un compte sur https://github.com (si vous n'en avez pas).
+2. Bouton « New repository » → nom : mi-housse-tech → Private → Create repository.
+3. Sur la page du dépôt vide : lien « uploading an existing file ».
+4. Glissez TOUT le contenu de ce dossier (index.html, logo.png, netlify.toml,
+   LISEZ-MOI.txt et les dossiers admin, data, img) → « Commit changes ».
+   Vérifiez que la branche s'appelle bien « main ».
+
+
+ÉTAPE 2 — Publier sur Netlify (≈ 5 min, gratuit)
+------------------------------------------------
+1. Créez un compte sur https://app.netlify.com (bouton « Sign up with GitHub »).
+2. « Add new site » → « Import an existing project » → GitHub → choisissez
+   mi-housse-tech.
+3. Laissez « Build command » vide, « Publish directory » vide (ou « . ») → Deploy.
+4. Le site est en ligne à une adresse du type https://xxxx.netlify.app
+   (« Site configuration » → « Change site name » pour mettre par ex.
+   mi-housse-tech.netlify.app).
+
+
+ÉTAPE 3 — Activer la connexion à /admin
+---------------------------------------
+Dans Netlify, sur votre site :
+1. « Project configuration » (ou « Site configuration ») → « Identity » → « Enable Identity ».
+2. Identity → « Registration » → choisissez « Invite only »
+   (personne d'autre ne pourra créer de compte).
+3. Identity → « Services » → « Git Gateway » → « Enable Git Gateway ».
+4. Onglet « Identity » (en haut) → « Invite users » → votre e-mail.
+5. Ouvrez l'e-mail d'invitation → cliquez le lien → choisissez votre mot de passe
+   (c'est vous qui le tapez, personne d'autre).
+6. Allez sur https://VOTRE-SITE.netlify.app/admin/ et connectez-vous.
+
+
+UTILISATION AU QUOTIDIEN (dans /admin)
+--------------------------------------
+Catalogue → choisissez la rubrique (ex. « Smartphones ») → chaque produit est une ligne.
+
+• Marquer un produit épuisé   : ouvrez-le → Statut = « Épuisé » → Publier.
+  Sur le site : photo grisée, badge « Épuisé », bouton « Me prévenir du retour ».
+• Remettre en stock           : Statut = « Disponible » → Publier.
+• Signaler une nouveauté      : Statut = « Nouveau » (badge orange « Nouveau »).
+• Cacher sans supprimer       : Statut = « Masqué ».
+• Ajouter un produit          : « Ajouter produit » (ou « Add produit ») (il apparaît en haut de la liste),
+                                remplissez nom, type, photo (téléverser), statut → Publier.
+• Afficher un prix            : remplissez « Prix » (ex. 2 999 DH) → le bouton devient
+                                « Commander ». Laissez vide → « Demander le prix ».
+• Supprimer                   : ouvrez le produit → icône ✕ (Supprimer) → Publier.
+
+Après « Publier », le site se met à jour tout seul en 30 secondes à 1 minute.
+
+Domaine personnalisé (ex. mihoussetech.ma) : Netlify → « Domain management »
+→ « Add a domain », puis suivez les indications DNS chez votre registraire.

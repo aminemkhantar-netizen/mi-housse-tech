@@ -1,0 +1,184 @@
+{
+  "produits": [
+    {
+      "nom": "Xiaomi TV A 32 2025",
+      "type": "Téléviseur 32 pouces",
+      "photo": "img/xiaomi-tv-a-32-2025.webp",
+      "statut": "disponible",
+      "style": "standard",
+      "couleur": "#2c2c30",
+      "prix": "1 499 DH"
+    },
+    {
+      "nom": "Xiaomi TV A 43 FHD 2025",
+      "type": "Téléviseur 43 pouces",
+      "photo": "img/xiaomi-tv-a-43-fhd-2025.webp",
+      "statut": "disponible",
+      "style": "standard",
+      "couleur": "#2c2c30",
+      "prix": "2 549 DH"
+    },
+    {
+      "nom": "Xiaomi TV A 43 2026",
+      "type": "Téléviseur 43 pouces",
+      "photo": "img/xiaomi-tv-a-43-2026.webp",
+      "statut": "disponible",
+      "style": "standard",
+      "couleur": "#2c2c30",
+      "prix": "2 999 DH"
+    },
+    {
+      "nom": "Xiaomi TV A Pro 43 2026",
+      "type": "Téléviseur 43 pouces",
+      "photo": "img/xiaomi-tv-a-pro-43-2026.webp",
+      "statut": "disponible",
+      "style": "standard",
+      "couleur": "#2c2c30",
+      "prix": "3 399 DH"
+    },
+    {
+      "nom": "Xiaomi TV A 50 2026",
+      "type": "Téléviseur 50 pouces",
+      "photo": "img/xiaomi-tv-a-50-2026.webp",
+      "statut": "disponible",
+      "style": "standard",
+      "couleur": "#2c2c30",
+      "prix": "3 599 DH"
+    },
+    {
+      "nom": "Xiaomi TV A 55 2026",
+      "type": "Téléviseur 55 pouces",
+      "photo": "img/xiaomi-tv-a-55-2026.webp",
+      "statut": "disponible",
+      "style": "standard",
+      "couleur": "#2c2c30",
+      "prix": "4 099 DH"
+    },
+    {
+      "nom": "Xiaomi TV A Pro 55 2026",
+      "type": "Téléviseur 55 pouces",
+      "photo": "img/xiaomi-tv-a-pro-55-2026.webp",
+      "statut": "disponible",
+      "style": "standard",
+      "couleur": "#2c2c30",
+      "prix": "4 899 DH"
+    },
+    {
+      "nom": "Xiaomi TV S Mini LED 55 2026",
+      "type": "Téléviseur Google TV",
+      "photo": "img/xiaomi-tv-s-mini-led-55-2026.webp",
+      "statut": "disponible",
+      "style": "standard",
+      "couleur": "#2c2c30",
+      "prix": "5 699 DH"
+    },
+    {
+      "nom": "Xiaomi TV S Pro Mini LED 55 2026",
+      "type": "Téléviseur 55 pouces",
+      "photo": "img/xiaomi-tv-s-pro-mini-led-55-2026.webp",
+      "statut": "disponible",
+      "style": "standard",
+      "couleur": "#2c2c30",
+      "prix": "6 799 DH"
+    },
+    {
+      "nom": "Xiaomi TV A 65 2026",
+      "type": "Téléviseur 65 pouces",
+      "photo": "img/xiaomi-tv-a-65-2026.webp",
+      "statut": "disponible",
+      "style": "standard",
+      "couleur": "#2c2c30",
+      "prix": "5 599 DH"
+    },
+    {
+      "nom": "Xiaomi TV A Pro 65 2026",
+      "type": "Téléviseur 65 pouces",
+      "photo": "img/xiaomi-tv-a-pro-65-2026.webp",
+      "statut": "disponible",
+      "style": "standard",
+      "couleur": "#2c2c30",
+      "prix": "6 499 DH"
+    },
+    {
+      "nom": "Xiaomi TV S Mini LED 65 2026",
+      "type": "Téléviseur Google TV",
+      "photo": "img/xiaomi-tv-s-mini-led-65-2026.webp",
+      "statut": "disponible",
+      "style": "standard",
+      "couleur": "#2c2c30",
+      "prix": "7 599 DH"
+    },
+    {
+      "nom": "Xiaomi TV S Pro Mini LED 65 2026",
+      "type": "Téléviseur 65 pouces",
+      "photo": "img/xiaomi-tv-s-pro-mini-led-65-2026.webp",
+      "statut": "disponible",
+      "style": "standard",
+      "couleur": "#2c2c30",
+      "prix": "9 199 DH"
+    },
+    {
+      "nom": "Xiaomi TV A Pro 75 2026",
+      "type": "Téléviseur 75 pouces",
+      "photo": "img/xiaomi-tv-a-pro-75-2026.webp",
+      "statut": "disponible",
+      "style": "standard",
+      "couleur": "#2c2c30",
+      "prix": "9 899 DH"
+    },
+    {
+      "nom": "Xiaomi TV S Mini LED 75 2026",
+      "type": "Téléviseur Google TV",
+      "photo": "img/xiaomi-tv-s-mini-led-75-2026.webp",
+      "statut": "disponible",
+      "style": "standard",
+      "couleur": "#2c2c30",
+      "prix": "9 899 DH"
+    },
+    {
+      "nom": "Xiaomi TV S Pro Mini LED 75 2026",
+      "type": "Téléviseur 75 pouces",
+      "photo": "img/xiaomi-tv-s-pro-mini-led-75-2026.webp",
+      "statut": "disponible",
+      "style": "standard",
+      "couleur": "#2c2c30",
+      "prix": "11 999 DH"
+    },
+    {
+      "nom": "Xiaomi TV Max 85 2025",
+      "type": "Téléviseur 85 pouces",
+      "photo": "img/xiaomi-tv-max-85-2025.webp",
+      "statut": "disponible",
+      "style": "standard",
+      "couleur": "#2c2c30",
+      "prix": "11 200 DH"
+    },
+    {
+      "nom": "Xiaomi TV Max 100 2025",
+      "type": "Téléviseur 100 pouces",
+      "photo": "img/xiaomi-tv-max-100-2025.webp",
+      "statut": "disponible",
+      "style": "standard",
+      "couleur": "#2c2c30",
+      "prix": "17 900 DH"
+    },
+    {
+      "nom": "Xiaomi TV Box S (3rd Gen)",
+      "type": "Box TV 4K Google TV",
+      "photo": "img/xiaomi-tv-box-s-3rd-gen.webp",
+      "statut": "disponible",
+      "style": "standard",
+      "couleur": "#2c2c30",
+      "prix": "799 DH"
+    },
+    {
+      "nom": "Xiaomi Smart Projector L1 Pro",
+      "type": "Vidéoprojecteur",
+      "photo": "img/xiaomi-smart-projector-l1-pro.webp",
+      "statut": "disponible",
+      "style": "standard",
+      "couleur": "#2c2c30",
+      "prix": "2 999 DH"
+    }
+  ]
+}

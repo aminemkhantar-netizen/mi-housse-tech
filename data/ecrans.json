@@ -1,0 +1,49 @@
+{
+  "produits": [
+    {
+      "nom": "Xiaomi Gaming Monitor G27i 2026",
+      "type": "Écran gaming",
+      "photo": "img/xiaomi-gaming-monitor-g27i-2026.webp",
+      "statut": "disponible",
+      "style": "standard",
+      "couleur": "#2c2c30",
+      "prix": "1 699 DH"
+    },
+    {
+      "nom": "Xiaomi Monitor A24i 2026",
+      "type": "Écran PC",
+      "photo": "img/xiaomi-monitor-a24i-2026.webp",
+      "statut": "disponible",
+      "style": "standard",
+      "couleur": "#2c2c30",
+      "prix": "1 099 DH"
+    },
+    {
+      "nom": "Xiaomi Curved Gaming Monitor G34WQi 2026",
+      "type": "Écran gaming incurvé",
+      "photo": "img/xiaomi-curved-gaming-monitor-g34wqi-2026.webp",
+      "statut": "disponible",
+      "style": "standard",
+      "couleur": "#2c2c30",
+      "prix": "3 299 DH"
+    },
+    {
+      "nom": "Xiaomi 2K Gaming Monitor G27Qi 2026",
+      "type": "Écran gaming 2K",
+      "photo": "img/xiaomi-2k-gaming-monitor-g27qi-2026.webp",
+      "statut": "disponible",
+      "style": "standard",
+      "couleur": "#2c2c30",
+      "prix": "2 199 DH"
+    },
+    {
+      "nom": "Xiaomi 2K Monitor A27Qi 2026",
+      "type": "Écran PC 2K",
+      "photo": "img/xiaomi-2k-monitor-a27qi-2026.webp",
+      "statut": "disponible",
+      "style": "standard",
+      "couleur": "#2c2c30",
+      "prix": "1 899 DH"
+    }
+  ]
+}

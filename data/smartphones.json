@@ -1,0 +1,458 @@
+{
+  "produits": [
+    {
+      "nom": "REDMI Note 17",
+      "type": "Série REDMI Note 17",
+      "photo": "img/redmi-note-17.webp",
+      "statut": "disponible",
+      "style": "mise-en-avant",
+      "couleur": "#2c2c30",
+      "gamme": "redmi",
+      "prix": "2 479 DH",
+      "couleurs": [
+        {
+          "nom": "Violet céleste",
+          "hex": "#d7d6ff",
+          "photo": "img/c/redmi-note-17-0.webp"
+        },
+        {
+          "nom": "Noir",
+          "hex": "#000000",
+          "photo": "img/c/redmi-note-17-1.webp"
+        },
+        {
+          "nom": "Bleu sarcelle",
+          "hex": "#b4ced4",
+          "photo": "img/c/redmi-note-17-2.webp"
+        }
+      ],
+      "versions": [
+        {
+          "nom": "4 Go + 128 Go",
+          "prix": "2 479 DH"
+        },
+        {
+          "nom": "6 Go + 256 Go",
+          "prix": "2 899 DH"
+        }
+      ]
+    },
+    {
+      "nom": "REDMI Note 17 5G",
+      "type": "Série REDMI Note 17",
+      "photo": "img/redmi-note-17-5g.webp",
+      "statut": "disponible",
+      "style": "mise-en-avant",
+      "couleur": "#2c2c30",
+      "gamme": "redmi",
+      "prix": "2 999 DH",
+      "couleurs": [
+        {
+          "nom": "Noir",
+          "hex": "#000000",
+          "photo": "img/c/redmi-note-17-5g-0.webp"
+        },
+        {
+          "nom": "Bleu sarcelle",
+          "hex": "#b4ced4",
+          "photo": "img/c/redmi-note-17-5g-1.webp"
+        },
+        {
+          "nom": "Violet céleste",
+          "hex": "#d7d6ff",
+          "photo": "img/c/redmi-note-17-5g-2.webp"
+        }
+      ],
+      "versions": [
+        {
+          "nom": "6 Go + 128 Go",
+          "prix": "2 999 DH"
+        },
+        {
+          "nom": "8 Go + 256 Go",
+          "prix": "3 499 DH"
+        }
+      ]
+    },
+    {
+      "nom": "REDMI Note 17 Pro 5G",
+      "type": "Série REDMI Note 17",
+      "photo": "img/redmi-note-17-pro-5g.webp",
+      "statut": "disponible",
+      "style": "mise-en-avant",
+      "couleur": "#3f6fd8",
+      "gamme": "redmi",
+      "prix": "4 149 DH",
+      "couleurs": [
+        {
+          "nom": "Bleu Ciel",
+          "hex": "#d9e7f6",
+          "photo": "img/c/redmi-note-17-pro-5g-0.webp"
+        },
+        {
+          "nom": "Noir",
+          "hex": "#000000",
+          "photo": "img/c/redmi-note-17-pro-5g-1.webp"
+        },
+        {
+          "nom": "Orange satin",
+          "hex": "#fbdcc3",
+          "photo": "img/c/redmi-note-17-pro-5g-2.webp"
+        },
+        {
+          "nom": "Violet",
+          "hex": "#ebe0f2",
+          "photo": "img/c/redmi-note-17-pro-5g-3.webp"
+        }
+      ],
+      "versions": [
+        {
+          "nom": "8 Go + 256 Go",
+          "prix": "4 149 DH"
+        },
+        {
+          "nom": "8 Go + 512 Go",
+          "prix": "4 799 DH"
+        }
+      ]
+    },
+    {
+      "nom": "REDMI Note 17 Pro Max 5G",
+      "type": "Série REDMI Note 17",
+      "photo": "img/redmi-note-17-pro-max-5g.webp",
+      "statut": "disponible",
+      "style": "mise-en-avant",
+      "couleur": "#b9bec7",
+      "gamme": "redmi",
+      "prix": "5 199 DH",
+      "couleurs": [
+        {
+          "nom": "Rose nuage",
+          "hex": "#faf2f2",
+          "photo": "img/c/redmi-note-17-pro-max-5g-0.webp"
+        },
+        {
+          "nom": "Noir",
+          "hex": "#000000",
+          "photo": "img/c/redmi-note-17-pro-max-5g-1.webp"
+        },
+        {
+          "nom": "Violet",
+          "hex": "#ebe0f2",
+          "photo": "img/c/redmi-note-17-pro-max-5g-2.webp"
+        },
+        {
+          "nom": "Vert",
+          "hex": "#dbe7cd",
+          "photo": "img/c/redmi-note-17-pro-max-5g-3.webp"
+        }
+      ],
+      "versions": [
+        {
+          "nom": "8 Go + 256 Go",
+          "prix": "5 199 DH"
+        },
+        {
+          "nom": "8 Go + 512 Go",
+          "prix": "5 799 DH"
+        }
+      ]
+    },
+    {
+      "nom": "REDMI Note 15 Pro+ 5G",
+      "type": "Série REDMI Note",
+      "photo": "img/redmi-note-15-pro-plus-5g.webp",
+      "statut": "disponible",
+      "style": "standard",
+      "couleur": "#2c2c30",
+      "gamme": "redmi",
+      "prix": "4 199 DH",
+      "couleurs": [
+        {
+          "nom": "Marron",
+          "hex": "#6c5519",
+          "photo": "img/c/redmi-note-15-pro-plus-5g-0.webp"
+        },
+        {
+          "nom": "Noir",
+          "hex": "#000000",
+          "photo": "img/c/redmi-note-15-pro-plus-5g-1.webp"
+        },
+        {
+          "nom": "Bleu",
+          "hex": "#9db2bf",
+          "photo": "img/c/redmi-note-15-pro-plus-5g-2.webp"
+        }
+      ],
+      "versions": [
+        {
+          "nom": "8 Go + 256 Go",
+          "prix": "4 199 DH"
+        },
+        {
+          "nom": "12 Go + 512 Go",
+          "prix": "4 799 DH"
+        }
+      ]
+    },
+    {
+      "nom": "REDMI Note 15 Pro 5G",
+      "type": "Série REDMI Note",
+      "photo": "img/redmi-note-15-pro-5g.webp",
+      "statut": "disponible",
+      "style": "standard",
+      "couleur": "#2c2c30",
+      "gamme": "redmi",
+      "prix": "3 399 DH",
+      "couleurs": [
+        {
+          "nom": "Noir",
+          "hex": "#000000",
+          "photo": "img/c/redmi-note-15-pro-5g-0.webp"
+        },
+        {
+          "nom": "Titane",
+          "hex": "#e0d5cf",
+          "photo": "img/c/redmi-note-15-pro-5g-1.webp"
+        }
+      ]
+    },
+    {
+      "nom": "REDMI Note 15 Pro",
+      "type": "Série REDMI Note",
+      "photo": "img/redmi-note-15-pro.webp",
+      "statut": "disponible",
+      "style": "standard",
+      "couleur": "#3f6fd8",
+      "gamme": "redmi",
+      "prix": "2 999 DH",
+      "couleurs": [
+        {
+          "nom": "Titane",
+          "hex": "#a9a8a7",
+          "photo": "img/c/redmi-note-15-pro-0.webp"
+        },
+        {
+          "nom": "Noir",
+          "hex": "#000000",
+          "photo": "img/c/redmi-note-15-pro-1.webp"
+        },
+        {
+          "nom": "Bleu",
+          "hex": "#9db2bf",
+          "photo": "img/c/redmi-note-15-pro-2.webp"
+        }
+      ],
+      "versions": [
+        {
+          "nom": "8 Go + 256 Go",
+          "prix": "2 999 DH"
+        },
+        {
+          "nom": "12 Go + 512 Go",
+          "prix": "3 599 DH"
+        }
+      ]
+    },
+    {
+      "nom": "REDMI Note 15",
+      "type": "Série REDMI Note",
+      "photo": "img/redmi-note-15.webp",
+      "statut": "disponible",
+      "style": "standard",
+      "couleur": "#2c2c30",
+      "gamme": "redmi",
+      "prix": "2 189 DH",
+      "couleurs": [
+        {
+          "nom": "Noir",
+          "hex": "#000000",
+          "photo": "img/c/redmi-note-15-0.webp"
+        },
+        {
+          "nom": "Bleu",
+          "hex": "#9db2bf",
+          "photo": "img/c/redmi-note-15-1.webp"
+        },
+        {
+          "nom": "Violet",
+          "hex": "#aab1cf",
+          "photo": "img/c/redmi-note-15-2.webp"
+        },
+        {
+          "nom": "Vert",
+          "hex": "#e2f0e3",
+          "photo": "img/c/redmi-note-15-3.webp"
+        }
+      ],
+      "versions": [
+        {
+          "nom": "6 Go + 128 Go",
+          "prix": "2 189 DH"
+        },
+        {
+          "nom": "8 Go + 256 Go",
+          "prix": "2 529 DH"
+        }
+      ]
+    },
+    {
+      "nom": "REDMI 17",
+      "type": "Série REDMI",
+      "photo": "img/redmi-17.webp",
+      "statut": "disponible",
+      "style": "standard",
+      "couleur": "#f26a1b",
+      "gamme": "redmi",
+      "prix": "2 059 DH",
+      "couleurs": [
+        {
+          "nom": "Noir",
+          "hex": "#000000",
+          "photo": "img/c/redmi-17-0.webp"
+        },
+        {
+          "nom": "Vert chêne",
+          "hex": "#4d5950",
+          "photo": "img/c/redmi-17-1.webp"
+        },
+        {
+          "nom": "Violet lotus",
+          "hex": "#d6d6f0",
+          "photo": "img/c/redmi-17-2.webp"
+        },
+        {
+          "nom": "Bleu profond",
+          "hex": "#344468",
+          "photo": "img/c/redmi-17-3.webp"
+        }
+      ],
+      "versions": [
+        {
+          "nom": "4 Go + 128 Go",
+          "prix": "2 059 DH"
+        },
+        {
+          "nom": "4 Go + 256 Go",
+          "prix": "2 429 DH"
+        }
+      ]
+    },
+    {
+      "nom": "REDMI A7 Pro",
+      "type": "Série REDMI",
+      "photo": "img/redmi-a7-pro.webp",
+      "statut": "disponible",
+      "style": "standard",
+      "couleur": "#3f6fd8",
+      "gamme": "redmi",
+      "prix": "1 649 DH",
+      "couleurs": [
+        {
+          "nom": "Orange",
+          "hex": "#efab72",
+          "photo": "img/c/redmi-a7-pro-0.webp"
+        },
+        {
+          "nom": "Noir",
+          "hex": "#000000",
+          "photo": "img/c/redmi-a7-pro-1.webp"
+        },
+        {
+          "nom": "Bleu brume",
+          "hex": "#c4d9e5",
+          "photo": "img/c/redmi-a7-pro-2.webp"
+        },
+        {
+          "nom": "Vert palmier",
+          "hex": "#d8e4c0",
+          "photo": "img/c/redmi-a7-pro-3.webp"
+        }
+      ],
+      "versions": [
+        {
+          "nom": "4 Go + 64 Go",
+          "prix": "1 649 DH"
+        },
+        {
+          "nom": "4 Go + 128 Go",
+          "prix": "1 899 DH"
+        }
+      ]
+    },
+    {
+      "nom": "Xiaomi 17T Pro",
+      "type": "Série Xiaomi",
+      "photo": "img/xiaomi-17t-pro.webp",
+      "statut": "disponible",
+      "style": "standard",
+      "couleur": "#2c2c30",
+      "gamme": "xiaomi",
+      "prix": "8 199 DH",
+      "couleurs": [
+        {
+          "nom": "Bleu Foncé",
+          "hex": "#3f5481",
+          "photo": "img/c/xiaomi-17t-pro-0.webp"
+        },
+        {
+          "nom": "Violet Foncé",
+          "hex": "#846d85",
+          "photo": "img/c/xiaomi-17t-pro-1.webp"
+        },
+        {
+          "nom": "Noir",
+          "hex": "#000000",
+          "photo": "img/c/xiaomi-17t-pro-2.webp"
+        }
+      ],
+      "versions": [
+        {
+          "nom": "12 Go + 256 Go",
+          "prix": "8 199 DH"
+        },
+        {
+          "nom": "12 Go + 512 Go",
+          "prix": "8 799 DH"
+        }
+      ]
+    },
+    {
+      "nom": "Xiaomi 17T",
+      "type": "Série Xiaomi",
+      "photo": "img/xiaomi-17t.webp",
+      "statut": "disponible",
+      "style": "standard",
+      "couleur": "#7a5fd0",
+      "gamme": "xiaomi",
+      "prix": "6 399 DH",
+      "couleurs": [
+        {
+          "nom": "Violet Clair",
+          "hex": "#bda3b8",
+          "photo": "img/c/xiaomi-17t-0.webp"
+        },
+        {
+          "nom": "Blanc Opale",
+          "hex": "#f3f1f4",
+          "photo": "img/c/xiaomi-17t-1.webp"
+        },
+        {
+          "nom": "Noir",
+          "hex": "#000000",
+          "photo": "img/c/xiaomi-17t-2.webp"
+        }
+      ],
+      "versions": [
+        {
+          "nom": "12 Go + 256 Go",
+          "prix": "6 399 DH"
+        },
+        {
+          "nom": "12 Go + 512 Go",
+          "prix": "6 899 DH"
+        }
+      ]
+    }
+  ]
+}

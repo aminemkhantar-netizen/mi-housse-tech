@@ -1,0 +1,141 @@
+{
+  "produits": [
+    {
+      "nom": "Xiaomi Pad 8 Pro",
+      "type": "Xiaomi Pad",
+      "photo": "img/xiaomi-pad-8-pro.webp",
+      "statut": "disponible",
+      "style": "standard",
+      "couleur": "#2c2c30",
+      "prix": "6 599 DH",
+      "couleurs": [
+        {
+          "nom": "Vert pin",
+          "hex": "#89998b",
+          "photo": "img/c/xiaomi-pad-8-pro-0.webp"
+        },
+        {
+          "nom": "Gris",
+          "hex": "#aaaaaa",
+          "photo": "img/c/xiaomi-pad-8-pro-1.webp"
+        },
+        {
+          "nom": "Bleu",
+          "hex": "#9db2bf",
+          "photo": "img/c/xiaomi-pad-8-pro-2.webp"
+        }
+      ]
+    },
+    {
+      "nom": "REDMI Pad Pro 5G",
+      "type": "REDMI Pad",
+      "photo": "img/redmi-pad-pro-5g.webp",
+      "statut": "disponible",
+      "style": "standard",
+      "couleur": "#2c2c30",
+      "prix": "3 149 DH"
+    },
+    {
+      "nom": "REDMI Pad 2 Pro 5G",
+      "type": "REDMI Pad",
+      "photo": "img/redmi-pad-2-pro-5g.webp",
+      "statut": "disponible",
+      "style": "standard",
+      "couleur": "#b9bec7",
+      "prix": "3 749 DH",
+      "couleurs": [
+        {
+          "nom": "Argent",
+          "hex": "#f3f3f3",
+          "photo": "img/c/redmi-pad-2-pro-5g-0.webp"
+        },
+        {
+          "nom": "Gris Graphite",
+          "hex": "#676972",
+          "photo": "img/c/redmi-pad-2-pro-5g-1.webp"
+        }
+      ],
+      "versions": [
+        {
+          "nom": "6 Go + 128 Go",
+          "prix": "3 749 DH"
+        },
+        {
+          "nom": "8 Go + 256 Go",
+          "prix": "4 299 DH"
+        }
+      ]
+    },
+    {
+      "nom": "REDMI Pad 2 4G",
+      "type": "REDMI Pad",
+      "photo": "img/redmi-pad-2-4g.webp",
+      "statut": "disponible",
+      "style": "standard",
+      "couleur": "#b9bec7",
+      "prix": "2 299 DH",
+      "couleurs": [
+        {
+          "nom": "Vert Menthe",
+          "hex": "#a9bcc1",
+          "photo": "img/c/redmi-pad-2-4g-0.webp"
+        },
+        {
+          "nom": "Gris Graphite",
+          "hex": "#6e6c77",
+          "photo": "img/c/redmi-pad-2-4g-1.webp"
+        }
+      ],
+      "versions": [
+        {
+          "nom": "4 Go + 128 Go",
+          "prix": "2 299 DH"
+        },
+        {
+          "nom": "8 Go + 256 Go",
+          "prix": "2 849 DH"
+        }
+      ]
+    },
+    {
+      "nom": "REDMI Pad 2 9.7 4G",
+      "type": "REDMI Pad",
+      "photo": "img/redmi-pad-2-9-7-4g.webp",
+      "statut": "disponible",
+      "style": "standard",
+      "couleur": "#b9bec7",
+      "prix": "1 919 DH",
+      "couleurs": [
+        {
+          "nom": "Argent",
+          "hex": "#f3f3f3",
+          "photo": "img/c/redmi-pad-2-9-7-4g-0.webp"
+        },
+        {
+          "nom": "Gris",
+          "hex": "#aaaaaa",
+          "photo": "img/c/redmi-pad-2-9-7-4g-1.webp"
+        }
+      ],
+      "versions": [
+        {
+          "nom": "4 Go + 64 Go",
+          "prix": "1 919 DH"
+        },
+        {
+          "nom": "4 Go + 128 Go",
+          "prix": "2 099 DH"
+        }
+      ]
+    },
+    {
+      "nom": "REDMI Smart Pen 1S",
+      "type": "Stylet pour tablette",
+      "photo": "img/redmi-smart-pen-1s.webp",
+      "statut": "disponible",
+      "style": "standard",
+      "couleur": "#e9e9ee",
+      "prix": "399 DH"
+    }
+  ]
+}

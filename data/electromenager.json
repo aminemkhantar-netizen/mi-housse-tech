@@ -1,0 +1,291 @@
+{
+  "produits": [
+    {
+      "nom": "Mijia Front Load Washer 8kg",
+      "type": "Lave-linge",
+      "photo": "img/mijia-front-load-washer-8kg.webp",
+      "statut": "disponible",
+      "style": "mise-en-avant",
+      "couleur": "#2c2c30",
+      "prix": "3 699 DH"
+    },
+    {
+      "nom": "Mijia Air Conditioner Eco",
+      "type": "Climatiseur",
+      "photo": "img/mijia-air-conditioner-eco.webp",
+      "statut": "disponible",
+      "style": "mise-en-avant",
+      "couleur": "#e9e9ee"
+    },
+    {
+      "nom": "Mijia Front Load Washer Dryer Pro 9kg",
+      "type": "Lave-linge séchant",
+      "photo": "img/mijia-front-load-washer-dryer-pro-9kg.webp",
+      "statut": "disponible",
+      "style": "standard",
+      "couleur": "#b9bec7",
+      "prix": "5 399 DH"
+    },
+    {
+      "nom": "Xiaomi Microwave Oven",
+      "type": "Micro-ondes",
+      "photo": "img/xiaomi-microwave-oven.webp",
+      "statut": "disponible",
+      "style": "standard",
+      "couleur": "#e9e9ee",
+      "prix": "899 DH"
+    },
+    {
+      "nom": "Xiaomi Semi-automatic Espresso Machine",
+      "type": "Machine à café",
+      "photo": "img/xiaomi-semi-automatic-espresso-machine.webp",
+      "statut": "disponible",
+      "style": "standard",
+      "couleur": "#b9bec7",
+      "prix": "1 379 DH"
+    },
+    {
+      "nom": "Xiaomi Blender",
+      "type": "Blender",
+      "photo": "img/xiaomi-blender.webp",
+      "statut": "disponible",
+      "style": "standard",
+      "couleur": "#2c2c30",
+      "prix": "799 DH"
+    },
+    {
+      "nom": "Xiaomi Blender Pro",
+      "type": "Blender",
+      "photo": "img/xiaomi-blender-pro.webp",
+      "statut": "disponible",
+      "style": "standard",
+      "couleur": "#e9e9ee",
+      "prix": "1 109 DH"
+    },
+    {
+      "nom": "Xiaomi Electric Glass Kettle",
+      "type": "Bouilloire",
+      "photo": "img/xiaomi-electric-glass-kettle.webp",
+      "statut": "disponible",
+      "style": "standard",
+      "couleur": "#b9bec7",
+      "prix": "319 DH"
+    },
+    {
+      "nom": "Xiaomi Electric Kettle 2",
+      "type": "Bouilloire",
+      "photo": "img/xiaomi-electric-kettle-2.webp",
+      "statut": "disponible",
+      "style": "standard",
+      "couleur": "#e9e9ee",
+      "prix": "409 DH"
+    },
+    {
+      "nom": "Xiaomi Electric Kettle 2 Lite",
+      "type": "Bouilloire",
+      "photo": "img/xiaomi-electric-kettle-2-lite.webp",
+      "statut": "disponible",
+      "style": "standard",
+      "couleur": "#e9e9ee",
+      "prix": "319 DH"
+    },
+    {
+      "nom": "Xiaomi Air Fryer 6.5L",
+      "type": "Friteuse sans huile",
+      "photo": "img/xiaomi-air-fryer-6-5l.webp",
+      "statut": "disponible",
+      "style": "standard",
+      "couleur": "#2c2c30",
+      "prix": "1 049 DH"
+    },
+    {
+      "nom": "Xiaomi Dual Zone Air Fryer 10L",
+      "type": "Friteuse sans huile",
+      "photo": "img/xiaomi-dual-zone-air-fryer-10l.webp",
+      "statut": "disponible",
+      "style": "standard",
+      "couleur": "#2c2c30",
+      "prix": "1 699 DH"
+    },
+    {
+      "nom": "Xiaomi Smart Air Fryer 6.5L",
+      "type": "Friteuse sans huile",
+      "photo": "img/xiaomi-smart-air-fryer-6-5l.webp",
+      "statut": "disponible",
+      "style": "standard",
+      "couleur": "#2c2c30",
+      "prix": "1 499 DH"
+    },
+    {
+      "nom": "Xiaomi Rice Cooker 4L",
+      "type": "Cuiseur à riz",
+      "photo": "img/xiaomi-rice-cooker-4l.webp",
+      "statut": "disponible",
+      "style": "standard",
+      "couleur": "#e9e9ee",
+      "prix": "899 DH"
+    },
+    {
+      "nom": "Xiaomi Toaster",
+      "type": "Grille-pain",
+      "photo": "img/xiaomi-toaster.webp",
+      "statut": "disponible",
+      "style": "standard",
+      "couleur": "#2c2c30",
+      "prix": "359 DH"
+    },
+    {
+      "nom": "Mijia Refrigerator Cross Door 502L",
+      "type": "Réfrigérateur",
+      "photo": "img/mijia-refrigerator-cross-door-502l.webp",
+      "statut": "disponible",
+      "style": "standard",
+      "couleur": "#b9bec7",
+      "prix": "8 899 DH"
+    },
+    {
+      "nom": "Xiaomi Smart Kettle 2 Pro",
+      "type": "Bouilloire",
+      "photo": "img/xiaomi-smart-kettle-2-pro.webp",
+      "statut": "disponible",
+      "style": "standard",
+      "couleur": "#e9e9ee",
+      "prix": "679 DH"
+    },
+    {
+      "nom": "Xiaomi Insulated Kettle 1.8L",
+      "type": "Bouilloire isotherme",
+      "photo": "img/xiaomi-insulated-kettle-1-8l.webp",
+      "statut": "disponible",
+      "style": "standard",
+      "couleur": "#e9e9ee",
+      "prix": "259 DH"
+    },
+    {
+      "nom": "Xiaomi Induction Cooker Lite",
+      "type": "Plaque à induction",
+      "photo": "img/xiaomi-induction-cooker-lite.webp",
+      "statut": "disponible",
+      "style": "standard",
+      "couleur": "#2c2c30",
+      "prix": "719 DH"
+    },
+    {
+      "nom": "Xiaomi Instant Hot Water Dispenser",
+      "type": "Fontaine à eau",
+      "photo": "img/xiaomi-instant-hot-water-dispenser.webp",
+      "statut": "disponible",
+      "style": "standard",
+      "couleur": "#e9e9ee",
+      "prix": "869 DH"
+    },
+    {
+      "nom": "Xiaomi Smart Water Dispenser Hot and Cold",
+      "type": "Fontaine à eau",
+      "photo": "img/xiaomi-smart-water-dispenser-hot-cold.webp",
+      "statut": "disponible",
+      "style": "standard",
+      "couleur": "#e9e9ee",
+      "prix": "1 709 DH"
+    },
+    {
+      "nom": "Xiaomi Smart Filtered Water Dispenser Pro",
+      "type": "Fontaine à eau filtrée",
+      "photo": "img/xiaomi-smart-filtered-water-dispenser-pro.webp",
+      "statut": "disponible",
+      "style": "standard",
+      "couleur": "#5f7189",
+      "prix": "3 699 DH"
+    },
+    {
+      "nom": "Mi Smart Standing Fan 2",
+      "type": "Ventilateur",
+      "photo": "img/mi-smart-standing-fan-2.webp",
+      "statut": "disponible",
+      "style": "standard",
+      "couleur": "#e9e9ee",
+      "prix": "999 DH"
+    },
+    {
+      "nom": "Mi Smart Standing Fan 2 Lite",
+      "type": "Ventilateur",
+      "photo": "img/mi-smart-standing-fan-2-lite.webp",
+      "statut": "disponible",
+      "style": "standard",
+      "couleur": "#e9e9ee",
+      "prix": "699 DH"
+    },
+    {
+      "nom": "Xiaomi Desktop Heater",
+      "type": "Chauffage",
+      "photo": "img/xiaomi-desktop-heater.webp",
+      "statut": "disponible",
+      "style": "standard",
+      "couleur": "#e9e9ee",
+      "prix": "449 DH"
+    },
+    {
+      "nom": "Xiaomi Fan Heater",
+      "type": "Chauffage",
+      "photo": "img/xiaomi-fan-heater.webp",
+      "statut": "disponible",
+      "style": "standard",
+      "couleur": "#b9bec7",
+      "prix": "749 DH"
+    },
+    {
+      "nom": "Mi Temperature and Humidity Monitor 3",
+      "type": "Thermomètre-hygromètre",
+      "photo": "img/mi-temperature-humidity-monitor-3.webp",
+      "statut": "disponible",
+      "style": "standard",
+      "couleur": "#e9e9ee",
+      "prix": "149 DH"
+    },
+    {
+      "nom": "Xiaomi Smart Temperature and Humidity Monitor 3 Mini",
+      "type": "Thermomètre-hygromètre",
+      "photo": "img/xiaomi-temperature-humidity-monitor-3-mini.webp",
+      "statut": "disponible",
+      "style": "standard",
+      "couleur": "#e9e9ee",
+      "prix": "109 DH"
+    },
+    {
+      "nom": "Xiaomi Temperature and Humidity Monitor Clock",
+      "type": "Thermomètre-hygromètre",
+      "photo": "img/xiaomi-temperature-humidity-monitor-clock.webp",
+      "statut": "disponible",
+      "style": "standard",
+      "couleur": "#e9e9ee",
+      "prix": "319 DH"
+    },
+    {
+      "nom": "Mijia Lint Remover 2",
+      "type": "Rasoir anti-bouloches",
+      "photo": "img/mijia-lint-remover-2.webp",
+      "statut": "disponible",
+      "style": "standard",
+      "couleur": "#e9e9ee",
+      "prix": "249 DH"
+    },
+    {
+      "nom": "Xiaomi Massage Gun 2",
+      "type": "Pistolet de massage",
+      "photo": "img/xiaomi-massage-gun-2.webp",
+      "statut": "disponible",
+      "style": "standard",
+      "couleur": "#3f6fd8",
+      "prix": "899 DH"
+    },
+    {
+      "nom": "Xiaomi Electric Shaver S101",
+      "type": "Rasoir électrique",
+      "photo": "img/xiaomi-electric-shaver-s101.webp",
+      "statut": "disponible",
+      "style": "standard",
+      "couleur": "#2c2c30",
+      "prix": "269 DH"
+    }
+  ]
+}

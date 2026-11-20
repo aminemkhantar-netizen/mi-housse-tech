@@ -1,0 +1,534 @@
+# Espace de gestion du catalogue Mi Housse Tech (Decap CMS)
+locale: "fr"
+backend:
+  name: git-gateway
+  branch: main
+  commit_messages:
+    update: "Catalogue : mise à jour de {{slug}}"
+
+site_url: /
+display_url: /
+logo_url: /logo.png
+
+# Les photos téléversées vont dans le dossier img/ du site
+media_folder: "img"
+public_folder: "img"
+
+collections:
+  - name: "catalogue"
+    label: "Catalogue"
+    label_singular: "Rubrique"
+    description: "Une page par rubrique du site. L'ordre de la liste est l'ordre d'affichage : glissez un produit pour le déplacer."
+    editor: {preview: false}
+    files:
+      - label: "Smartphones"
+        name: "smartphones"
+        file: "data/smartphones.json"
+        format: "json"
+        fields:
+          - label: "Produits"
+            name: "produits"
+            label_singular: "produit"
+            widget: "list"
+            summary: "{{fields.nom}} · {{fields.statut}}"
+            collapsed: true
+            add_to_top: true
+            fields:
+          - {label: "Nom du produit", name: "nom", widget: "string"}
+          - {label: "Type (petite ligne au-dessus du nom)", name: "type", widget: "string", hint: "Exemple : Écouteurs sans fil, Aspirateur robot, Série REDMI Note"}
+          - {label: "Photo", name: "photo", widget: "image", required: false, hint: "Photo sur fond clair, idéalement 1040 × 600 pixels"}
+          - label: "Statut"
+            name: "statut"
+            widget: "select"
+            default: "disponible"
+            options:
+              - {label: "Disponible", value: "disponible"}
+              - {label: "Nouveau (badge orange)", value: "nouveau"}
+              - {label: "Épuisé (badge + photo grisée)", value: "epuise"}
+              - {label: "Masqué (n'apparaît pas sur le site)", value: "masque"}
+          - {label: "Prix (facultatif)", name: "prix", widget: "string", required: false, hint: "Laisser vide pour afficher « Demander le prix ». Exemple : 2 499 DH"}
+          - label: "Couleurs (fiche Acheter)"
+            name: "couleurs"
+            widget: "list"
+            required: false
+            collapsed: true
+            summary: "{{fields.nom}}"
+            hint: "Chaque couleur proposée au client, avec sa photo. La 1re couleur est celle affichée par défaut."
+            fields:
+              - {label: "Nom de la couleur", name: "nom", widget: "string"}
+              - {label: "Pastille", name: "hex", widget: "color", required: false}
+              - {label: "Photo de cette couleur", name: "photo", widget: "image", required: false}
+          - label: "Versions RAM + stockage (fiche Acheter)"
+            name: "versions"
+            widget: "list"
+            required: false
+            collapsed: true
+            summary: "{{fields.nom}} · {{fields.prix}}"
+            hint: "Exemple : 8 Go + 256 Go · 2 999 DH. Le prix de la version remplace le prix du produit."
+            fields:
+              - {label: "Version", name: "nom", widget: "string"}
+              - {label: "Prix de cette version", name: "prix", widget: "string", required: false}
+          - label: "Présentation de la carte"
+            name: "style"
+            widget: "select"
+            default: "standard"
+            options:
+              - {label: "Standard", value: "standard"}
+              - {label: "Mise en avant (grande carte)", value: "mise-en-avant"}
+              - {label: "Affiche", value: "affiche"}
+          - {label: "Couleur d'accent", name: "couleur", widget: "color", default: "#e9e9ee", required: false}
+          - label: "Gamme"
+            name: "gamme"
+            widget: "select"
+            default: "redmi"
+            options:
+              - {label: "Gamme REDMI", value: "redmi"}
+              - {label: "Gamme Xiaomi", value: "xiaomi"}
+      - label: "Tablettes"
+        name: "tablettes"
+        file: "data/tablettes.json"
+        format: "json"
+        fields:
+          - label: "Produits"
+            name: "produits"
+            label_singular: "produit"
+            widget: "list"
+            summary: "{{fields.nom}} · {{fields.statut}}"
+            collapsed: true
+            add_to_top: true
+            fields:
+          - {label: "Nom du produit", name: "nom", widget: "string"}
+          - {label: "Type (petite ligne au-dessus du nom)", name: "type", widget: "string", hint: "Exemple : Écouteurs sans fil, Aspirateur robot, Série REDMI Note"}
+          - {label: "Photo", name: "photo", widget: "image", required: false, hint: "Photo sur fond clair, idéalement 1040 × 600 pixels"}
+          - label: "Statut"
+            name: "statut"
+            widget: "select"
+            default: "disponible"
+            options:
+              - {label: "Disponible", value: "disponible"}
+              - {label: "Nouveau (badge orange)", value: "nouveau"}
+              - {label: "Épuisé (badge + photo grisée)", value: "epuise"}
+              - {label: "Masqué (n'apparaît pas sur le site)", value: "masque"}
+          - {label: "Prix (facultatif)", name: "prix", widget: "string", required: false, hint: "Laisser vide pour afficher « Demander le prix ». Exemple : 2 499 DH"}
+          - label: "Couleurs (fiche Acheter)"
+            name: "couleurs"
+            widget: "list"
+            required: false
+            collapsed: true
+            summary: "{{fields.nom}}"
+            hint: "Chaque couleur proposée au client, avec sa photo. La 1re couleur est celle affichée par défaut."
+            fields:
+              - {label: "Nom de la couleur", name: "nom", widget: "string"}
+              - {label: "Pastille", name: "hex", widget: "color", required: false}
+              - {label: "Photo de cette couleur", name: "photo", widget: "image", required: false}
+          - label: "Versions RAM + stockage (fiche Acheter)"
+            name: "versions"
+            widget: "list"
+            required: false
+            collapsed: true
+            summary: "{{fields.nom}} · {{fields.prix}}"
+            hint: "Exemple : 8 Go + 256 Go · 2 999 DH. Le prix de la version remplace le prix du produit."
+            fields:
+              - {label: "Version", name: "nom", widget: "string"}
+              - {label: "Prix de cette version", name: "prix", widget: "string", required: false}
+          - label: "Présentation de la carte"
+            name: "style"
+            widget: "select"
+            default: "standard"
+            options:
+              - {label: "Standard", value: "standard"}
+              - {label: "Mise en avant (grande carte)", value: "mise-en-avant"}
+              - {label: "Affiche", value: "affiche"}
+          - {label: "Couleur d'accent", name: "couleur", widget: "color", default: "#e9e9ee", required: false}
+      - label: "Objets connectés"
+        name: "objets"
+        file: "data/objets.json"
+        format: "json"
+        fields:
+          - label: "Produits"
+            name: "produits"
+            label_singular: "produit"
+            widget: "list"
+            summary: "{{fields.nom}} · {{fields.statut}}"
+            collapsed: true
+            add_to_top: true
+            fields:
+          - {label: "Nom du produit", name: "nom", widget: "string"}
+          - {label: "Type (petite ligne au-dessus du nom)", name: "type", widget: "string", hint: "Exemple : Écouteurs sans fil, Aspirateur robot, Série REDMI Note"}
+          - {label: "Photo", name: "photo", widget: "image", required: false, hint: "Photo sur fond clair, idéalement 1040 × 600 pixels"}
+          - label: "Statut"
+            name: "statut"
+            widget: "select"
+            default: "disponible"
+            options:
+              - {label: "Disponible", value: "disponible"}
+              - {label: "Nouveau (badge orange)", value: "nouveau"}
+              - {label: "Épuisé (badge + photo grisée)", value: "epuise"}
+              - {label: "Masqué (n'apparaît pas sur le site)", value: "masque"}
+          - {label: "Prix (facultatif)", name: "prix", widget: "string", required: false, hint: "Laisser vide pour afficher « Demander le prix ». Exemple : 2 499 DH"}
+          - label: "Couleurs (fiche Acheter)"
+            name: "couleurs"
+            widget: "list"
+            required: false
+            collapsed: true
+            summary: "{{fields.nom}}"
+            hint: "Chaque couleur proposée au client, avec sa photo. La 1re couleur est celle affichée par défaut."
+            fields:
+              - {label: "Nom de la couleur", name: "nom", widget: "string"}
+              - {label: "Pastille", name: "hex", widget: "color", required: false}
+              - {label: "Photo de cette couleur", name: "photo", widget: "image", required: false}
+          - label: "Versions RAM + stockage (fiche Acheter)"
+            name: "versions"
+            widget: "list"
+            required: false
+            collapsed: true
+            summary: "{{fields.nom}} · {{fields.prix}}"
+            hint: "Exemple : 8 Go + 256 Go · 2 999 DH. Le prix de la version remplace le prix du produit."
+            fields:
+              - {label: "Version", name: "nom", widget: "string"}
+              - {label: "Prix de cette version", name: "prix", widget: "string", required: false}
+          - label: "Présentation de la carte"
+            name: "style"
+            widget: "select"
+            default: "standard"
+            options:
+              - {label: "Standard", value: "standard"}
+              - {label: "Mise en avant (grande carte)", value: "mise-en-avant"}
+              - {label: "Affiche", value: "affiche"}
+          - {label: "Couleur d'accent", name: "couleur", widget: "color", default: "#e9e9ee", required: false}
+      - label: "Téléviseurs"
+        name: "televiseurs"
+        file: "data/televiseurs.json"
+        format: "json"
+        fields:
+          - label: "Produits"
+            name: "produits"
+            label_singular: "produit"
+            widget: "list"
+            summary: "{{fields.nom}} · {{fields.statut}}"
+            collapsed: true
+            add_to_top: true
+            fields:
+          - {label: "Nom du produit", name: "nom", widget: "string"}
+          - {label: "Type (petite ligne au-dessus du nom)", name: "type", widget: "string", hint: "Exemple : Écouteurs sans fil, Aspirateur robot, Série REDMI Note"}
+          - {label: "Photo", name: "photo", widget: "image", required: false, hint: "Photo sur fond clair, idéalement 1040 × 600 pixels"}
+          - label: "Statut"
+            name: "statut"
+            widget: "select"
+            default: "disponible"
+            options:
+              - {label: "Disponible", value: "disponible"}
+              - {label: "Nouveau (badge orange)", value: "nouveau"}
+              - {label: "Épuisé (badge + photo grisée)", value: "epuise"}
+              - {label: "Masqué (n'apparaît pas sur le site)", value: "masque"}
+          - {label: "Prix (facultatif)", name: "prix", widget: "string", required: false, hint: "Laisser vide pour afficher « Demander le prix ». Exemple : 2 499 DH"}
+          - label: "Couleurs (fiche Acheter)"
+            name: "couleurs"
+            widget: "list"
+            required: false
+            collapsed: true
+            summary: "{{fields.nom}}"
+            hint: "Chaque couleur proposée au client, avec sa photo. La 1re couleur est celle affichée par défaut."
+            fields:
+              - {label: "Nom de la couleur", name: "nom", widget: "string"}
+              - {label: "Pastille", name: "hex", widget: "color", required: false}
+              - {label: "Photo de cette couleur", name: "photo", widget: "image", required: false}
+          - label: "Versions RAM + stockage (fiche Acheter)"
+            name: "versions"
+            widget: "list"
+            required: false
+            collapsed: true
+            summary: "{{fields.nom}} · {{fields.prix}}"
+            hint: "Exemple : 8 Go + 256 Go · 2 999 DH. Le prix de la version remplace le prix du produit."
+            fields:
+              - {label: "Version", name: "nom", widget: "string"}
+              - {label: "Prix de cette version", name: "prix", widget: "string", required: false}
+          - label: "Présentation de la carte"
+            name: "style"
+            widget: "select"
+            default: "standard"
+            options:
+              - {label: "Standard", value: "standard"}
+              - {label: "Mise en avant (grande carte)", value: "mise-en-avant"}
+              - {label: "Affiche", value: "affiche"}
+          - {label: "Couleur d'accent", name: "couleur", widget: "color", default: "#e9e9ee", required: false}
+      - label: "Écrans PC"
+        name: "ecrans"
+        file: "data/ecrans.json"
+        format: "json"
+        fields:
+          - label: "Produits"
+            name: "produits"
+            label_singular: "produit"
+            widget: "list"
+            summary: "{{fields.nom}} · {{fields.statut}}"
+            collapsed: true
+            add_to_top: true
+            fields:
+          - {label: "Nom du produit", name: "nom", widget: "string"}
+          - {label: "Type (petite ligne au-dessus du nom)", name: "type", widget: "string", hint: "Exemple : Écouteurs sans fil, Aspirateur robot, Série REDMI Note"}
+          - {label: "Photo", name: "photo", widget: "image", required: false, hint: "Photo sur fond clair, idéalement 1040 × 600 pixels"}
+          - label: "Statut"
+            name: "statut"
+            widget: "select"
+            default: "disponible"
+            options:
+              - {label: "Disponible", value: "disponible"}
+              - {label: "Nouveau (badge orange)", value: "nouveau"}
+              - {label: "Épuisé (badge + photo grisée)", value: "epuise"}
+              - {label: "Masqué (n'apparaît pas sur le site)", value: "masque"}
+          - {label: "Prix (facultatif)", name: "prix", widget: "string", required: false, hint: "Laisser vide pour afficher « Demander le prix ». Exemple : 2 499 DH"}
+          - label: "Couleurs (fiche Acheter)"
+            name: "couleurs"
+            widget: "list"
+            required: false
+            collapsed: true
+            summary: "{{fields.nom}}"
+            hint: "Chaque couleur proposée au client, avec sa photo. La 1re couleur est celle affichée par défaut."
+            fields:
+              - {label: "Nom de la couleur", name: "nom", widget: "string"}
+              - {label: "Pastille", name: "hex", widget: "color", required: false}
+              - {label: "Photo de cette couleur", name: "photo", widget: "image", required: false}
+          - label: "Versions RAM + stockage (fiche Acheter)"
+            name: "versions"
+            widget: "list"
+            required: false
+            collapsed: true
+            summary: "{{fields.nom}} · {{fields.prix}}"
+            hint: "Exemple : 8 Go + 256 Go · 2 999 DH. Le prix de la version remplace le prix du produit."
+            fields:
+              - {label: "Version", name: "nom", widget: "string"}
+              - {label: "Prix de cette version", name: "prix", widget: "string", required: false}
+          - label: "Présentation de la carte"
+            name: "style"
+            widget: "select"
+            default: "standard"
+            options:
+              - {label: "Standard", value: "standard"}
+              - {label: "Mise en avant (grande carte)", value: "mise-en-avant"}
+              - {label: "Affiche", value: "affiche"}
+          - {label: "Couleur d'accent", name: "couleur", widget: "color", default: "#e9e9ee", required: false}
+      - label: "Sécurité"
+        name: "securite"
+        file: "data/securite.json"
+        format: "json"
+        fields:
+          - label: "Produits"
+            name: "produits"
+            label_singular: "produit"
+            widget: "list"
+            summary: "{{fields.nom}} · {{fields.statut}}"
+            collapsed: true
+            add_to_top: true
+            fields:
+          - {label: "Nom du produit", name: "nom", widget: "string"}
+          - {label: "Type (petite ligne au-dessus du nom)", name: "type", widget: "string", hint: "Exemple : Écouteurs sans fil, Aspirateur robot, Série REDMI Note"}
+          - {label: "Photo", name: "photo", widget: "image", required: false, hint: "Photo sur fond clair, idéalement 1040 × 600 pixels"}
+          - label: "Statut"
+            name: "statut"
+            widget: "select"
+            default: "disponible"
+            options:
+              - {label: "Disponible", value: "disponible"}
+              - {label: "Nouveau (badge orange)", value: "nouveau"}
+              - {label: "Épuisé (badge + photo grisée)", value: "epuise"}
+              - {label: "Masqué (n'apparaît pas sur le site)", value: "masque"}
+          - {label: "Prix (facultatif)", name: "prix", widget: "string", required: false, hint: "Laisser vide pour afficher « Demander le prix ». Exemple : 2 499 DH"}
+          - label: "Couleurs (fiche Acheter)"
+            name: "couleurs"
+            widget: "list"
+            required: false
+            collapsed: true
+            summary: "{{fields.nom}}"
+            hint: "Chaque couleur proposée au client, avec sa photo. La 1re couleur est celle affichée par défaut."
+            fields:
+              - {label: "Nom de la couleur", name: "nom", widget: "string"}
+              - {label: "Pastille", name: "hex", widget: "color", required: false}
+              - {label: "Photo de cette couleur", name: "photo", widget: "image", required: false}
+          - label: "Versions RAM + stockage (fiche Acheter)"
+            name: "versions"
+            widget: "list"
+            required: false
+            collapsed: true
+            summary: "{{fields.nom}} · {{fields.prix}}"
+            hint: "Exemple : 8 Go + 256 Go · 2 999 DH. Le prix de la version remplace le prix du produit."
+            fields:
+              - {label: "Version", name: "nom", widget: "string"}
+              - {label: "Prix de cette version", name: "prix", widget: "string", required: false}
+          - label: "Présentation de la carte"
+            name: "style"
+            widget: "select"
+            default: "standard"
+            options:
+              - {label: "Standard", value: "standard"}
+              - {label: "Mise en avant (grande carte)", value: "mise-en-avant"}
+              - {label: "Affiche", value: "affiche"}
+          - {label: "Couleur d'accent", name: "couleur", widget: "color", default: "#e9e9ee", required: false}
+      - label: "Purificateurs d'air"
+        name: "purificateurs"
+        file: "data/purificateurs.json"
+        format: "json"
+        fields:
+          - label: "Produits"
+            name: "produits"
+            label_singular: "produit"
+            widget: "list"
+            summary: "{{fields.nom}} · {{fields.statut}}"
+            collapsed: true
+            add_to_top: true
+            fields:
+          - {label: "Nom du produit", name: "nom", widget: "string"}
+          - {label: "Type (petite ligne au-dessus du nom)", name: "type", widget: "string", hint: "Exemple : Écouteurs sans fil, Aspirateur robot, Série REDMI Note"}
+          - {label: "Photo", name: "photo", widget: "image", required: false, hint: "Photo sur fond clair, idéalement 1040 × 600 pixels"}
+          - label: "Statut"
+            name: "statut"
+            widget: "select"
+            default: "disponible"
+            options:
+              - {label: "Disponible", value: "disponible"}
+              - {label: "Nouveau (badge orange)", value: "nouveau"}
+              - {label: "Épuisé (badge + photo grisée)", value: "epuise"}
+              - {label: "Masqué (n'apparaît pas sur le site)", value: "masque"}
+          - {label: "Prix (facultatif)", name: "prix", widget: "string", required: false, hint: "Laisser vide pour afficher « Demander le prix ». Exemple : 2 499 DH"}
+          - label: "Couleurs (fiche Acheter)"
+            name: "couleurs"
+            widget: "list"
+            required: false
+            collapsed: true
+            summary: "{{fields.nom}}"
+            hint: "Chaque couleur proposée au client, avec sa photo. La 1re couleur est celle affichée par défaut."
+            fields:
+              - {label: "Nom de la couleur", name: "nom", widget: "string"}
+              - {label: "Pastille", name: "hex", widget: "color", required: false}
+              - {label: "Photo de cette couleur", name: "photo", widget: "image", required: false}
+          - label: "Versions RAM + stockage (fiche Acheter)"
+            name: "versions"
+            widget: "list"
+            required: false
+            collapsed: true
+            summary: "{{fields.nom}} · {{fields.prix}}"
+            hint: "Exemple : 8 Go + 256 Go · 2 999 DH. Le prix de la version remplace le prix du produit."
+            fields:
+              - {label: "Version", name: "nom", widget: "string"}
+              - {label: "Prix de cette version", name: "prix", widget: "string", required: false}
+          - label: "Présentation de la carte"
+            name: "style"
+            widget: "select"
+            default: "standard"
+            options:
+              - {label: "Standard", value: "standard"}
+              - {label: "Mise en avant (grande carte)", value: "mise-en-avant"}
+              - {label: "Affiche", value: "affiche"}
+          - {label: "Couleur d'accent", name: "couleur", widget: "color", default: "#e9e9ee", required: false}
+      - label: "Électroménager"
+        name: "electromenager"
+        file: "data/electromenager.json"
+        format: "json"
+        fields:
+          - label: "Produits"
+            name: "produits"
+            label_singular: "produit"
+            widget: "list"
+            summary: "{{fields.nom}} · {{fields.statut}}"
+            collapsed: true
+            add_to_top: true
+            fields:
+          - {label: "Nom du produit", name: "nom", widget: "string"}
+          - {label: "Type (petite ligne au-dessus du nom)", name: "type", widget: "string", hint: "Exemple : Écouteurs sans fil, Aspirateur robot, Série REDMI Note"}
+          - {label: "Photo", name: "photo", widget: "image", required: false, hint: "Photo sur fond clair, idéalement 1040 × 600 pixels"}
+          - label: "Statut"
+            name: "statut"
+            widget: "select"
+            default: "disponible"
+            options:
+              - {label: "Disponible", value: "disponible"}
+              - {label: "Nouveau (badge orange)", value: "nouveau"}
+              - {label: "Épuisé (badge + photo grisée)", value: "epuise"}
+              - {label: "Masqué (n'apparaît pas sur le site)", value: "masque"}
+          - {label: "Prix (facultatif)", name: "prix", widget: "string", required: false, hint: "Laisser vide pour afficher « Demander le prix ». Exemple : 2 499 DH"}
+          - label: "Couleurs (fiche Acheter)"
+            name: "couleurs"
+            widget: "list"
+            required: false
+            collapsed: true
+            summary: "{{fields.nom}}"
+            hint: "Chaque couleur proposée au client, avec sa photo. La 1re couleur est celle affichée par défaut."
+            fields:
+              - {label: "Nom de la couleur", name: "nom", widget: "string"}
+              - {label: "Pastille", name: "hex", widget: "color", required: false}
+              - {label: "Photo de cette couleur", name: "photo", widget: "image", required: false}
+          - label: "Versions RAM + stockage (fiche Acheter)"
+            name: "versions"
+            widget: "list"
+            required: false
+            collapsed: true
+            summary: "{{fields.nom}} · {{fields.prix}}"
+            hint: "Exemple : 8 Go + 256 Go · 2 999 DH. Le prix de la version remplace le prix du produit."
+            fields:
+              - {label: "Version", name: "nom", widget: "string"}
+              - {label: "Prix de cette version", name: "prix", widget: "string", required: false}
+          - label: "Présentation de la carte"
+            name: "style"
+            widget: "select"
+            default: "standard"
+            options:
+              - {label: "Standard", value: "standard"}
+              - {label: "Mise en avant (grande carte)", value: "mise-en-avant"}
+              - {label: "Affiche", value: "affiche"}
+          - {label: "Couleur d'accent", name: "couleur", widget: "color", default: "#e9e9ee", required: false}
+      - label: "Aspirateurs"
+        name: "aspirateurs"
+        file: "data/aspirateurs.json"
+        format: "json"
+        fields:
+          - label: "Produits"
+            name: "produits"
+            label_singular: "produit"
+            widget: "list"
+            summary: "{{fields.nom}} · {{fields.statut}}"
+            collapsed: true
+            add_to_top: true
+            fields:
+          - {label: "Nom du produit", name: "nom", widget: "string"}
+          - {label: "Type (petite ligne au-dessus du nom)", name: "type", widget: "string", hint: "Exemple : Écouteurs sans fil, Aspirateur robot, Série REDMI Note"}
+          - {label: "Photo", name: "photo", widget: "image", required: false, hint: "Photo sur fond clair, idéalement 1040 × 600 pixels"}
+          - label: "Statut"
+            name: "statut"
+            widget: "select"
+            default: "disponible"
+            options:
+              - {label: "Disponible", value: "disponible"}
+              - {label: "Nouveau (badge orange)", value: "nouveau"}
+              - {label: "Épuisé (badge + photo grisée)", value: "epuise"}
+              - {label: "Masqué (n'apparaît pas sur le site)", value: "masque"}
+          - {label: "Prix (facultatif)", name: "prix", widget: "string", required: false, hint: "Laisser vide pour afficher « Demander le prix ». Exemple : 2 499 DH"}
+          - label: "Couleurs (fiche Acheter)"
+            name: "couleurs"
+            widget: "list"
+            required: false
+            collapsed: true
+            summary: "{{fields.nom}}"
+            hint: "Chaque couleur proposée au client, avec sa photo. La 1re couleur est celle affichée par défaut."
+            fields:
+              - {label: "Nom de la couleur", name: "nom", widget: "string"}
+              - {label: "Pastille", name: "hex", widget: "color", required: false}
+              - {label: "Photo de cette couleur", name: "photo", widget: "image", required: false}
+          - label: "Versions RAM + stockage (fiche Acheter)"
+            name: "versions"
+            widget: "list"
+            required: false
+            collapsed: true
+            summary: "{{fields.nom}} · {{fields.prix}}"
+            hint: "Exemple : 8 Go + 256 Go · 2 999 DH. Le prix de la version remplace le prix du produit."
+            fields:
+              - {label: "Version", name: "nom", widget: "string"}
+              - {label: "Prix de cette version", name: "prix", widget: "string", required: false}
+          - label: "Présentation de la carte"
+            name: "style"
+            widget: "select"
+            default: "standard"
+            options:
+              - {label: "Standard", value: "standard"}
+              - {label: "Mise en avant (grande carte)", value: "mise-en-avant"}
+              - {label: "Affiche", value: "affiche"}
+          - {label: "Couleur d'accent", name: "couleur", widget: "color", default: "#e9e9ee", required: false}

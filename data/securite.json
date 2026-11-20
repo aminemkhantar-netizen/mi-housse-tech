@@ -1,0 +1,139 @@
+{
+  "produits": [
+    {
+      "nom": "Xiaomi Smart Camera C200",
+      "type": "Caméra intérieure",
+      "photo": "img/xiaomi-smart-camera-c200.webp",
+      "statut": "disponible",
+      "style": "standard",
+      "couleur": "#e9e9ee",
+      "prix": "319 DH"
+    },
+    {
+      "nom": "Xiaomi Smart Camera C300",
+      "type": "Caméra intérieure",
+      "photo": "img/xiaomi-smart-camera-c300.webp",
+      "statut": "disponible",
+      "style": "standard",
+      "couleur": "#e9e9ee",
+      "prix": "499 DH"
+    },
+    {
+      "nom": "Xiaomi Smart Camera C300 Dual",
+      "type": "Caméra intérieure double objectif",
+      "photo": "img/xiaomi-smart-camera-c300-dual.webp",
+      "statut": "disponible",
+      "style": "standard",
+      "couleur": "#e9e9ee",
+      "prix": "599 DH"
+    },
+    {
+      "nom": "Xiaomi Smart Camera C301",
+      "type": "Caméra intérieure",
+      "photo": "img/xiaomi-smart-camera-c301.webp",
+      "statut": "disponible",
+      "style": "standard",
+      "couleur": "#e9e9ee",
+      "prix": "399 DH"
+    },
+    {
+      "nom": "Xiaomi Smart Camera C302",
+      "type": "Caméra intérieure",
+      "photo": "img/xiaomi-smart-camera-c302.webp",
+      "statut": "disponible",
+      "style": "standard",
+      "couleur": "#e9e9ee",
+      "prix": "359 DH"
+    },
+    {
+      "nom": "Xiaomi Smart Camera C400",
+      "type": "Caméra intérieure",
+      "photo": "img/xiaomi-smart-camera-c400.webp",
+      "statut": "disponible",
+      "style": "standard",
+      "couleur": "#e9e9ee",
+      "prix": "599 DH"
+    },
+    {
+      "nom": "Xiaomi Smart Camera C500 Dual",
+      "type": "Caméra intérieure double objectif",
+      "photo": "img/xiaomi-smart-camera-c500-dual.webp",
+      "statut": "disponible",
+      "style": "standard",
+      "couleur": "#e9e9ee",
+      "prix": "799 DH"
+    },
+    {
+      "nom": "Xiaomi Smart Camera C700",
+      "type": "Caméra intérieure",
+      "photo": "img/xiaomi-smart-camera-c700.webp",
+      "statut": "disponible",
+      "style": "standard",
+      "couleur": "#e9e9ee",
+      "prix": "599 DH"
+    },
+    {
+      "nom": "Xiaomi Outdoor Camera AW200",
+      "type": "Caméra extérieure",
+      "photo": "img/xiaomi-outdoor-camera-aw200.webp",
+      "statut": "disponible",
+      "style": "standard",
+      "couleur": "#e9e9ee",
+      "prix": "329 DH"
+    },
+    {
+      "nom": "Xiaomi Outdoor Camera AW300",
+      "type": "Caméra extérieure",
+      "photo": "img/xiaomi-outdoor-camera-aw300.webp",
+      "statut": "disponible",
+      "style": "standard",
+      "couleur": "#e9e9ee",
+      "prix": "459 DH"
+    },
+    {
+      "nom": "Xiaomi Outdoor Camera CW300",
+      "type": "Caméra extérieure motorisée",
+      "photo": "img/xiaomi-outdoor-camera-cw300.webp",
+      "statut": "disponible",
+      "style": "standard",
+      "couleur": "#e9e9ee",
+      "prix": "549 DH"
+    },
+    {
+      "nom": "Xiaomi Outdoor Camera CW500 Dual",
+      "type": "Caméra extérieure double objectif",
+      "photo": "img/xiaomi-outdoor-camera-cw500-dual.webp",
+      "statut": "disponible",
+      "style": "standard",
+      "couleur": "#e9e9ee",
+      "prix": "779 DH"
+    },
+    {
+      "nom": "Xiaomi Outdoor Camera BW300",
+      "type": "Caméra extérieure sur batterie",
+      "photo": "img/xiaomi-outdoor-camera-bw300.webp",
+      "statut": "disponible",
+      "style": "standard",
+      "couleur": "#e9e9ee",
+      "prix": "599 DH"
+    },
+    {
+      "nom": "Xiaomi Outdoor Camera BW500",
+      "type": "Caméra extérieure sur batterie",
+      "photo": "img/xiaomi-outdoor-camera-bw500.webp",
+      "statut": "disponible",
+      "style": "standard",
+      "couleur": "#e9e9ee",
+      "prix": "899 DH"
+    },
+    {
+      "nom": "Xiaomi Solar Outdoor Camera BW400 Pro Set",
+      "type": "Caméra extérieure solaire",
+      "photo": "img/xiaomi-solar-outdoor-camera-bw400-pro-set.webp",
+      "statut": "disponible",
+      "style": "standard",
+      "couleur": "#e9e9ee",
+      "prix": "1 299 DH"
+    }
+  ]
+}

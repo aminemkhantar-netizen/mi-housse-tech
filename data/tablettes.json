@@ -4,7 +4,7 @@
       "nom": "Xiaomi Pad 8 Pro",
       "type": "Xiaomi Pad",
       "photo": "img/xiaomi-pad-8-pro.webp",
-      "statut": "disponible",
+      "statut": "masque",
       "style": "standard",
       "couleur": "#2c2c30",
       "prix": "6 599 DH",
@@ -37,12 +37,10 @@
     },
     {
       "nom": "REDMI Pad 2 Pro 5G",
-      "type": "REDMI Pad",
+      "style": "standard",
+      "prix": "3 749 DH",
       "photo": "img/redmi-pad-2-pro-5g.webp",
       "statut": "disponible",
-      "style": "standard",
-      "couleur": "#b9bec7",
-      "prix": "3 749 DH",
       "couleurs": [
         {
           "nom": "Argent",
@@ -55,6 +53,7 @@
           "photo": "img/c/redmi-pad-2-pro-5g-1.webp"
         }
       ],
+      "type": "REDMI Pad",
       "versions": [
         {
           "nom": "6 Go + 128 Go",
@@ -64,16 +63,15 @@
           "nom": "8 Go + 256 Go",
           "prix": "4 299 DH"
         }
-      ]
+      ],
+      "couleur": "#b9bec7"
     },
     {
       "nom": "REDMI Pad 2 4G",
-      "type": "REDMI Pad",
-      "photo": "img/redmi-pad-2-4g.webp",
-      "statut": "disponible",
       "style": "standard",
-      "couleur": "#b9bec7",
       "prix": "2 299 DH",
+      "photo": "img/redmi-pad-2-4g.webp",
+      "statut": "masque",
       "couleurs": [
         {
           "nom": "Vert Menthe",
@@ -86,6 +84,7 @@
           "photo": "img/c/redmi-pad-2-4g-1.webp"
         }
       ],
+      "type": "REDMI Pad",
       "versions": [
         {
           "nom": "4 Go + 128 Go",
@@ -95,16 +94,15 @@
           "nom": "8 Go + 256 Go",
           "prix": "2 849 DH"
         }
-      ]
+      ],
+      "couleur": "#b9bec7"
     },
     {
       "nom": "REDMI Pad 2 9.7 4G",
-      "type": "REDMI Pad",
-      "photo": "img/redmi-pad-2-9-7-4g.webp",
-      "statut": "disponible",
       "style": "standard",
-      "couleur": "#b9bec7",
       "prix": "1 919 DH",
+      "photo": "img/redmi-pad-2-9-7-4g.webp",
+      "statut": "masque",
       "couleurs": [
         {
           "nom": "Argent",
@@ -117,6 +115,7 @@
           "photo": "img/c/redmi-pad-2-9-7-4g-1.webp"
         }
       ],
+      "type": "REDMI Pad",
       "versions": [
         {
           "nom": "4 Go + 64 Go",
@@ -126,13 +125,14 @@
           "nom": "4 Go + 128 Go",
           "prix": "2 099 DH"
         }
-      ]
+      ],
+      "couleur": "#b9bec7"
     },
     {
       "nom": "REDMI Smart Pen 1S",
       "type": "Stylet pour tablette",
       "photo": "img/redmi-smart-pen-1s.webp",
-      "statut": "disponible",
+      "statut": "masque",
       "style": "standard",
       "couleur": "#e9e9ee",
       "prix": "399 DH"

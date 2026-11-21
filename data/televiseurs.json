@@ -1,7 +1,7 @@
 {
   "produits": [
     {
-      "nom": "Xiaomi TV A 32 2025",
+      "nom": "Xiaomi TV A PRO 32 2026",
       "type": "Téléviseur 32 pouces",
       "photo": "img/xiaomi-tv-a-32-2025.webp",
       "statut": "disponible",
@@ -19,7 +19,7 @@
       "prix": "2 549 DH"
     },
     {
-      "nom": "Xiaomi TV A 43 2026",
+      "nom": "Xiaomi TV A 43 4K 2026",
       "type": "Téléviseur 43 pouces",
       "photo": "img/xiaomi-tv-a-43-2026.webp",
       "statut": "disponible",

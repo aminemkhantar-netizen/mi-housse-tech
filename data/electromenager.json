@@ -15,7 +15,18 @@
       "photo": "img/mijia-air-conditioner-eco.webp",
       "statut": "disponible",
       "style": "mise-en-avant",
-      "couleur": "#e9e9ee"
+      "couleur": "#e9e9ee",
+      "versions": [
+        {
+          "nom": "9K",
+          "prix": "3399"
+        },
+        {
+          "nom": "12K",
+          "prix": "3649"
+        }
+      ],
+      "prix": "3399"
     },
     {
       "nom": "Mijia Front Load Washer Dryer Pro 9kg",

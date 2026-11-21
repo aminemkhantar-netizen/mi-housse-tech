@@ -160,7 +160,7 @@
     },
     {
       "nom": "REDMI Note 15 Pro+ 5G",
-      "type": "Série REDMI Note",
+      "type": "Série REDMI Note 15",
       "photo": "img/redmi-note-15-pro-plus-5g.webp",
       "statut": "disponible",
       "style": "standard",
@@ -197,7 +197,7 @@
     },
     {
       "nom": "REDMI Note 15 Pro 5G",
-      "type": "Série REDMI Note",
+      "type": "Série REDMI Note 15",
       "photo": "img/redmi-note-15-pro-5g.webp",
       "statut": "disponible",
       "style": "standard",
@@ -219,7 +219,7 @@
     },
     {
       "nom": "REDMI Note 15 Pro",
-      "type": "Série REDMI Note",
+      "type": "Série REDMI Note 15",
       "photo": "img/redmi-note-15-pro.webp",
       "statut": "disponible",
       "style": "standard",
@@ -256,7 +256,7 @@
     },
     {
       "nom": "REDMI Note 15",
-      "type": "Série REDMI Note",
+      "type": "Série REDMI Note 15",
       "photo": "img/redmi-note-15.webp",
       "statut": "disponible",
       "style": "standard",

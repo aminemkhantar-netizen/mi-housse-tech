@@ -105,7 +105,7 @@
       "nom": "Xiaomi Watch 2 Pro",
       "type": "Montre connectée",
       "photo": "img/xiaomi-watch-2-pro.webp",
-      "statut": "disponible",
+      "statut": "masque",
       "style": "standard",
       "couleur": "#b9bec7",
       "prix": "1 499 DH",
@@ -126,7 +126,7 @@
       "nom": "Xiaomi Watch 2",
       "type": "Montre connectée",
       "photo": "img/xiaomi-watch-2.webp",
-      "statut": "disponible",
+      "statut": "masque",
       "style": "standard",
       "couleur": "#b9bec7",
       "prix": "1 499 DH"

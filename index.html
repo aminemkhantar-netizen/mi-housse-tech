@@ -65,6 +65,10 @@ button { font: inherit; color: inherit; cursor: pointer; }
 .pill.dark:hover { background: var(--accent); border-color: var(--accent); }
 .count { min-width: 20px; height: 20px; border-radius: 999px; background: var(--accent); color: #fff; font-size: 12px; display: inline-grid; place-items: center; padding: 0 6px; }
 .count.bump { animation: bump .45s; }
+.cart-btn { position: relative; overflow: visible; }
+.cart-btn .count { position: absolute; top: -4px; right: -4px; min-width: 20px; height: 20px; font-size: 11px; line-height: 1; padding: 0 4px; border: 2px solid var(--paper); box-sizing: border-box; }
+.count[hidden] { display: none; }
+html[lang="ar"] .cart-btn .count { right: auto; left: -5px; }
 @keyframes bump { 40% { transform: scale(1.4); } }
 .dot { width: 7px; height: 7px; border-radius: 50%; background: #b8b2a8; }
 .open .dot { background: #2fbf71; box-shadow: 0 0 0 4px rgba(47,191,113,.18); }
@@ -354,7 +358,7 @@ html[lang="ar"] .arr { transform: scaleX(-1); }
       <button class="pill icon-btn" id="searchBtn" type="button" aria-label="Rechercher un produit" aria-expanded="false" aria-controls="q"><svg class="ico" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg></button>
       <span class="pill" id="status"><span class="dot"></span><span id="status-t">Ouvert 7j/7 · 10h–20h</span></span>
       <button class="pill" id="langBtn" type="button" lang="ar">العربية</button>
-      <button class="pill dark" id="cartBtn" type="button"><svg class="ico" viewBox="0 0 24 24"><path d="M3 4h2l2.4 11.2a2 2 0 0 0 2 1.6h7.7a2 2 0 0 0 2-1.5L21 8H6"/><circle cx="10" cy="20.5" r="1.2"/><circle cx="17" cy="20.5" r="1.2"/></svg><span>Panier</span><span class="count" id="cartCount">0</span></button>
+      <button class="pill dark icon-btn cart-btn" id="cartBtn" type="button" aria-label="Panier" title="Panier"><svg class="ico" viewBox="0 0 24 24"><path d="M3 4h2l2.4 11.2a2 2 0 0 0 2 1.6h7.7a2 2 0 0 0 2-1.5L21 8H6"/><circle cx="10" cy="20.5" r="1.2"/><circle cx="17" cy="20.5" r="1.2"/></svg><span class="count" id="cartCount">0</span></button>
     </div>
   </div>
 </header>
@@ -642,7 +646,7 @@ html[lang="ar"] .arr { transform: scaleX(-1); }
 
   // Panier
   var cart = []; try { cart = JSON.parse(localStorage.getItem('mht2-panier')) || []; } catch (e) {}
-  function save() { try { localStorage.setItem('mht2-panier', JSON.stringify(cart)); } catch (e) {} var n = cart.reduce(function (s, x) { return s + x.q; }, 0), c = $('cartCount'); c.textContent = n; c.classList.remove('bump'); void c.offsetWidth; c.classList.add('bump'); }
+  function save() { try { localStorage.setItem('mht2-panier', JSON.stringify(cart)); } catch (e) {} var n = cart.reduce(function (s, x) { return s + x.q; }, 0), c = $('cartCount'); c.textContent = n; c.hidden = !n; c.classList.remove('bump'); void c.offsetWidth; c.classList.add('bump'); }
   function addToCart(p, c, v, q, silent) {
     var key = p.nom + '|' + (c ? c.nom : '') + '|' + (v ? v.nom : '');
     var ex = cart.filter(function (x) { return x.k === key; })[0];

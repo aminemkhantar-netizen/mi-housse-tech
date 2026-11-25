@@ -45,6 +45,14 @@ button { font: inherit; color: inherit; cursor: pointer; }
 .top .wrap { display: grid; grid-template-columns: auto minmax(0,1fr) auto; align-items: center; height: 76px; gap: 28px; }
 .hsearch { width: min(560px, 100%); justify-self: center; }
 .hsearch input { padding-top: 12px; padding-bottom: 12px; font-size: 15px; }
+.top .top-r { grid-column: 3; }
+.top .hsearch { display: none; grid-column: 2; }
+.top.s-open .hsearch { display: block; animation: sIn .2s ease; }
+@keyframes sIn { from { opacity: 0; transform: translateY(-4px); } }
+.icon-btn { width: 42px; height: 42px; padding: 0; justify-content: center; }
+.icon-btn .ico { width: 19px; height: 19px; flex: none; }
+@media (max-width: 900px) { .top .hsearch { grid-column: 1 / -1; } .top .top-r { grid-column: auto; } }
+.top.s-open .icon-btn { background: var(--ink); color: #fff; border-color: var(--ink); }
 .top nav { display: flex; gap: 26px; font-size: 14px; font-weight: 500; }
 .top nav a { opacity: .72; transition: opacity .2s; }
 .top nav a:hover { opacity: 1; }
@@ -343,6 +351,7 @@ html[lang="ar"] .arr { transform: scaleX(-1); }
     <a class="brand" href="#accueil"><img src="logo.png" alt="" width="36" height="36"><span>Mi Housse Tech</span></a>
     <label class="search hsearch"><span class="sr">Rechercher un produit</span><svg class="ico" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><input id="q" type="search" placeholder="Rechercher : REDMI Note, montre, aspirateur…" autocomplete="off"></label>
     <div class="top-r">
+      <button class="pill icon-btn" id="searchBtn" type="button" aria-label="Rechercher un produit" aria-expanded="false" aria-controls="q"><svg class="ico" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg></button>
       <span class="pill" id="status"><span class="dot"></span><span id="status-t">Ouvert 7j/7 · 10h–20h</span></span>
       <button class="pill" id="langBtn" type="button" lang="ar">العربية</button>
       <button class="pill dark" id="cartBtn" type="button"><svg class="ico" viewBox="0 0 24 24"><path d="M3 4h2l2.4 11.2a2 2 0 0 0 2 1.6h7.7a2 2 0 0 0 2-1.5L21 8H6"/><circle cx="10" cy="20.5" r="1.2"/><circle cx="17" cy="20.5" r="1.2"/></svg><span>Panier</span><span class="count" id="cartCount">0</span></button>
@@ -767,6 +776,17 @@ html[lang="ar"] .arr { transform: scaleX(-1); }
 <script>
 // Connexion à l'espace /admin : si un lien d'invitation ou de mot de passe arrive sur l'accueil, on renvoie vers /admin
 if (window.netlifyIdentity) { window.netlifyIdentity.on('init', function (u) { if (!u) window.netlifyIdentity.on('login', function () { document.location.href = '/admin/'; }); }); }
+</script>
+<script>
+// Recherche : la barre s'ouvre en cliquant sur la loupe
+(function () {
+  var top = document.querySelector('header.top'), b = document.getElementById('searchBtn'), q = document.getElementById('q');
+  if (!top || !b || !q) return;
+  function set(o) { top.classList.toggle('s-open', o); b.setAttribute('aria-expanded', o ? 'true' : 'false'); if (o) setTimeout(function () { q.focus(); }, 30); }
+  b.addEventListener('click', function () { set(!top.classList.contains('s-open')); });
+  q.addEventListener('keydown', function (e) { if (e.key === 'Escape') { set(false); b.focus(); } });
+  document.addEventListener('click', function (e) { if (top.classList.contains('s-open') && !top.contains(e.target) && !q.value.trim()) set(false); });
+})();
 </script>
 </body>
 </html>

@@ -1,6 +1,15 @@
 {
   "produits": [
     {
+      "statut": "disponible",
+      "style": "standard",
+      "couleur": "#e9e9ee",
+      "photo": "img/img_0068.png",
+      "nom": "Xiaomi TV S Mini LED 98 2026",
+      "type": "Téléviseurs 98 pouces",
+      "prix": "22 499"
+    },
+    {
       "nom": "Xiaomi TV A PRO 32 2026",
       "type": "Téléviseur 32 pouces",
       "photo": "img/xiaomi-tv-a-32-2025.webp",
@@ -11,7 +20,7 @@
     },
     {
       "nom": "Xiaomi TV A 43 FHD 2026",
-      "type": "Téléviseur 43 pouces",
+      "type": "Téléviseurs 43 pouces",
       "photo": "img/xiaomi-tv-a-43-fhd-2025.webp",
       "statut": "disponible",
       "style": "standard",

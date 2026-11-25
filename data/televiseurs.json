@@ -10,7 +10,7 @@
       "prix": "1 499 DH"
     },
     {
-      "nom": "Xiaomi TV A 43 FHD 2025",
+      "nom": "Xiaomi TV A 43 FHD 2026",
       "type": "Téléviseur 43 pouces",
       "photo": "img/xiaomi-tv-a-43-fhd-2025.webp",
       "statut": "disponible",
@@ -76,7 +76,7 @@
       "nom": "Xiaomi TV S Pro Mini LED 55 2026",
       "type": "Téléviseur 55 pouces",
       "photo": "img/xiaomi-tv-s-pro-mini-led-55-2026.webp",
-      "statut": "disponible",
+      "statut": "masque",
       "style": "standard",
       "couleur": "#2c2c30",
       "prix": "6 799 DH"
@@ -103,7 +103,7 @@
       "nom": "Xiaomi TV S Mini LED 65 2026",
       "type": "Téléviseur Google TV",
       "photo": "img/xiaomi-tv-s-mini-led-65-2026.webp",
-      "statut": "disponible",
+      "statut": "epuise",
       "style": "standard",
       "couleur": "#2c2c30",
       "prix": "7 599 DH"
@@ -112,7 +112,7 @@
       "nom": "Xiaomi TV S Pro Mini LED 65 2026",
       "type": "Téléviseur 65 pouces",
       "photo": "img/xiaomi-tv-s-pro-mini-led-65-2026.webp",
-      "statut": "disponible",
+      "statut": "masque",
       "style": "standard",
       "couleur": "#2c2c30",
       "prix": "9 199 DH"
@@ -130,7 +130,7 @@
       "nom": "Xiaomi TV S Mini LED 75 2026",
       "type": "Téléviseur Google TV",
       "photo": "img/xiaomi-tv-s-mini-led-75-2026.webp",
-      "statut": "disponible",
+      "statut": "epuise",
       "style": "standard",
       "couleur": "#2c2c30",
       "prix": "9 899 DH"
@@ -139,7 +139,7 @@
       "nom": "Xiaomi TV S Pro Mini LED 75 2026",
       "type": "Téléviseur 75 pouces",
       "photo": "img/xiaomi-tv-s-pro-mini-led-75-2026.webp",
-      "statut": "disponible",
+      "statut": "masque",
       "style": "standard",
       "couleur": "#2c2c30",
       "prix": "11 999 DH"
@@ -175,7 +175,7 @@
       "nom": "Xiaomi Smart Projector L1 Pro",
       "type": "Vidéoprojecteur",
       "photo": "img/xiaomi-smart-projector-l1-pro.webp",
-      "statut": "disponible",
+      "statut": "epuise",
       "style": "standard",
       "couleur": "#2c2c30",
       "prix": "2 999 DH"

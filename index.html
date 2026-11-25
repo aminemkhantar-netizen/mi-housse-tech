@@ -539,7 +539,7 @@ html[lang="ar"] .arr { transform: scaleX(-1); }
   function buildRayon(r, list) {
     var s = el('section', 'rayon'); s.id = 'r-' + r[0];
     var w = el('div', 'wrap'); s.appendChild(w);
-    w.innerHTML = '<div class="rayon-head rev"><div><h2>' + esc(r[1]) + '</h2><p class="n">' + esc(r[2]) + ' · <span class="cnt">' + list.length + '</span> produits</p></div></div>';
+    w.innerHTML = '<div class="rayon-head rev"><div><h2>' + esc(r[1]) + '</h2></div></div>';
     var types = []; list.forEach(function (p) { if (types.indexOf(p.type) < 0) types.push(p.type); });
     var g = el('div', 'grid'), chips = el('div', 'chips'), cur = null, LIM = 8, showAll = false;
     var more = el('button', 'pill more', 'Voir tout le rayon'); more.type = 'button';

@@ -151,6 +151,8 @@ h2.one-line { white-space: nowrap; }
 .tile[href="#r-objets"] img { left: 50%; right: auto; width: 48%; height: 86%; bottom: 7%; transform: translateX(-50%); }
 .tile[href="#r-objets"]:hover img { transform: translateX(-50%) scale(1.06) rotate(-2deg); }
 html[lang="ar"] .tile[href="#r-objets"] img { left: 50%; right: auto; }
+.t-big[href="#r-electromenager"] img { width: auto; height: 70%; right: 7%; bottom: 6%; max-width: 62%; }
+html[lang="ar"] .t-big[href="#r-electromenager"] img { right: auto; left: 7%; width: auto; height: 78%; bottom: 6%; }
 .t-full { grid-column: span 6; }
 .tile.t-full img { width: 58%; height: 84%; right: 5%; bottom: 7%; }
 html[lang="ar"] .tile.t-full img { right: auto; left: 5%; width: 58%; height: 84%; }
@@ -337,7 +339,7 @@ html[lang="ar"] .arr { transform: scaleX(-1); }
   section { padding: 36px 0; }
   .finder { justify-items: stretch; width: 100%; } .needs { justify-content: flex-start; flex-wrap: nowrap; overflow-x: auto; padding-bottom: 4px; } .need { white-space: nowrap; }
   .bento { grid-template-columns: 1fr 1fr; grid-auto-rows: 160px; gap: 10px; }
-  .t-big { grid-column: span 2; grid-row: span 2; } .t-w, .t-s { grid-column: span 1; } .t-full { grid-column: span 2; } .tile[href="#r-objets"] img { width: 70%; height: 66%; bottom: 8%; } .tile.t-full img { width: 62%; height: 70%; right: 4%; bottom: 8%; }
+  .t-big { grid-column: span 2; grid-row: span 2; } .t-w, .t-s { grid-column: span 1; } .t-full { grid-column: span 2; } .t-big[href="#r-electromenager"] img { height: 74%; } .tile[href="#r-objets"] img { width: 70%; height: 66%; bottom: 8%; } .tile.t-full img { width: 62%; height: 70%; right: 4%; bottom: 8%; }
   .t-big h3 { font-size: 40px; } .tile { padding: 16px; border-radius: 20px; } .tile h3 { font-size: 22px; } .tile small { font-size: 11px; }
   .tile:not(.t-big) img { height: 50%; width: 60%; right: 8%; bottom: 7%; } .tile:not(.t-big) .go { display: none; }
   .grid { grid-template-columns: minmax(0,1fr) minmax(0,1fr); gap: 10px; } .pr { white-space: normal; }
@@ -411,11 +413,11 @@ html[lang="ar"] .arr { transform: scaleX(-1); }
         <div class="grid" id="res-g"></div>
       </div>
       <div class="bento" id="bento">
-        <a class="tile t-big rev" href="#r-smartphones"><div><small data-n="smartphones">Smartphones</small><h3>Smartphones</h3></div><span class="go">↗</span><img src="img/banner-xiaomi-17t.webp" alt="" loading="lazy"></a>
+        <a class="tile t-big rev" href="#r-electromenager"><div><small data-n="electromenager">Électroménager</small><h3>Électroménager</h3></div><span class="go">↗</span><img src="img/fan/electromenager-duo.webp" alt="" loading="lazy"></a>
         <a class="tile t-w rev" href="#r-objets"><div><small data-n="objets">Montres, écouteurs, batteries</small><h3>Objets connectés</h3></div><span class="go">↗</span><img src="img/fan/objets-1.webp" alt="" loading="lazy"></a>
         <a class="tile t-w t-warm rev" href="#r-televiseurs"><div><small data-n="televiseurs">De 32 à 100 pouces</small><h3>Téléviseurs</h3></div><span class="go">↗</span><img src="img/fan/televiseurs-1.webp" alt="" loading="lazy"></a>
         <a class="tile t-s rev" href="#r-tablettes"><div><small data-n="tablettes">Tablettes</small><h3>Tablettes</h3></div><span class="go">↗</span><img src="img/banner-pad2pro.webp" alt="" loading="lazy"></a>
-        <a class="tile t-s t-warm rev" href="#r-electromenager"><div><small data-n="electromenager">Électroménager</small><h3>Électroménager</h3></div><span class="go">↗</span><img src="img/fan/electromenager-duo.webp" alt="" loading="lazy"></a>
+        <a class="tile t-s t-warm rev" href="#r-smartphones"><div><small data-n="smartphones">Smartphones</small><h3>Smartphones</h3></div><span class="go">↗</span><img src="img/banner-xiaomi-17t.webp" alt="" loading="lazy"></a>
         <a class="tile t-s rev" href="#r-aspirateurs"><div><small data-n="aspirateurs">Aspirateurs</small><h3>Aspirateurs</h3></div><span class="go">↗</span><img src="img/tile-aspirateur.webp" alt="" loading="lazy"></a>
         <a class="tile t-s t-warm rev" href="#r-securite"><div><small data-n="securite">Sécurité</small><h3>Sécurité</h3></div><span class="go">↗</span><img src="img/fan/securite-1.webp" alt="" loading="lazy"></a>
         <a class="tile t-s rev" href="#r-purificateurs"><div><small data-n="purificateurs">Purificateurs</small><h3>Purificateurs</h3></div><span class="go">↗</span><img src="img/fan/purificateurs-1.webp" alt="" loading="lazy"></a>

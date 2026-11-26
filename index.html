@@ -422,16 +422,6 @@ html[lang="ar"] .arr { transform: scaleX(-1); }
     </div>
   </section>
 
-  <section id="selection" style="padding-top:0">
-    <div class="wrap">
-      <div class="sec-head rev">
-        <h2 class="one-line">La sélection <em>du moment</em></h2>
-        <p>Les modèles que nos clients choisissent le plus.</p>
-      </div>
-      <div class="grid rail" id="sel-g"></div>
-    </div>
-  </section>
-
   <div id="catalogue"></div>
 
   <div class="store" id="boutique">
@@ -726,7 +716,7 @@ html[lang="ar"] .arr { transform: scaleX(-1); }
   })).then(function () {
     var cat = $('catalogue');
     RAYONS.forEach(function (r) { var l = BY[r[0]]; ALL = ALL.concat(l); if (l.length) cat.appendChild(buildRayon(r, l)); });
-    var sel = $('sel-g'); SELECTION.forEach(function (n) { var p = ALL.filter(function (x) { return x.nom === n; })[0]; if (p) sel.appendChild(card(p)); });
+    var sel = $('sel-g'); if (sel) SELECTION.forEach(function (n) { var p = ALL.filter(function (x) { return x.nom === n; })[0]; if (p) sel.appendChild(card(p)); });
     watch();
     document.dispatchEvent(new Event('catalogue-pret'));
   });

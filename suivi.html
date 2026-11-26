@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Suivre ma commande · Mi Housse Tech</title>
+<meta name="robots" content="noindex">
+<link rel="icon" href="logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter+Tight:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root { color-scheme: light; --paper: #f3efe8; --card: #faf8f4; --ink: #141414; --muted: #6f6a62; --line: rgba(20,20,20,.12); --accent: #ff6900; --green: #1fa855; --red: #c0392b; --serif: "Instrument Serif", Georgia, serif; --sans: "Inter Tight", system-ui, sans-serif; }
+* { box-sizing: border-box; margin: 0; }
+body { font-family: var(--sans); background: var(--paper); color: var(--ink); -webkit-font-smoothing: antialiased; }
+a { color: inherit; }
+.top { border-bottom: 1px solid var(--line); }
+.top .w { max-width: 1000px; margin: 0 auto; padding: 0 20px; height: 70px; display: flex; align-items: center; justify-content: space-between; }
+.brand { display: flex; gap: 10px; align-items: center; font-weight: 700; text-decoration: none; }
+.brand img { width: 34px; height: 34px; border-radius: 10px; }
+.back { border: 1px solid var(--line); border-radius: 999px; padding: 8px 14px; font-size: 14px; text-decoration: none; }
+main { max-width: 760px; margin: 0 auto; padding: 40px 20px 60px; }
+h1 { font-family: var(--serif); font-weight: 400; font-size: clamp(40px, 6vw, 60px); line-height: 1; }
+h1 em { color: var(--accent); }
+.lead { color: var(--muted); margin: 12px 0 26px; font-size: 16px; line-height: 1.5; }
+form { display: grid; grid-template-columns: 1fr 1fr auto; gap: 10px; background: var(--card); border: 1px solid var(--line); border-radius: 20px; padding: 14px; }
+label { font-size: 12px; color: var(--muted); display: flex; flex-direction: column; gap: 5px; }
+input { font: inherit; font-size: 15px; padding: 12px 14px; border: 1px solid var(--line); border-radius: 12px; background: #fff; color: var(--ink); -webkit-text-fill-color: var(--ink); width: 100%; min-width: 0; }
+button { align-self: end; font: inherit; font-weight: 600; background: var(--ink); color: #fff; border: 0; border-radius: 999px; padding: 13px 22px; font-size: 15px; cursor: pointer; }
+button:disabled { opacity: .6; }
+.msg { margin-top: 16px; padding: 14px 16px; border-radius: 14px; background: #fff; border: 1px solid var(--line); font-size: 15px; line-height: 1.5; }
+.msg.err { color: var(--red); }
+.res { margin-top: 22px; background: var(--card); border: 1px solid var(--line); border-radius: 22px; padding: 24px; }
+.rh { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; flex-wrap: wrap; margin-bottom: 22px; }
+.rh b { font-size: 20px; }
+.rh small { display: block; color: var(--muted); margin-top: 4px; font-size: 13px; }
+.badge { background: #fff1e6; color: #c2550f; font-weight: 600; font-size: 13px; border-radius: 999px; padding: 7px 12px; }
+.badge.ok { background: #e6f6ec; color: #157a3e; } .badge.ko { background: #fbeaea; color: var(--red); }
+.note { background: #fff; border-radius: 12px; padding: 12px 14px; margin-bottom: 18px; font-size: 14px; line-height: 1.5; }
+.tl { list-style: none; padding: 0; }
+.tl li { position: relative; padding: 0 0 22px 40px; }
+.tl li:last-child { padding-bottom: 0; }
+.tl li::before { content: ""; position: absolute; left: 11px; top: 24px; bottom: -2px; width: 2px; background: var(--line); }
+.tl li:last-child::before { display: none; }
+.tl li.done::before { background: var(--green); }
+.dot { position: absolute; left: 0; top: 0; width: 24px; height: 24px; border-radius: 50%; border: 2px solid var(--line); background: #fff; display: grid; place-items: center; font-size: 13px; color: #fff; }
+.done .dot { background: var(--green); border-color: var(--green); }
+.now .dot { border-color: var(--accent); box-shadow: 0 0 0 5px rgba(255,105,0,.15); }
+.now .dot::after { content: ""; width: 10px; height: 10px; border-radius: 50%; background: var(--accent); }
+.ko .dot { background: var(--red); border-color: var(--red); }
+.tl b { font-size: 15px; } .tl p { color: var(--muted); font-size: 13.5px; margin-top: 3px; } .todo b { color: #a39d94; }
+.items { margin-top: 22px; border-top: 1px solid var(--line); padding-top: 14px; }
+.it { display: flex; justify-content: space-between; gap: 12px; padding: 8px 0; font-size: 14px; border-bottom: 1px solid #efebe4; }
+.it span:last-child { font-weight: 600; white-space: nowrap; }
+.tot { display: flex; justify-content: space-between; gap: 10px; font-size: 14px; padding: 6px 0; }
+.tot.big { font-weight: 700; font-size: 16px; border-top: 1px solid var(--line); margin-top: 8px; padding-top: 12px; }
+.help { margin-top: 16px; font-size: 14px; color: var(--muted); }
+.help a { color: var(--ink); font-weight: 600; }
+@media (max-width: 640px) { form { grid-template-columns: 1fr; } button { width: 100%; } main { padding-top: 26px; } }
+</style>
+</head>
+<body>
+<div class="top"><div class="w"><a class="brand" href="./"><img src="logo.png" alt="">Mi Housse Tech</a><a class="back" href="./">← Retour au site</a></div></div>
+<main>
+  <h1>Suivre ma <em>commande</em></h1>
+  <p class="lead">Entrez le numéro de commande reçu par e-mail (par exemple MHT-7K3QX9) et le téléphone utilisé pour la commande.</p>
+  <form id="f" novalidate>
+    <label>Numéro de commande<input name="code" autocomplete="off" autocapitalize="characters" placeholder="MHT-…"></label>
+    <label>Téléphone<input name="tel" type="tel" inputmode="tel" autocomplete="tel" placeholder="06 00 00 00 00"></label>
+    <button id="go">Suivre</button>
+  </form>
+  <div id="out"></div>
+</main>
+<script src="commande-config.js"></script>
+<script>
+(function () {
+  var API = window.MHT_COMMANDES || '', out = document.getElementById('out'), f = document.getElementById('f'), go = document.getElementById('go');
+  function esc(s) { return String(s == null ? '' : s).replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }); }
+  function dh(n) { return typeof n === 'number' ? String(n).replace(/\B(?=(\d{3})+(?!\d))/g, ' ') + ' DH' : esc(n); }
+  function quand(d) { try { var x = new Date(d); if (isNaN(x)) return ''; return x.toLocaleDateString('fr-FR', { day: '2-digit', month: '2-digit' }) + ' à ' + x.toLocaleTimeString('fr-FR', { hour: '2-digit', minute: '2-digit' }); } catch (e) { return ''; } }
+  function msg(t, err) { out.innerHTML = '<div class="msg' + (err ? ' err' : '') + '">' + t + '</div>'; }
+  var TXT = { 'En attente de confirmation': 'Confirmez la commande avec le bouton orange de l’e-mail reçu.', 'Confirmée': 'Merci, nous préparons votre commande.', 'Préparée': 'Votre commande est prête.', 'Expédiée': 'Le livreur vous appellera avant de passer.', 'Livrée': 'Merci pour votre achat !' };
+  var ETAPES = [['En attente de confirmation', 'Commande reçue'], ['Confirmée', 'Confirmée'], ['Préparée', 'Préparée en boutique'], ['Expédiée', 'Expédiée'], ['Livrée', 'Livrée']];
+  function afficher(c) {
+    var quandS = {}; (c.historique || []).forEach(function (h) { quandS[h.s] = h.d; });
+    var ko = c.statut === 'Annulée', idx = -1; ETAPES.forEach(function (e, i) { if (e[0] === c.statut) idx = i; });
+    if (ko) ETAPES.forEach(function (e, i) { if (quandS[e[0]]) idx = i; });
+    var tl = ETAPES.map(function (e, i) {
+      var cls = ko ? (i <= idx ? 'done' : 'todo') : (i < idx || (i === idx && c.statut === 'Livrée') ? 'done' : i === idx ? 'now' : 'todo');
+      if (i === 0 && cls === 'now') cls = 'now';
+      var label = e[1] + (i === 0 && c.statut === 'En attente de confirmation' ? ' · en attente de votre confirmation' : '');
+      var detail = quandS[e[0]] ? quand(quandS[e[0]]) : (i === 4 ? 'Paiement à la réception' : '');
+      if (cls === 'now' && TXT[c.statut]) detail = (detail ? detail + ' · ' : '') + TXT[c.statut];
+      return '<li class="' + cls + '"><span class="dot">' + (cls === 'done' ? '✓' : '') + '</span><b>' + esc(label) + '</b>' + (detail ? '<p>' + esc(detail) + '</p>' : '') + '</li>';
+    }).join('');
+    if (ko) tl += '<li class="ko"><span class="dot">×</span><b>Annulée</b><p>' + esc(quand(quandS['Annulée'])) + ' · Une question ? Appelez-nous.</p></li>';
+    var badge = ko ? '<span class="badge ko">Annulée</span>' : c.statut === 'Livrée' ? '<span class="badge ok">Livrée</span>' : '<span class="badge">' + esc(c.statut) + '</span>';
+    var lieu = c.reception === 'Retrait en boutique' ? 'Retrait en boutique' : 'Livraison' + (c.ville ? ' à ' + esc(c.ville) : '');
+    var items = (c.articles || []).map(function (a) { var m = String(a).split(' — '); return '<div class="it"><span>' + esc(m[0]) + '</span><span>' + esc(m[1] || '') + '</span></div>'; }).join('');
+    var frais = typeof c.frais === 'number' ? (c.frais ? dh(c.frais) : 'Gratuite') : 'À confirmer';
+    out.innerHTML = '<div class="res"><div class="rh"><div><b>Commande ' + esc(c.code) + '</b><small>Passée le ' + esc(new Date(c.date).toLocaleDateString('fr-FR')) + ' · ' + lieu + ' · ' + esc(c.prenom) + (c.tel ? ' · ' + esc(c.tel) : '') + '</small></div>' + badge + '</div>' +
+      (c.note ? '<div class="note"><b>Message de la boutique :</b> ' + esc(c.note) + '</div>' : '') +
+      '<ol class="tl">' + tl + '</ol><div class="items">' + items +
+      '<div class="tot"><span>Sous-total</span><span>' + dh(c.sousTotal) + '</span></div>' +
+      (c.reception === 'Retrait en boutique' ? '' : '<div class="tot"><span>Livraison</span><span>' + frais + '</span></div>') +
+      '<div class="tot big"><span>Total à payer' + (c.reception === 'Retrait en boutique' ? ' en boutique' : ' à la livraison') + '</span><span>' + dh(c.total) + (typeof c.frais === 'number' || c.reception === 'Retrait en boutique' ? '' : ' + livraison') + '</span></div></div>' +
+      '<p class="help">Une question ? Appelez le <a href="tel:+212643745842">06 43 74 58 42</a> en donnant votre numéro de commande.</p></div>';
+  }
+  function chercher(q) {
+    if (!API) { msg('Le suivi de commande sera bientôt disponible. En attendant, appelez le <a href="tel:+212643745842">06 43 74 58 42</a>.', true); return; }
+    go.disabled = true; msg('Recherche…');
+    fetch(API + (API.indexOf('?') < 0 ? '?' : '&') + q).then(function (r) { return r.json(); })
+      .then(function (c) { if (!c.ok) throw new Error(c.erreur); afficher(c); })
+      .catch(function (e) { msg(esc(e && e.message && e.message !== 'Failed to fetch' ? e.message : 'Service momentanément indisponible. Réessayez ou appelez le 06 43 74 58 42.'), true); })
+      .then(function () { go.disabled = false; });
+  }
+  f.onsubmit = function (e) {
+    e.preventDefault();
+    var code = f.code.value.trim(), tel = f.tel.value.trim();
+    if (!code || !tel) { msg('Indiquez le numéro de commande et le téléphone.', true); return; }
+    chercher('action=suivi&code=' + encodeURIComponent(code) + '&tel=' + encodeURIComponent(tel));
+  };
+  var t = new URLSearchParams(location.search).get('t');
+  if (t) chercher('action=suivi&t=' + encodeURIComponent(t));
+})();
+</script>
+</body>
+</html>

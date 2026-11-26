@@ -1,0 +1,50 @@
+MI HOUSSE TECH — COMMANDES PAR E-MAIL ET SUIVI DE COMMANDE
+==========================================================
+
+Comment ça marche
+-----------------
+1. Le client remplit le panier (e-mail obligatoire) et clique « Confirmer la commande ».
+2. La commande est écrite dans votre tableau Google Sheets « Commandes ».
+3. Le client reçoit un e-mail avec le récapitulatif et le bouton « Je confirme ma commande ».
+   Sans clic sous 48 h, la commande passe automatiquement en « Annulée ».
+4. Vous recevez un e-mail « Nouvelle commande » à chaque commande.
+5. Vous faites avancer la commande en changeant la colonne « Statut » :
+   Confirmée → Préparée → Expédiée → Livrée (ou Annulée).
+   À chaque changement, le client reçoit un e-mail.
+   Colonne « Note » : écrivez un message pour le client (ex. « Livraison demain entre 14h et 18h »),
+   il apparaît dans l'e-mail et sur la page de suivi.
+6. Le client suit sa commande sur  /suivi.html  (lien dans ses e-mails, ou numéro + téléphone).
+
+Mise en place (une seule fois, ≈ 15 minutes)
+-------------------------------------------
+1. Créez un compte Gmail pour la boutique (ex. mihoussetech@gmail.com). Les e-mails partiront de là.
+2. Connecté à ce Gmail, ouvrez https://sheets.new  → renommez le fichier « Mi Housse Tech — Commandes ».
+3. Menu  Extensions > Apps Script.
+4. Effacez tout le texte, collez le contenu de  commandes/Code.gs , cliquez sur l'icône Enregistrer.
+5. En haut, choisissez la fonction  installer  puis cliquez  Exécuter.
+   Google demande des autorisations : « Examiner les autorisations » → votre compte →
+   « Paramètres avancés » → « Accéder à … (non sécurisé) » → « Autoriser ».
+   (C'est votre propre programme : l'avertissement est normal.)
+6. Bouton bleu  Déployer > Nouveau déploiement  → roue dentée → « Application Web ».
+     - Exécuter en tant que : Moi
+     - Qui a accès : Tout le monde
+   → Déployer → copiez l'« URL de l'application Web » (elle finit par /exec).
+7. Envoyez cette URL (ce n'est pas un mot de passe). Elle se met dans le fichier
+   commande-config.js du site :   window.MHT_COMMANDES = 'https://script.google.com/macros/s/…/exec';
+   Tant que ce fichier est vide, le panier continue d'envoyer les commandes par WhatsApp.
+
+Réglages (en haut de Code.gs, section CONFIG)
+---------------------------------------------
+FRAIS             : null = « frais confirmés par e-mail ». Exemple fixe : { 'kenitra': 30, 'defaut': 50 }
+DELAI             : phrase affichée dans l'e-mail.
+ANNULATION_HEURES : 48 par défaut (0 = jamais d'annulation automatique).
+Après une modification de Code.gs : Déployer > Gérer les déploiements > crayon > Version : Nouvelle version > Déployer
+(l'URL reste la même).
+
+Limites
+-------
+- Gmail gratuit : environ 100 e-mails par jour (≈ 30 à 40 commandes par jour avec les e-mails de suivi).
+- Les e-mails peuvent arriver dans « Promotions » ou « Spam » chez le client : la page de confirmation le lui dit.
+- Les prix sont revérifiés avec le catalogue du site (data/*.json) : un client ne peut pas modifier un prix.
+- Sécurité du suivi : code aléatoire (MHT-XXXXXX), téléphone obligatoire, 5 essais ratés = blocage 15 min,
+  adresse et e-mail jamais affichés sur la page de suivi.

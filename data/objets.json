@@ -1,89 +1,6 @@
 {
   "produits": [
     {
-      "nom": "Xiaomi Watch S5",
-      "type": "Montre connectée",
-      "photo": "img/xiaomi-watch-s5.webp",
-      "statut": "disponible",
-      "style": "mise-en-avant",
-      "couleur": "#3f6fd8",
-      "prix": "1 899 DH",
-      "couleurs": [
-        {
-          "nom": "Bleu Céramique",
-          "hex": "#596586",
-          "photo": "img/c/xiaomi-watch-s5-0.webp"
-        },
-        {
-          "nom": "Noir",
-          "hex": "#000000",
-          "photo": "img/c/xiaomi-watch-s5-1.webp"
-        },
-        {
-          "nom": "Vert Jungle",
-          "hex": "#697561",
-          "photo": "img/c/xiaomi-watch-s5-2.webp"
-        }
-      ]
-    },
-    {
-      "nom": "Xiaomi Smart Band 11",
-      "type": "Bracelet d'activité",
-      "photo": "img/xiaomi-smart-band-11.webp",
-      "statut": "disponible",
-      "style": "mise-en-avant",
-      "couleur": "#2c2c30",
-      "prix": "549 DH",
-      "couleurs": [
-        {
-          "nom": "Noir Minuit",
-          "hex": "#1e1f23",
-          "photo": "img/c/xiaomi-smart-band-11-0.webp"
-        },
-        {
-          "nom": "Argent Glacier",
-          "hex": "#d1d2d7",
-          "photo": "img/c/xiaomi-smart-band-11-1.webp"
-        },
-        {
-          "nom": "Rose Mystique",
-          "hex": "#e1c5ce",
-          "photo": "img/c/xiaomi-smart-band-11-2.webp"
-        },
-        {
-          "nom": "Blanc perle",
-          "hex": "#f0f1f2",
-          "photo": "img/c/xiaomi-smart-band-11-3.webp"
-        },
-        {
-          "nom": "Violet Lavande",
-          "hex": "#d7d4ef",
-          "photo": "img/c/xiaomi-smart-band-11-4.webp"
-        }
-      ]
-    },
-    {
-      "nom": "Xiaomi Watch 5",
-      "type": "Montre connectée",
-      "photo": "img/xiaomi-watch-5.webp",
-      "statut": "disponible",
-      "style": "standard",
-      "couleur": "#2c2c30",
-      "prix": "3 229 DH",
-      "couleurs": [
-        {
-          "nom": "Noir",
-          "hex": "#000000",
-          "photo": "img/c/xiaomi-watch-5-0.webp"
-        },
-        {
-          "nom": "Vert genévrier",
-          "hex": "#656f63",
-          "photo": "img/c/xiaomi-watch-5-1.webp"
-        }
-      ]
-    },
-    {
       "nom": "Xiaomi Watch S4",
       "type": "Montre connectée",
       "photo": "img/xiaomi-watch-s4.webp",
@@ -93,124 +10,13 @@
       "prix": "1 499 DH"
     },
     {
-      "nom": "Xiaomi Watch S4 41mm",
-      "type": "Montre connectée",
-      "photo": "img/xiaomi-watch-s4-41mm.webp",
-      "statut": "disponible",
-      "style": "standard",
-      "couleur": "#b9bec7",
-      "prix": "1 299 DH"
-    },
-    {
-      "nom": "Xiaomi Watch 2 Pro",
-      "type": "Montre connectée",
-      "photo": "img/xiaomi-watch-2-pro.webp",
-      "statut": "masque",
-      "style": "standard",
-      "couleur": "#b9bec7",
-      "prix": "1 499 DH",
-      "couleurs": [
-        {
-          "nom": "Argent",
-          "hex": "#f3f3f3",
-          "photo": "img/c/xiaomi-watch-2-pro-0.webp"
-        },
-        {
-          "nom": "Noir",
-          "hex": "#000000",
-          "photo": "img/c/xiaomi-watch-2-pro-1.webp"
-        }
-      ]
-    },
-    {
-      "nom": "Xiaomi Watch 2",
-      "type": "Montre connectée",
-      "photo": "img/xiaomi-watch-2.webp",
-      "statut": "masque",
-      "style": "standard",
-      "couleur": "#b9bec7",
-      "prix": "1 499 DH"
-    },
-    {
-      "nom": "Xiaomi Smart Band 11 Active",
-      "type": "Bracelet d'activité",
-      "photo": "img/xiaomi-smart-band-11-active.webp",
-      "statut": "disponible",
-      "style": "standard",
-      "couleur": "#2c2c30",
-      "prix": "299 DH",
-      "couleurs": [
-        {
-          "nom": "Noir",
-          "hex": "#000000",
-          "photo": "img/c/xiaomi-smart-band-11-active-0.webp"
-        },
-        {
-          "nom": "Gris",
-          "hex": "#aaaaaa",
-          "photo": "img/c/xiaomi-smart-band-11-active-1.webp"
-        }
-      ]
-    },
-    {
-      "nom": "Xiaomi Smart Band 10",
-      "type": "Bracelet d'activité",
-      "photo": "img/xiaomi-smart-band-10.webp",
-      "statut": "disponible",
-      "style": "standard",
-      "couleur": "#2c2c30",
-      "prix": "479 DH",
-      "couleurs": [
-        {
-          "nom": "Noir",
-          "hex": "#000000",
-          "photo": "img/c/xiaomi-smart-band-10-0.webp"
-        },
-        {
-          "nom": "Argent",
-          "hex": "#f3f3f3",
-          "photo": "img/c/xiaomi-smart-band-10-1.webp"
-        }
-      ]
-    },
-    {
-      "nom": "REDMI Watch 6",
-      "type": "Montre connectée",
-      "photo": "img/redmi-watch-6.webp",
-      "statut": "disponible",
-      "style": "standard",
-      "couleur": "#b9bec7",
-      "prix": "999 DH"
-    },
-    {
-      "nom": "REDMI Watch 6 Lite",
-      "type": "Montre connectée",
-      "photo": "img/redmi-watch-6-lite.webp",
-      "statut": "disponible",
-      "style": "standard",
-      "couleur": "#2c2c30",
-      "prix": "699 DH",
-      "couleurs": [
-        {
-          "nom": "Noir",
-          "hex": "#000000",
-          "photo": "img/c/redmi-watch-6-lite-0.webp"
-        },
-        {
-          "nom": "Gris acier",
-          "hex": "#dedcd5",
-          "photo": "img/c/redmi-watch-6-lite-1.webp"
-        }
-      ]
-    },
-    {
       "nom": "REDMI Watch 5",
       "type": "Montre connectée",
       "photo": "img/redmi-watch-5.webp",
       "statut": "disponible",
       "style": "standard",
       "couleur": "#2c2c30",
-      "prix": "899 DH",
+      "prix": "1310",
       "couleurs": [
         {
           "nom": "Noir Obsidienne",
@@ -272,152 +78,13 @@
       ]
     },
     {
-      "nom": "Xiaomi Buds 6",
-      "type": "Écouteurs sans fil",
-      "photo": "img/xiaomi-buds-6.webp",
-      "statut": "disponible",
-      "style": "standard",
-      "couleur": "#2c2c30",
-      "prix": "1 199 DH",
-      "couleurs": [
-        {
-          "nom": "Noir Graphite",
-          "hex": "#282828",
-          "photo": "img/c/xiaomi-buds-6-0.webp"
-        },
-        {
-          "nom": "Blanc perle",
-          "hex": "#f0f1f2",
-          "photo": "img/c/xiaomi-buds-6-1.webp"
-        },
-        {
-          "nom": "Gris Titane",
-          "hex": "#979390",
-          "photo": "img/c/xiaomi-buds-6-2.webp"
-        }
-      ]
-    },
-    {
-      "nom": "Xiaomi Buds 5 Pro",
-      "type": "Écouteurs sans fil",
-      "photo": "img/xiaomi-buds-5-pro.webp",
-      "statut": "disponible",
-      "style": "standard",
-      "couleur": "#b9bec7",
-      "prix": "1 829 DH"
-    },
-    {
-      "nom": "Xiaomi OpenWear Stereo Pro",
-      "type": "Écouteurs ouverts",
-      "photo": "img/xiaomi-openwear-stereo-pro.webp",
-      "statut": "disponible",
-      "style": "standard",
-      "couleur": "#e9e9ee",
-      "prix": "1 199 DH",
-      "couleurs": [
-        {
-          "nom": "Noir",
-          "hex": "#000000",
-          "photo": "img/c/xiaomi-openwear-stereo-pro-0.webp"
-        },
-        {
-          "nom": "Or moka",
-          "hex": "#d2c4b5",
-          "photo": "img/c/xiaomi-openwear-stereo-pro-1.webp"
-        },
-        {
-          "nom": "Argent",
-          "hex": "#f3f3f3",
-          "photo": "img/c/xiaomi-openwear-stereo-pro-2.webp"
-        }
-      ]
-    },
-    {
-      "nom": "REDMI Buds 8 Pro",
-      "type": "Écouteurs sans fil",
-      "photo": "img/redmi-buds-8-pro.webp",
-      "statut": "disponible",
-      "style": "standard",
-      "couleur": "#2c2c30",
-      "prix": "729 DH",
-      "couleurs": [
-        {
-          "nom": "Blanc Nuage",
-          "hex": "#fafafa",
-          "photo": "img/c/redmi-buds-8-pro-0.webp"
-        },
-        {
-          "nom": "Noir Obsidienne",
-          "hex": "#434448",
-          "photo": "img/c/redmi-buds-8-pro-1.webp"
-        },
-        {
-          "nom": "Glacier Blue",
-          "hex": "#cfdde4",
-          "photo": "img/c/redmi-buds-8-pro-2.webp"
-        }
-      ]
-    },
-    {
-      "nom": "REDMI Buds 8",
-      "type": "Écouteurs sans fil",
-      "photo": "img/redmi-buds-8.webp",
-      "statut": "disponible",
-      "style": "standard",
-      "couleur": "#e9e9ee",
-      "prix": "499 DH",
-      "couleurs": [
-        {
-          "nom": "Noir",
-          "hex": "#18181b",
-          "photo": "img/c/redmi-buds-8-0.webp"
-        },
-        {
-          "nom": "Blanc",
-          "hex": "#f5f6f8",
-          "photo": "img/c/redmi-buds-8-1.webp"
-        },
-        {
-          "nom": "Vert",
-          "hex": "#e4f0e2",
-          "photo": "img/c/redmi-buds-8-2.webp"
-        }
-      ]
-    },
-    {
-      "nom": "REDMI Buds 8 Active",
-      "type": "Écouteurs sans fil",
-      "photo": "img/redmi-buds-8-active.webp",
-      "statut": "disponible",
-      "style": "standard",
-      "couleur": "#2c2c30",
-      "prix": "209 DH",
-      "couleurs": [
-        {
-          "nom": "Bleu",
-          "hex": "#daf3fc",
-          "photo": "img/c/redmi-buds-8-active-0.webp"
-        },
-        {
-          "nom": "Blanc",
-          "hex": "#ffffff",
-          "photo": "img/c/redmi-buds-8-active-1.webp"
-        },
-        {
-          "nom": "Noir",
-          "hex": "#000000",
-          "photo": "img/c/redmi-buds-8-active-2.webp"
-        }
-      ]
-    },
-    {
       "nom": "REDMI Buds 6 Pro",
       "type": "Écouteurs sans fil",
       "photo": "img/redmi-buds-6-pro.webp",
       "statut": "disponible",
       "style": "standard",
       "couleur": "#2c2c30",
-      "prix": "649 DH",
+      "prix": "899",
       "couleurs": [
         {
           "nom": "Noir Espace",
@@ -443,7 +110,7 @@
       "statut": "disponible",
       "style": "standard",
       "couleur": "#2c2c30",
-      "prix": "399 DH",
+      "prix": "529",
       "couleurs": [
         {
           "nom": "Noir Minuit",
@@ -495,7 +162,7 @@
       "statut": "disponible",
       "style": "standard",
       "couleur": "#2c2c30",
-      "prix": "129 DH",
+      "prix": "159",
       "couleurs": [
         {
           "nom": "Noir",
@@ -550,16 +217,7 @@
       ]
     },
     {
-      "nom": "Xiaomi Portable Photo Printer Pro",
-      "type": "Imprimante photo portable",
-      "photo": "img/xiaomi-portable-photo-printer-pro.webp",
-      "statut": "disponible",
-      "style": "standard",
-      "couleur": "#e9e9ee",
-      "prix": "1 369 DH"
-    },
-    {
-      "nom": "Xiaomi Power Bank 10000mAh Integrated Cable",
+      "nom": "Xiaomi Power Bank 20000mAh Integrated Cable",
       "type": "Batterie externe",
       "photo": "img/xiaomi-power-bank-10000mah-integrated-cable.webp",
       "statut": "disponible",
@@ -580,112 +238,13 @@
       ]
     },
     {
-      "nom": "Xiaomi UltraThin Magnetic Power Bank 5000",
-      "type": "Batterie externe",
-      "photo": "img/xiaomi-ultrathin-magnetic-power-bank-5000.webp",
-      "statut": "disponible",
-      "style": "standard",
-      "couleur": "#e9e9ee",
-      "prix": "839 DH"
-    },
-    {
-      "nom": "Xiaomi Ultra Slim Power Bank 5000",
-      "type": "Batterie externe",
-      "photo": "img/xiaomi-ultra-slim-power-bank-5000.webp",
-      "statut": "disponible",
-      "style": "standard",
-      "couleur": "#b9bec7",
-      "prix": "209 DH"
-    },
-    {
-      "nom": "Xiaomi 33W Power Bank 10000",
-      "type": "Batterie externe",
-      "photo": "img/xiaomi-33w-power-bank-10000.webp",
-      "statut": "disponible",
-      "style": "standard",
-      "couleur": "#3f6fd8",
-      "prix": "299 DH",
-      "couleurs": [
-        {
-          "nom": "Marron clair",
-          "hex": "#ddd8d2",
-          "photo": "img/c/xiaomi-33w-power-bank-10000-0.webp"
-        },
-        {
-          "nom": "Bleu foncé",
-          "hex": "#42466e",
-          "photo": "img/c/xiaomi-33w-power-bank-10000-1.webp"
-        }
-      ]
-    },
-    {
       "nom": "Xiaomi 165W Power Bank 10000",
       "type": "Batterie externe",
       "photo": "img/xiaomi-165w-power-bank-10000.webp",
       "statut": "disponible",
       "style": "standard",
       "couleur": "#b9bec7",
-      "prix": "499 DH"
-    },
-    {
-      "nom": "REDMI 18W Power Bank 20000",
-      "type": "Batterie externe",
-      "photo": "img/redmi-18w-power-bank-20000.webp",
-      "statut": "disponible",
-      "style": "standard",
-      "couleur": "#2c2c30",
-      "prix": "179 DH"
-    },
-    {
-      "nom": "Xiaomi 67W Power Bank 20000",
-      "type": "Batterie externe",
-      "photo": "img/xiaomi-67w-power-bank-20000.webp",
-      "statut": "disponible",
-      "style": "standard",
-      "couleur": "#e9e9ee",
-      "prix": "499 DH",
-      "couleurs": [
-        {
-          "nom": "Beige sable",
-          "hex": "#e7e3d7",
-          "photo": "img/c/xiaomi-67w-power-bank-20000-0.webp"
-        },
-        {
-          "nom": "Bleu glace",
-          "hex": "#c5d5e8",
-          "photo": "img/c/xiaomi-67w-power-bank-20000-1.webp"
-        }
-      ]
-    },
-    {
-      "nom": "Xiaomi 212W Power Bank 25000",
-      "type": "Batterie externe",
-      "photo": "img/xiaomi-212w-power-bank-25000.webp",
-      "statut": "disponible",
-      "style": "standard",
-      "couleur": "#2c2c30",
-      "prix": "1 279 DH"
-    },
-    {
-      "nom": "Xiaomi Power Bank 20000mAh",
-      "type": "Batterie externe",
-      "photo": "img/xiaomi-power-bank-20000.webp",
-      "statut": "disponible",
-      "style": "standard",
-      "couleur": "#e9e9ee",
-      "prix": "279 DH",
-      "couleurs": [
-        {
-          "nom": "Gris léger",
-          "hex": "#f2f2f2",
-          "photo": "img/c/xiaomi-power-bank-20000-0.webp"
-        },
-        {
-          "nom": "Gris foncé",
-          "hex": "#7f7f7f",
-          "photo": "img/c/xiaomi-power-bank-20000-1.webp"
-        }
-      ]
+      "prix": "549"
     },
     {
       "nom": "Xiaomi Power Bank 10000mAh 22.5W Lite",
@@ -694,7 +253,7 @@
       "statut": "disponible",
       "style": "standard",
       "couleur": "#e9e9ee",
-      "prix": "119 DH"
+      "prix": "149 DH"
     }
   ]
 }

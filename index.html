@@ -142,6 +142,7 @@ h2.one-line { white-space: nowrap; }
 .tile { position: relative; border-radius: 26px; background: var(--card); overflow: hidden; padding: 24px; display: flex; flex-direction: column; justify-content: space-between; transition: transform .4s cubic-bezier(.2,.8,.2,1); border: 1px solid var(--line); }
 .tile:hover { transform: translateY(-4px); }
 .tile h3 { font-family: var(--serif); font-weight: 400; font-size: 32px; line-height: 1; position: relative; z-index: 2; }
+.tile small[data-n] { display: none; }
 .tile small { font-size: 13px; color: var(--muted); position: relative; z-index: 2; }
 .tile img { position: absolute; right: 6%; bottom: 8%; height: 62%; width: 46%; max-width: none; object-fit: contain; object-position: center; transition: transform .6s cubic-bezier(.2,.8,.2,1); filter: drop-shadow(0 18px 22px rgba(0,0,0,.16)); }
 .tile img.mul { mix-blend-mode: multiply; filter: none; }
@@ -719,7 +720,7 @@ html[lang="ar"] .arr { transform: scaleX(-1); }
     });
   })).then(function () {
     var cat = $('catalogue');
-    RAYONS.forEach(function (r) { var l = BY[r[0]]; ALL = ALL.concat(l); if (l.length) cat.appendChild(buildRayon(r, l)); var s = document.querySelector('[data-n="' + r[0] + '"]'); if (s && l.length) s.textContent = l.length + ' produits'; });
+    RAYONS.forEach(function (r) { var l = BY[r[0]]; ALL = ALL.concat(l); if (l.length) cat.appendChild(buildRayon(r, l)); });
     var sel = $('sel-g'); SELECTION.forEach(function (n) { var p = ALL.filter(function (x) { return x.nom === n; })[0]; if (p) sel.appendChild(card(p)); });
     watch();
     document.dispatchEvent(new Event('catalogue-pret'));

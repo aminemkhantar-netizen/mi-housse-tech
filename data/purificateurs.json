@@ -16,7 +16,7 @@
       "statut": "disponible",
       "style": "affiche",
       "couleur": "#e9e9ee",
-      "prix": "1 599 DH"
+      "prix": "1 959 DH"
     },
     {
       "nom": "Xiaomi Smart Air Purifier Elite",
@@ -26,24 +26,6 @@
       "style": "affiche",
       "couleur": "#e9e9ee",
       "prix": "3 899 DH"
-    },
-    {
-      "nom": "Mijia Smart Air Purifier 6",
-      "type": "Purificateur d'air",
-      "photo": "img/mijia-smart-air-purifier-6.webp",
-      "statut": "disponible",
-      "style": "affiche",
-      "couleur": "#e9e9ee",
-      "prix": "2 299 DH"
-    },
-    {
-      "nom": "Mijia Smart Air Purifier Max",
-      "type": "Purificateur d'air",
-      "photo": "img/mijia-smart-air-purifier-max.webp",
-      "statut": "disponible",
-      "style": "affiche",
-      "couleur": "#e9e9ee",
-      "prix": "5 599 DH"
     }
   ]
 }

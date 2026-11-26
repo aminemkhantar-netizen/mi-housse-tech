@@ -1,0 +1,67 @@
+{
+  "produits": [
+    {
+      "nom": "Xiaomi Electric Scooter 4 Lite (2e gén.)",
+      "type": "Trottinette électrique",
+      "photo": "img/xiaomi-electric-scooter-4-lite-2nd-gen.webp",
+      "statut": "disponible",
+      "style": "standard",
+      "couleur": "#2c2c30",
+      "prix": "2 999 DH"
+    },
+    {
+      "nom": "Xiaomi Electric Scooter Elite",
+      "type": "Trottinette électrique",
+      "photo": "img/xiaomi-electric-scooter-elite.webp",
+      "statut": "disponible",
+      "style": "standard",
+      "couleur": "#2c2c30",
+      "prix": "3 699 DH"
+    },
+    {
+      "nom": "Xiaomi Electric Scooter 6 Lite",
+      "type": "Trottinette électrique",
+      "photo": "img/xiaomi-electric-scooter-6-lite.webp",
+      "statut": "disponible",
+      "style": "standard",
+      "couleur": "#2c2c30",
+      "prix": "3 559 DH"
+    },
+    {
+      "nom": "Xiaomi Electric Scooter 6",
+      "type": "Trottinette électrique",
+      "photo": "img/xiaomi-electric-scooter-6.webp",
+      "statut": "disponible",
+      "style": "standard",
+      "couleur": "#2c2c30",
+      "prix": "4 299 DH"
+    },
+    {
+      "nom": "Xiaomi Electric Scooter 6 Pro",
+      "type": "Trottinette électrique",
+      "photo": "img/xiaomi-electric-scooter-6-pro.webp",
+      "statut": "disponible",
+      "style": "standard",
+      "couleur": "#2c2c30",
+      "prix": "5 499 DH"
+    },
+    {
+      "nom": "Xiaomi Electric Scooter 6 Max",
+      "type": "Trottinette électrique",
+      "photo": "img/xiaomi-electric-scooter-6-max.webp",
+      "statut": "disponible",
+      "style": "standard",
+      "couleur": "#2c2c30",
+      "prix": "6 799 DH"
+    },
+    {
+      "nom": "Xiaomi Electric Scooter 6 Ultra",
+      "type": "Trottinette électrique",
+      "photo": "img/xiaomi-electric-scooter-6-ultra.webp",
+      "statut": "disponible",
+      "style": "standard",
+      "couleur": "#f26a1b",
+      "prix": "8 299 DH"
+    }
+  ]
+}

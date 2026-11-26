@@ -1,24 +1,6 @@
 {
   "produits": [
     {
-      "nom": "Xiaomi Robot Vacuum S40 Pro",
-      "type": "Aspirateur robot laveur",
-      "photo": "img/xiaomi-robot-vacuum-s40-pro.webp",
-      "statut": "disponible",
-      "style": "standard",
-      "couleur": "#e9e9ee",
-      "prix": "3 499 DH"
-    },
-    {
-      "nom": "Xiaomi Robot Vacuum X20 Pro",
-      "type": "Aspirateur robot avec station",
-      "photo": "img/xiaomi-robot-vacuum-x20-pro.webp",
-      "statut": "disponible",
-      "style": "standard",
-      "couleur": "#e9e9ee",
-      "prix": "5 999 DH"
-    },
-    {
       "nom": "Xiaomi Robot Vacuum X20+",
       "type": "Aspirateur robot avec station",
       "photo": "img/xiaomi-robot-vacuum-x20-plus.webp",
@@ -28,28 +10,13 @@
       "prix": "5 499 DH"
     },
     {
-      "nom": "Xiaomi Robot Vacuum X10+",
-      "type": "Aspirateur robot avec station",
-      "photo": "img/xiaomi-robot-vacuum-x10-plus.webp",
-      "statut": "disponible",
-      "style": "standard",
-      "couleur": "#e9e9ee"
-    },
-    {
       "nom": "Xiaomi Robot Vacuum H50 Pro",
       "type": "Aspirateur robot avec station",
       "photo": "img/xiaomi-robot-vacuum-h50-pro.webp",
       "statut": "disponible",
       "style": "standard",
-      "couleur": "#e9e9ee"
-    },
-    {
-      "nom": "Xiaomi Robot Vacuum S10+",
-      "type": "Aspirateur robot laveur",
-      "photo": "img/xiaomi-robot-vacuum-s10-plus.webp",
-      "statut": "disponible",
-      "style": "standard",
-      "couleur": "#e9e9ee"
+      "couleur": "#e9e9ee",
+      "prix": "5999"
     },
     {
       "nom": "Xiaomi Robot Vacuum E10",
@@ -78,98 +45,6 @@
       "prix": "1 129 DH"
     },
     {
-      "nom": "Xiaomi Vacuum Cleaner G30 Max",
-      "type": "Aspirateur balai sans fil",
-      "photo": "img/xiaomi-vacuum-cleaner-g30-max.webp",
-      "statut": "disponible",
-      "style": "standard",
-      "couleur": "#e9e9ee",
-      "prix": "3 899 DH"
-    },
-    {
-      "nom": "Xiaomi Vacuum Cleaner G20 Max",
-      "type": "Aspirateur balai sans fil",
-      "photo": "img/xiaomi-vacuum-cleaner-g20-max.webp",
-      "statut": "disponible",
-      "style": "standard",
-      "couleur": "#e9e9ee"
-    },
-    {
-      "nom": "Xiaomi Vacuum Cleaner G20",
-      "type": "Aspirateur balai sans fil",
-      "photo": "img/xiaomi-vacuum-cleaner-g20.webp",
-      "statut": "disponible",
-      "style": "standard",
-      "couleur": "#e9e9ee"
-    },
-    {
-      "nom": "Xiaomi Vacuum Cleaner G20 Lite",
-      "type": "Aspirateur balai sans fil",
-      "photo": "img/xiaomi-vacuum-cleaner-g20-lite.webp",
-      "statut": "disponible",
-      "style": "standard",
-      "couleur": "#e9e9ee",
-      "prix": "999 DH"
-    },
-    {
-      "nom": "Xiaomi Vacuum Cleaner G10 Plus",
-      "type": "Aspirateur balai sans fil",
-      "photo": "img/xiaomi-vacuum-cleaner-g10-plus.webp",
-      "statut": "disponible",
-      "style": "standard",
-      "couleur": "#e9e9ee"
-    },
-    {
-      "nom": "Xiaomi Vacuum Cleaner G9 Plus",
-      "type": "Aspirateur balai sans fil",
-      "photo": "img/xiaomi-vacuum-cleaner-g9-plus.webp",
-      "statut": "disponible",
-      "style": "standard",
-      "couleur": "#e9e9ee"
-    },
-    {
-      "nom": "Xiaomi Vacuum Cleaner P30",
-      "type": "Aspirateur balai sans fil",
-      "photo": "img/xiaomi-vacuum-cleaner-p30.webp",
-      "statut": "disponible",
-      "style": "standard",
-      "couleur": "#e9e9ee",
-      "prix": "799 DH"
-    },
-    {
-      "nom": "Mijia Vacuum Cleaner 4 Pro",
-      "type": "Aspirateur balai sans fil",
-      "photo": "img/mijia-vacuum-cleaner-4-pro.webp",
-      "statut": "disponible",
-      "style": "standard",
-      "couleur": "#e9e9ee"
-    },
-    {
-      "nom": "Mijia Vacuum Cleaner 4",
-      "type": "Aspirateur balai sans fil",
-      "photo": "img/mijia-vacuum-cleaner-4.webp",
-      "statut": "disponible",
-      "style": "standard",
-      "couleur": "#e9e9ee"
-    },
-    {
-      "nom": "Mijia Vacuum Cleaner 4C",
-      "type": "Aspirateur balai sans fil",
-      "photo": "img/mijia-vacuum-cleaner-4c.webp",
-      "statut": "disponible",
-      "style": "standard",
-      "couleur": "#e9e9ee"
-    },
-    {
-      "nom": "Xiaomi Truclean W30 Pro Wet Dry Vacuum",
-      "type": "Aspirateur eau et poussière",
-      "photo": "img/xiaomi-truclean-w30-pro.webp",
-      "statut": "disponible",
-      "style": "standard",
-      "couleur": "#e9e9ee",
-      "prix": "3 999 DH"
-    },
-    {
       "nom": "Xiaomi Truclean W20 Wet Dry Vacuum",
       "type": "Aspirateur eau et poussière",
       "photo": "img/xiaomi-truclean-w20.webp",
@@ -177,24 +52,6 @@
       "style": "standard",
       "couleur": "#e9e9ee",
       "prix": "2 819 DH"
-    },
-    {
-      "nom": "Xiaomi Dust Mite Vacuum Cleaner",
-      "type": "Aspirateur anti-acariens",
-      "photo": "img/xiaomi-dust-mite-vacuum-cleaner.webp",
-      "statut": "disponible",
-      "style": "standard",
-      "couleur": "#e9e9ee",
-      "prix": "499 DH"
-    },
-    {
-      "nom": "Mi Vacuum Cleaner Mini",
-      "type": "Aspirateur à main",
-      "photo": "img/mi-vacuum-cleaner-mini.webp",
-      "statut": "disponible",
-      "style": "standard",
-      "couleur": "#e9e9ee",
-      "prix": "499 DH"
     }
   ]
 }

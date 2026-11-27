@@ -269,7 +269,7 @@ function tableArticles(c) {
   });
   h += '<tr><td colspan="2" style="padding:10px 0 2px">Sous-total</td><td style="text-align:right;padding:10px 0 2px">' + dh(c.sousTotal) + '</td></tr>';
   h += '<tr><td colspan="2" style="padding:2px 0">' + (c.retrait ? 'Retrait en boutique' : 'Livraison') + '</td><td style="text-align:right;padding:2px 0">' + (c.retrait ? 'Gratuit' : (c.frais === null ? 'Confirmés par e-mail' : (c.frais ? dh(c.frais) : 'Gratuite'))) + '</td></tr>';
-  h += '<tr><td colspan="2" style="padding:12px 0 0;border-top:1px solid #e2ddd4;font-weight:bold;font-size:16px">Total à payer ' + (c.retrait ? 'en boutique' : 'à la livraison') + '</td><td style="padding:12px 0 0;border-top:1px solid #e2ddd4;text-align:right;font-weight:bold;font-size:16px;white-space:nowrap">' + dh(c.total) + (c.frais === null && !c.retrait ? ' + livraison' : '') + '</td></tr></table>';
+  h += '<tr><td colspan="2" style="padding:12px 0 0;border-top:1px solid #e2ddd4;font-weight:bold;font-size:16px">Total à payer ' + (c.retrait ? 'en boutique' : 'à la livraison') + '</td><td style="padding:12px 0 0;border-top:1px solid #e2ddd4;text-align:right;font-weight:bold;font-size:16px;white-space:nowrap">' + dh(c.total) + (c.frais === null && !c.retrait ? '<br><span style="font-size:12px;font-weight:normal;color:#7a746b">+ livraison</span>' : '') + '</td></tr></table>';
   return h;
 }
 function emailClient(c) {

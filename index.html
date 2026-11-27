@@ -687,7 +687,7 @@ html[lang="ar"] .arr { transform: scaleX(-1); }
       '<fieldset class="seg"><legend class="sr">Réception</legend><label><input type="radio" name="mode" value="livraison" checked>Livraison</label><label><input type="radio" name="mode" value="retrait">Retrait en boutique</label></fieldset>' +
       '<div class="two" id="pa-adr"><label>Ville<input name="ville" autocomplete="address-level2" placeholder="Kénitra"></label><label>Adresse<input name="adresse" autocomplete="street-address"></label></div>' +
       '<label>' + (API ? 'E-mail (pour recevoir la confirmation)' : 'E-mail (facultatif)') + '<input name="email" type="email" inputmode="email" autocomplete="email" placeholder="exemple@gmail.com"></label>' +
-      '<input name="site" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0">' +
+      '<div aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden"><label>Ne pas remplir<input name="zx_hp_mht" type="text" tabindex="-1" autocomplete="new-password" data-lpignore="true" data-form-type="other"></label></div>' +
       '<p class="err" id="pa-err" role="alert"></p>' +
       '<button class="btn btn-accent" id="pa-go" type="submit">Confirmer la commande <span class="arr">→</span></button>' +
       '<p class="fine">' + (API ? 'Livraison à Kénitra, paiement à la livraison ou en boutique. Vous recevrez un e-mail avec le récapitulatif et un bouton pour confirmer votre commande. Les frais de livraison (selon le produit) vous sont confirmés par e-mail.' : 'Paiement à la livraison ou en boutique. La commande s’ouvre dans WhatsApp, déjà rédigée : il vous suffit d’appuyer sur Envoyer. Nous vous confirmons la disponibilité et les frais de livraison.') + '</p></form>');
@@ -709,7 +709,7 @@ html[lang="ar"] .arr { transform: scaleX(-1); }
       if (API) {
         var go = $('pa-go'); go.disabled = true; go.textContent = 'Envoi de la commande…';
         var corps = { prenom: client.prenom, nom: client.nom, tel: client.tel, email: client.email, mode: r ? 'retrait' : 'livraison', ville: client.ville, adresse: client.adresse,
-          langue: document.documentElement.lang === 'ar' ? 'ar' : 'fr', site: f.site.value,
+          langue: document.documentElement.lang === 'ar' ? 'ar' : 'fr', site: (f.zx_hp_mht && f.zx_hp_mht.value === f.zx_hp_mht.defaultValue) ? '' : (f.zx_hp_mht ? f.zx_hp_mht.value : ''),
           articles: cart.map(function (x) { return { nom: x.nom, couleur: x.couleur, version: x.version, q: x.q, prix: x.prix, photo: x.photo }; }) };
         fetch(API, { method: 'POST', headers: { 'Content-Type': 'text/plain;charset=utf-8' }, body: JSON.stringify(corps) })
           .then(function (res) { return res.json(); })

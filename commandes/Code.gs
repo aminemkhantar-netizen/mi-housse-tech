@@ -15,7 +15,7 @@
 // ===================== RÉGLAGES (modifiables) =====================
 var CONFIG = {
   BOUTIQUE: 'Mi Housse Tech',
-  SITE_URL: 'https://aminemkhantar-netizen.github.io/mi-housse-tech',      // adresse du site (sans / à la fin)
+  SITE_URL: 'https://mihoussetech.com',      // adresse du site (sans / à la fin)
   TELEPHONE: '06 43 74 58 42',
   ADRESSE: 'Avenue Mohammed V – Centre commercial City Center, Kénitra',
   HORAIRES: 'Ouvert 7j/7 de 10h à 20h',

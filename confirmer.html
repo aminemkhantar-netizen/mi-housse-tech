@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Confirmer ma commande · Mi Housse Tech</title>
+<meta name="robots" content="noindex">
+<link rel="icon" href="logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter+Tight:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root { color-scheme: light; --paper: #f3efe8; --card: #faf8f4; --ink: #141414; --muted: #6f6a62; --line: rgba(20,20,20,.12); --accent: #ff6900; --green: #1fa855; --red: #c0392b; }
+* { box-sizing: border-box; margin: 0; }
+body { font-family: "Inter Tight", system-ui, sans-serif; background: var(--paper); color: var(--ink); -webkit-font-smoothing: antialiased; }
+.top { border-bottom: 1px solid var(--line); }
+.top .w { max-width: 1000px; margin: 0 auto; padding: 0 20px; height: 70px; display: flex; align-items: center; }
+.brand { display: flex; gap: 10px; align-items: center; font-weight: 700; text-decoration: none; color: inherit; }
+.brand img { width: 34px; height: 34px; border-radius: 10px; }
+main { max-width: 560px; margin: 0 auto; padding: 50px 20px 60px; text-align: center; }
+.ico { width: 64px; height: 64px; border-radius: 50%; display: grid; place-items: center; margin: 0 auto 18px; font-size: 30px; color: #fff; background: var(--accent); }
+.ico.ok { background: var(--green); } .ico.ko { background: var(--red); }
+h1 { font-family: "Instrument Serif", Georgia, serif; font-weight: 400; font-size: clamp(36px, 7vw, 50px); line-height: 1.05; margin-bottom: 12px; }
+p { font-size: 16px; line-height: 1.55; color: #2c2925; margin-bottom: 14px; }
+.btn { display: inline-block; font: inherit; font-weight: 700; font-size: 16px; border: 0; border-radius: 999px; padding: 15px 28px; cursor: pointer; text-decoration: none; background: var(--accent); color: #fff; margin-top: 8px; }
+.btn.dark { background: var(--ink); }
+.btn:disabled { opacity: .6; cursor: default; }
+.small { font-size: 13.5px; color: var(--muted); margin-top: 18px; }
+.small a { color: var(--ink); font-weight: 600; }
+</style>
+</head>
+<body>
+<div class="top"><div class="w"><a class="brand" href="./"><img src="logo.png" alt="">Mi Housse Tech</a></div></div>
+<main id="box">
+  <div class="ico">✓</div>
+  <h1>Confirmer ma commande</h1>
+  <p>Cliquez sur le bouton ci-dessous pour confirmer votre commande. Nous la préparons dès votre confirmation.</p>
+  <button class="btn" id="go" type="button">Je confirme ma commande</button>
+  <p class="small">Un problème ? Appelez le <a href="tel:+212643745842">06 43 74 58 42</a>.</p>
+</main>
+<script src="commande-config.js"></script>
+<script>
+(function () {
+  var API = window.MHT_COMMANDES || '', t = new URLSearchParams(location.search).get('t') || '';
+  var box = document.getElementById('box'), go = document.getElementById('go');
+  function esc(s) { return String(s == null ? '' : s).replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }); }
+  function fin(cls, titre, texte) {
+    box.innerHTML = '<div class="ico ' + cls + '">' + (cls === 'ko' ? '!' : '✓') + '</div><h1>' + esc(titre) + '</h1><p>' + esc(texte) + '</p>' +
+      (t ? '<a class="btn dark" href="suivi.html?t=' + encodeURIComponent(t) + '">Suivre ma commande</a>' : '<a class="btn dark" href="./">Retour au site</a>') +
+      '<p class="small">Une question ? Appelez le <a href="tel:+212643745842">06 43 74 58 42</a>.</p>';
+  }
+  if (!t || !API) { fin('ko', 'Lien incomplet', 'Ce lien de confirmation est incomplet. Utilisez le bouton de votre e-mail ou appelez-nous.'); return; }
+  go.onclick = function () {
+    go.disabled = true; go.textContent = 'Confirmation…';
+    fetch(API + (API.indexOf('?') < 0 ? '?' : '&') + 'action=confirmer_json&t=' + encodeURIComponent(t))
+      .then(function (r) { return r.json(); })
+      .then(function (r) { fin(r.ok ? 'ok' : 'ko', r.titre || 'Commande', r.texte || ''); })
+      .catch(function () { go.disabled = false; go.textContent = 'Je confirme ma commande'; alert('Connexion impossible. Réessayez dans un instant.'); });
+  };
+})();
+</script>
+</body>
+</html>

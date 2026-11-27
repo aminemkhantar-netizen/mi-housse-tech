@@ -77,7 +77,7 @@ function doPost(e) {
 
     var cmd = { code: code, jeton: jeton, date: maintenant, prenom: c.prenom, nom: c.nom, tel: c.tel, email: c.email, retrait: c.retrait,
       ville: c.ville, adresse: c.adresse, articles: articles, sousTotal: sousTotal, frais: frais, total: total };
-    envoyer(c.email, 'Votre commande ' + code + ' · merci de la confirmer', emailClient(cmd));
+    envoyer(c.email, 'Mi Housse Tech · votre commande ' + code, emailClient(cmd));
     envoyer(Session.getEffectiveUser().getEmail(), 'Nouvelle commande ' + code + ' · ' + c.prenom + ' ' + c.nom + ' · ' + dh(total), emailBoutique(cmd));
     return json({ ok: true, code: code, jeton: jeton });
   } catch (err) {
@@ -89,20 +89,22 @@ function doPost(e) {
 function doGet(e) {
   var p = (e && e.parameter) || {};
   if (p.action === 'confirmer') return pageConfirmation(p.t);
+  if (p.action === 'confirmer_json') return json(confirmerCommande(p.t));
   if (p.action === 'suivi') return json(suivi(p));
   return json({ ok: true, service: CONFIG.BOUTIQUE });
 }
 
-function pageConfirmation(jeton) {
+function confirmerCommande(jeton) {
   var sh = feuille(), r = jeton && trouver(sh, 'Jeton', String(jeton));
-  var titre, texte;
-  if (!r) { titre = 'Lien invalide'; texte = 'Cette commande est introuvable. Appelez-nous au ' + CONFIG.TELEPHONE + '.'; }
-  else {
-    var statut = sh.getRange(r, C['Statut']).getValue(), code = sh.getRange(r, C['Code']).getValue();
-    if (statut === STATUTS[0]) { changerStatut(sh, r, STATUTS[1], true); titre = 'Commande confirmée'; texte = 'Merci ! Votre commande ' + code + ' est confirmée. Nous la préparons et vous tenons informé par e-mail.'; }
-    else if (statut === 'Annulée') { titre = 'Commande annulée'; texte = 'La commande ' + code + ' a été annulée. Pour la reprendre, appelez-nous au ' + CONFIG.TELEPHONE + '.'; }
-    else { titre = 'Déjà confirmée'; texte = 'Votre commande ' + code + ' est déjà confirmée (statut : ' + statut + ').'; }
-  }
+  if (!r) return { ok: false, titre: 'Lien invalide', texte: 'Cette commande est introuvable. Appelez-nous au ' + CONFIG.TELEPHONE + '.' };
+  var statut = sh.getRange(r, C['Statut']).getValue(), code = sh.getRange(r, C['Code']).getValue();
+  if (statut === STATUTS[0]) { changerStatut(sh, r, STATUTS[1], true); return { ok: true, code: code, titre: 'Commande confirmée', texte: 'Merci ! Votre commande ' + code + ' est confirmée. Nous la préparons et vous tenons informé par e-mail.' }; }
+  if (statut === 'Annulée') return { ok: false, code: code, titre: 'Commande annulée', texte: 'La commande ' + code + ' a été annulée. Pour la reprendre, appelez-nous au ' + CONFIG.TELEPHONE + '.' };
+  return { ok: true, code: code, titre: 'Déjà confirmée', texte: 'Votre commande ' + code + ' est déjà confirmée (statut : ' + statut + ').' };
+}
+
+function pageConfirmation(jeton) {
+  var res = confirmerCommande(jeton), titre = res.titre, texte = res.texte;
   var lien = jeton ? CONFIG.SITE_URL + '/suivi.html?t=' + encodeURIComponent(jeton) : CONFIG.SITE_URL;
   var html = '<!DOCTYPE html><html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>' + esc(titre) + '</title></head>' +
     '<body style="margin:0;background:#f3efe8;font-family:Arial,sans-serif;color:#141414">' +
@@ -234,7 +236,17 @@ function dh(n) { return typeof n === 'number' ? String(n).replace(/\B(?=(\d{3})+
 function esc(x) { return String(x == null ? '' : x).replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }); }
 function json(o) { return ContentService.createTextOutput(JSON.stringify(o)).setMimeType(ContentService.MimeType.JSON); }
 function texteArticles(a) { return a.map(function (x) { return x.q + ' × ' + x.nom + ([x.couleur, x.version].filter(String).length ? ' (' + [x.couleur, x.version].filter(String).join(', ') + ')' : '') + ' — ' + dh(x.prix * x.q); }).join('\n'); }
-function envoyer(a, objet, html) { if (!a) return; MailApp.sendEmail({ to: a, subject: objet, htmlBody: html, name: CONFIG.BOUTIQUE }); }
+function versTexte(html) {
+  return String(html)
+    .replace(/<a [^>]*href="([^"]+)"[^>]*>([\s\S]*?)<\/a>/gi, function (m, href, t) { t = t.replace(/<[^>]+>/g, '').trim(); return t ? t + ' : ' + href : href; })
+    .replace(/<br\s*\/?>/gi, '\n').replace(/<\/(p|div|tr|h1|h2|li)>/gi, '\n').replace(/<\/td>/gi, '  ')
+    .replace(/<[^>]+>/g, '').replace(/&nbsp;/g, ' ').replace(/&amp;/g, '&').replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&quot;/g, '"').replace(/&#39;/g, "'")
+    .replace(/[ \t]+/g, ' ').replace(/ *\n */g, '\n').replace(/\n{3,}/g, '\n\n').trim();
+}
+function envoyer(a, objet, html) {
+  if (!a) return;
+  MailApp.sendEmail({ to: a, subject: objet, body: versTexte(html), htmlBody: html, name: CONFIG.BOUTIQUE, replyTo: Session.getEffectiveUser().getEmail() });
+}
 
 // ===================== E-MAILS =====================
 function cadre(contenu) {
@@ -261,7 +273,7 @@ function tableArticles(c) {
   return h;
 }
 function emailClient(c) {
-  var confirmer = ScriptApp.getService().getUrl() + '?action=confirmer&t=' + c.jeton;
+  var confirmer = CONFIG.SITE_URL + '/confirmer.html?t=' + c.jeton;
   var suivre = CONFIG.SITE_URL + '/suivi.html?t=' + c.jeton;
   var liv = c.retrait ? 'Retrait en boutique au City Center, Kénitra' : esc(c.adresse) + ', ' + esc(c.ville);
   return cadre(

@@ -6,10 +6,10 @@ backend:
   commit_messages:
     update: "Catalogue : mise à jour de {{slug}}"
 
-site_url: https://aminemkhantar-netizen.github.io/mi-housse-tech
-display_url: https://aminemkhantar-netizen.github.io/mi-housse-tech
+site_url: https://mihoussetech.com
+display_url: https://mihoussetech.com
 logo:
-  src: https://aminemkhantar-netizen.github.io/mi-housse-tech/logo.png
+  src: https://mihoussetech.com/logo.png
 
 # Les photos téléversées vont dans le dossier img/ du site
 media_folder: "img"

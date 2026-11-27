@@ -1,14 +1,15 @@
-# Espace de gestion du catalogue Mi Housse Tech (Decap CMS)
-locale: "fr"
+# Espace de gestion du catalogue Mi Housse Tech (Sveltia CMS, connexion GitHub)
 backend:
-  name: git-gateway
+  name: github
+  repo: aminemkhantar-netizen/mi-housse-tech
   branch: main
   commit_messages:
     update: "Catalogue : mise à jour de {{slug}}"
 
-site_url: /
-display_url: /
-logo_url: /logo.png
+site_url: https://aminemkhantar-netizen.github.io/mi-housse-tech
+display_url: https://aminemkhantar-netizen.github.io/mi-housse-tech
+logo:
+  src: https://aminemkhantar-netizen.github.io/mi-housse-tech/logo.png
 
 # Les photos téléversées vont dans le dossier img/ du site
 media_folder: "img"

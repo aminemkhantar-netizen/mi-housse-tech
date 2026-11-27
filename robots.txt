@@ -1,3 +1,3 @@
 User-agent: *
 Disallow: /admin/
-Sitemap: https://mi-housse-tech.netlify.app/sitemap.xml
+Sitemap: https://aminemkhantar-netizen.github.io/mi-housse-tech/sitemap.xml
